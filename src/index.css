@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* ── Light "Trust & Authority" theme ── */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary = Action Amber/Gold for CTA buttons */
+    --primary: 43 90% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 45%;
+
+    --accent: 43 90% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --emerald: 160 84% 39%;
+    --emerald-foreground: 0 0% 100%;
+
+    /* Navy brand — used directly in components for trust elements */
+    --navy: 224 71% 22%;
+    --navy-light: 224 60% 32%;
+    --navy-medium: 224 55% 28%;
+
+    --gold: 43 90% 48%;
+    --gold-light: 43 90% 62%;
+    --gold-dark: 43 80% 38%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 224 71% 30%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 224 71% 18%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 43 90% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 224 55% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 224 45% 25%;
+    --sidebar-ring: 43 90% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-gold-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 96% 70%));
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(180deg, hsl(224 71% 18%) 0%, hsl(224 71% 14%) 100%);
+  }
+
+  .bg-card-hover {
+    background: linear-gradient(135deg, hsl(210 20% 97%) 0%, hsl(210 20% 94%) 100%);
+  }
+
+  .gold-border-glow {
+    box-shadow: 0 0 20px hsl(43 90% 48% / 0.18), 0 0 40px hsl(43 90% 48% / 0.08);
+  }
+}
+
+/* Swiper overrides */
+.hero-swiper .swiper-pagination-bullet {
+  background: hsl(0 0% 100%) !important;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+.hero-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 28px;
+  border-radius: 5px;
+  background: hsl(43 90% 60%) !important;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(210 20% 96%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(215 20% 78%);
+  border-radius: 3px;
+}
