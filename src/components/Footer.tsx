@@ -214,14 +214,20 @@ export default function Footer() {
               { text: "Garage Door Repair Kirkland WA", href: "/locations/kirkland-wa" },
               { text: "Garage Door Repair Bellevue WA", href: "/locations/bellevue-wa" },
               { text: "Garage Door Repair Redmond WA", href: "/locations/redmond-wa" },
+              { text: "Garage Door Repair Lynnwood WA", href: "/locations/lynnwood-wa" },
+              { text: "Garage Door Repair Bothell WA", href: "/locations/bothell-wa" },
+              { text: "Garage Door Repair Mercer Island", href: "/locations/mercer-island-wa" },
+              { text: "Garage Door Repair Woodinville WA", href: "/locations/woodinville-wa" },
+              { text: "Garage Door Repair Kenmore WA", href: "/locations/kenmore-wa" },
               { text: "Spring Replacement Kirkland", href: "/services/spring-replacement" },
-              { text: "Opener Repair Bellevue", href: "/services/opener-repair" },
+              { text: "Smart Opener Install Bothell WA", href: "/services/opener-repair" },
+              { text: "Opener Repair Bellevue WA", href: "/services/opener-repair" },
               { text: "Emergency Garage Door Eastside WA", href: "/contact" },
               { text: "LiftMaster Repair Kirkland WA", href: "/services/opener-repair" },
               { text: "Off-Track Repair Kirkland", href: "/services/off-track-repair" },
               { text: "Cable Repair Bellevue WA", href: "/services/cable-replacement" },
-              { text: "Garage Door Repair Mercer Island", href: "/locations/mercer-island-wa" },
-              { text: "Garage Door Repair Bothell WA", href: "/locations/bothell-wa" },
+              { text: "Luxury Door Repair Mercer Island", href: "/locations/mercer-island-wa" },
+              { text: "Spring Replacement Lynnwood WA", href: "/services/spring-replacement" },
               { text: "New Garage Door Installation Kirkland", href: "/services/new-installation" },
             ].map((link) => (
               <Link
@@ -241,7 +247,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
           <p>
             © {currentYear} Zeus Garage Doors and Gate Repair LLC. All rights reserved.
-            Serving Kirkland, Bellevue, Redmond &amp; the Eastside.
+            Serving Kirkland, Bellevue, Redmond, Bothell, Lynnwood, Mercer Island, Woodinville &amp; Kenmore.
           </p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-white/70 transition-colors">
