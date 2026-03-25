@@ -93,15 +93,16 @@ export default function Index() {
                 Get a Free Quote Today
               </h2>
               <p className="text-white/70 text-base mb-8 max-w-md">
-                Fill in your details and our dispatch team will call you back fast — same-day service available across the entire Eastside.
+                Fill in your details and our dispatch team will call you back fast — same-day service available across the entire Eastside. For urgent emergencies outside regular hours, we offer 24/7 emergency dispatch.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Same-day emergency service, Sunday–Friday",
+                  "24/7 emergency dispatch — urgent repairs, any hour",
                   "Licensed, insured & background-checked techs",
                   "Transparent flat-rate pricing — no surprise fees",
                   "Parts stocked on every truck for one-visit fixes",
-                  "10% off for first-time customers",
+                  "🎁 10% off — first-time customers (mention at booking)",
+                  "🎖️ 12.5% off — veterans & seniors (Zeus honors those who served)",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm text-white/80">
                     <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[hsl(var(--primary))]/20 border border-[hsl(var(--primary))]/50 flex items-center justify-center">

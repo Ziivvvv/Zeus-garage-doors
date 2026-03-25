@@ -48,6 +48,11 @@ const KENMORE_FAQS = [
     answer:
       "Yes — LiftMaster and Chamberlain are our primary stocked brands and our most common Kenmore service calls. We carry replacement motors, logic boards, remotes, and MyQ smart home modules. We also service Genie, Craftsman, Marantec, and most legacy systems. If your opener is beyond repair, we install new units same-day.",
   },
+  {
+    question: "Do you offer emergency garage door service after hours in Kenmore?",
+    answer:
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM and Friday 6:00 AM–6:00 PM (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kenmore. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service.",
+  },
 ];
 
 const SERVICES = [
@@ -233,11 +238,19 @@ export default function KenmoreLocation() {
                 </div>
 
                 {/* Extended Range Badge */}
-                <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 rounded-full px-4 py-2 mb-7">
-                  <Clock size={14} className="text-gold flex-shrink-0" />
-                  <span className="text-gold text-xs font-bold uppercase tracking-wide">
-                    Extended Area Emergency Response — Same-Day Service
-                  </span>
+                <div className="flex flex-wrap items-center gap-3 mb-7">
+                  <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 rounded-full px-4 py-2">
+                    <Clock size={14} className="text-gold flex-shrink-0" />
+                    <span className="text-gold text-xs font-bold uppercase tracking-wide">
+                      Extended Area Emergency Response — Same-Day Service
+                    </span>
+                  </div>
+                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                    <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
+                    <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
+                      Local 24/7 Emergency Garage Door Repair
+                    </span>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
@@ -368,6 +381,8 @@ export default function KenmoreLocation() {
                       "Over 85% of calls resolved in one visit",
                       "100% Customer Satisfaction — guaranteed on every job",
                       "No upselling, no manufactured urgency",
+                      "🎁 10% off for first-time customers",
+                      "🎖️ 12.5% off — veterans & seniors",
                     ].map((s) => (
                       <li key={s} className="flex items-start gap-2 text-sm text-charcoal">
                         <span className="text-forest mt-0.5" aria-hidden="true">✓</span>
@@ -386,6 +401,35 @@ export default function KenmoreLocation() {
                   <p className="text-charcoal/70 text-sm leading-relaxed">
                     Kenmore is part of our dedicated extended service area — a short drive from our Kirkland shop via SR 522. We cover Kenmore, Woodinville, Sammamish, and Issaquah with the same service standards as our home market.
                   </p>
+                  <p className="text-red-500/70 text-xs font-medium mt-3">
+                    * 24/7 emergency dispatch available for urgent repairs.
+                  </p>
+                </div>
+
+                {/* Special Offers */}
+                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-300/60 rounded-2xl p-5">
+                  <p className="text-navy font-bold text-sm mb-3 flex items-center gap-2">
+                    <span aria-hidden="true">🏷️</span> Special Offers
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2.5">
+                      <span className="text-xl leading-none flex-shrink-0" aria-hidden="true">🎁</span>
+                      <p className="text-charcoal text-sm leading-snug">
+                        <strong className="text-navy text-base">10% Off</strong>{" "}
+                        for first-time customers
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2.5">
+                      <span className="text-xl leading-none flex-shrink-0" aria-hidden="true">🎖️</span>
+                      <p className="text-charcoal text-sm leading-snug">
+                        <strong className="text-navy text-base">12.5% Off</strong>{" "}
+                        for veterans &amp; seniors
+                      </p>
+                    </div>
+                    <p className="text-charcoal/60 text-xs leading-relaxed pt-2 border-t border-amber-200/60">
+                      Zeus honors those who served. Mention discount at booking.
+                    </p>
+                  </div>
                 </div>
               </FadeIn>
             </div>

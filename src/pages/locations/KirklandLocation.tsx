@@ -48,6 +48,11 @@ const KIRKLAND_FAQS = [
     answer:
       "Yes, and this is a significant part of our Kirkland workload. Many established Kirkland neighborhoods — Juanita, Houghton, Norkirk, and the older sections of Rose Hill — have original extension spring systems, one-piece tilt-up doors, and pre-safety-reverse openers that predate current code. We service and replace all of these. For older systems, we strongly recommend converting from extension springs to modern torsion springs: torsion systems are safer (no horizontal spring cables that can snap), easier to balance, and more durable in Kirkland's damp climate. We carry parts for all major brands including LiftMaster, Genie, Chamberlain, and Craftsman.",
   },
+  {
+    question: "Do you offer emergency garage door service after hours in Kirkland?",
+    answer:
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM and Friday 6:00 AM–6:00 PM (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kirkland. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service.",
+  },
 ];
 
 const SERVICES = [
@@ -237,11 +242,19 @@ export default function KirklandLocation() {
                   </p>
                 </div>
 
-                <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 rounded-full px-4 py-2 mb-7">
-                  <MapPin size={14} className="text-gold flex-shrink-0" />
-                  <span className="text-gold text-xs font-bold uppercase tracking-wide">
-                    Based in Kirkland — Your Actual Neighbors
-                  </span>
+                <div className="flex flex-wrap items-center gap-3 mb-7">
+                  <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 rounded-full px-4 py-2">
+                    <MapPin size={14} className="text-gold flex-shrink-0" />
+                    <span className="text-gold text-xs font-bold uppercase tracking-wide">
+                      Based in Kirkland — Your Actual Neighbors
+                    </span>
+                  </div>
+                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                    <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
+                    <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
+                      Local 24/7 Emergency Garage Door Repair
+                    </span>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
@@ -372,6 +385,8 @@ export default function KirklandLocation() {
                       "100% Customer Satisfaction — guaranteed",
                       "LiftMaster, Genie & Chamberlain stocked",
                       "No upselling, no manufactured urgency",
+                      "🎁 10% off for first-time customers",
+                      "🎖️ 12.5% off — veterans & seniors",
                     ].map((s) => (
                       <li key={s} className="flex items-start gap-2 text-sm text-charcoal">
                         <span className="text-forest mt-0.5" aria-hidden="true">✓</span>
@@ -390,8 +405,38 @@ export default function KirklandLocation() {
                     <li>Sunday – Thursday: 6:00 AM – 10:00 PM</li>
                     <li>Friday: 6:00 AM – 6:00 PM</li>
                     <li className="text-charcoal/50">Saturday: Closed</li>
+                  <li className="text-red-500/70 text-xs font-medium pt-1">
+                    * 24/7 emergency dispatch available for urgent repairs.
+                  </li>
                   </ul>
                 </div>
+
+                {/* Special Offers */}
+                <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-300/60 rounded-2xl p-5">
+                  <p className="text-navy font-bold text-sm mb-3 flex items-center gap-2">
+                    <span aria-hidden="true">🏷️</span> Special Offers
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2.5">
+                      <span className="text-xl leading-none flex-shrink-0" aria-hidden="true">🎁</span>
+                      <p className="text-charcoal text-sm leading-snug">
+                        <strong className="text-navy text-base">10% Off</strong>{" "}
+                        for first-time customers
+                      </p>
+                    </div>
+                    <div className="flex items-start gap-2.5">
+                      <span className="text-xl leading-none flex-shrink-0" aria-hidden="true">🎖️</span>
+                      <p className="text-charcoal text-sm leading-snug">
+                        <strong className="text-navy text-base">12.5% Off</strong>{" "}
+                        for veterans &amp; seniors
+                      </p>
+                    </div>
+                    <p className="text-charcoal/60 text-xs leading-relaxed pt-2 border-t border-amber-200/60">
+                      Zeus honors those who served. Mention discount at booking.
+                    </p>
+                  </div>
+                </div>
+
               </FadeIn>
             </div>
           </div>

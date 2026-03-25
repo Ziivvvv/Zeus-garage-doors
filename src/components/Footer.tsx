@@ -191,6 +191,9 @@ export default function Footer() {
               <p>Sunday – Thursday: 6:00 AM – 10:00 PM</p>
               <p>Friday: 6:00 AM – 6:00 PM</p>
               <p>Saturday: Closed</p>
+              <p className="text-red-400/80 mt-2 leading-snug">
+                * Emergency dispatch available 24/7 for urgent repairs.
+              </p>
             </div>
           </div>
 

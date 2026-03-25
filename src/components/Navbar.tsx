@@ -374,13 +374,19 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <a
-                href="tel:+14255550199"
-                className="ml-4 bg-gold hover:bg-gold-dark text-navy font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-md"
-                aria-label="Call Zeus Garage Doors now at 425-555-0199"
-              >
-                📞 Call Now
-              </a>
+              <div className="ml-4 flex flex-col items-center gap-0.5">
+                <span className="flex items-center gap-1.5 text-red-400 text-[9px] font-bold uppercase tracking-widest leading-none">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" aria-hidden="true" />
+                  24/7 Emergency Service
+                </span>
+                <a
+                  href="tel:+14255550199"
+                  className="bg-gold hover:bg-gold-dark text-navy font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-md"
+                  aria-label="Call Zeus Garage Doors now at 425-555-0199"
+                >
+                  📞 Call Now
+                </a>
+              </div>
             </nav>
 
             <div className="flex lg:hidden items-center gap-3">
