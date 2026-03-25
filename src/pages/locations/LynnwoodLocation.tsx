@@ -98,6 +98,8 @@ export default function LynnwoodLocation() {
         "Same-Day Response for the I-5 & I-405 Corridor",
         "Fully Licensed & Bonded WA Contractor",
         "Specialists in High-Cycle Hardware",
+        "85% of calls resolved in a single visit — stocked truck every call",
+        "100% Customer Satisfaction — guaranteed on every job",
         "No Hidden Fees — Exact Pricing Upfront",
         "Top-Rated Local Business — Not a Franchise",
       ]}

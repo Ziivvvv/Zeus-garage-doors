@@ -96,6 +96,34 @@ export default function ServicesGrid() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* ── Trust Stats Strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
+        >
+          {[
+            { value: "85%",      label: "One-Visit Fix Rate",       sub: "Fully stocked truck every call" },
+            { value: "100%",     label: "Customer Satisfaction",    sub: "Guaranteed on every job" },
+            { value: "Same Day", label: "Emergency Response",       sub: "Sunday – Friday availability" },
+            { value: "8 Cities", label: "Eastside Coverage",        sub: "Kirkland, Bellevue & more" },
+          ].map((stat) => (
+            <div
+              key={stat.label}
+              className="bg-slate-50 border border-slate-200 rounded-2xl p-5 text-center"
+            >
+              <p className="font-display text-3xl font-bold text-blue-900 leading-none mb-1">
+                {stat.value}
+              </p>
+              <p className="text-sm font-semibold text-slate-900 mt-1">{stat.label}</p>
+              <p className="text-xs text-slate-500 mt-0.5">{stat.sub}</p>
+            </div>
+          ))}
+        </motion.div>
+
       </div>
     </section>
   );

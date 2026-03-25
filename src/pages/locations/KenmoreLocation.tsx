@@ -366,6 +366,7 @@ export default function KenmoreLocation() {
                       "In-person assessment — never phone quotes",
                       "High-cycle springs & stainless cables stocked",
                       "Over 85% of calls resolved in one visit",
+                      "100% Customer Satisfaction — guaranteed on every job",
                       "No upselling, no manufactured urgency",
                     ].map((s) => (
                       <li key={s} className="flex items-start gap-2 text-sm text-charcoal">
@@ -497,8 +498,8 @@ export default function KenmoreLocation() {
                     {[
                       { label: "Response Time", value: "Same Day" },
                       { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Customer Satisfaction", value: "100%" },
                       { label: "Days Available", value: "Mon–Sat" },
-                      { label: "Spring Sizes Stocked", value: "10+" },
                     ].map((stat) => (
                       <div
                         key={stat.label}

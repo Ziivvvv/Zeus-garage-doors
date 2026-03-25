@@ -158,6 +158,8 @@ export default function KirklandLocation() {
         "Licensed Washington state contractor",
         "Full liability insurance on every job",
         "In-person assessment — never phone quotes",
+        "85% of calls resolved in a single visit — stocked truck every call",
+        "100% Customer Satisfaction — guaranteed on every job",
         "LiftMaster, Genie, Chamberlain stocked for same-day repair",
         "No upselling, no manufactured urgency",
       ]}

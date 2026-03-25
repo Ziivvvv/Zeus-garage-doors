@@ -98,6 +98,8 @@ export default function BothellLocation() {
         "Smart Home Opener Specialists",
         "Fully Licensed, Bonded & Insured WA Contractor",
         "Premium Weather-Resistant Parts",
+        "85% of calls resolved in a single visit — stocked truck every call",
+        "100% Customer Satisfaction — guaranteed on every job",
         "No Hidden Fees — Exact Pricing Upfront",
         "Same-Day Service Availability",
       ]}

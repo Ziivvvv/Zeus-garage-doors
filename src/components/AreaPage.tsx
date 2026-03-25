@@ -191,6 +191,28 @@ export default function AreaPage({
           </div>
         </section>
 
+        {/* ── TRUST BAR */}
+        <section className="bg-white border-b border-slate-200 py-6" aria-label="Quick facts">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+              {[
+                { value: "85%",      label: "One-Visit Fix Rate",      sub: "Fully stocked truck every call" },
+                { value: "100%",     label: "Customer Satisfaction",   sub: "Guaranteed on every job" },
+                { value: "Same Day", label: "Emergency Response",      sub: "Sunday – Friday" },
+                { value: "Licensed", label: "& Fully Insured",         sub: "Washington State Contractor" },
+              ].map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <p className="text-2xl font-bold text-navy font-playfair leading-none">
+                    {stat.value}
+                  </p>
+                  <p className="text-xs font-semibold text-charcoal mt-1">{stat.label}</p>
+                  <p className="text-xs text-charcoal/50 mt-0.5">{stat.sub}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── INTRO CONTENT */}
         <section
           className="py-16 lg:py-20 bg-offwhite"

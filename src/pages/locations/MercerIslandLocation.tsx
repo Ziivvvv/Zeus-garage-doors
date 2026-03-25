@@ -98,6 +98,8 @@ export default function MercerIslandLocation() {
         "Specialists in Heavy Custom Wood Doors",
         "Discreet, White-Glove Professional Service",
         "Premium Rust-Resistant PNW Hardware",
+        "85% of calls resolved in a single visit — stocked truck every call",
+        "100% Customer Satisfaction — guaranteed on every job",
         "Fully Licensed, Bonded & Insured WA Contractor",
         "Direct Communication — No Call Centers",
       ]}

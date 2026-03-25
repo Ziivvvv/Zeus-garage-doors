@@ -1,10 +1,10 @@
-import { Star, Shield, Package, Clock } from "lucide-react";
+import { Star, Shield, CheckCircle, Wrench } from "lucide-react";
 
 const badges = [
-  { icon: Star,    label: "5-Star Rated",       sub: "80+ Google & Yelp Reviews" },
-  { icon: Shield,  label: "Fully Licensed",      sub: "& Fully Insured" },
-  { icon: Package, label: "Premium Parts",       sub: "OEM & Manufacturer Approved" },
-  { icon: Clock,   label: "Same-Day Priority",   sub: "Emergency Service Available" },
+  { icon: Star,        label: "5-Star Rated",              sub: "80+ Google & Yelp Reviews" },
+  { icon: Shield,      label: "Fully Licensed & Insured",  sub: "Washington State Contractor" },
+  { icon: Wrench,      label: "85% One-Visit Fix Rate",    sub: "Fully Stocked Truck Every Call" },
+  { icon: CheckCircle, label: "100% Customer Satisfaction",sub: "Guaranteed on Every Job" },
 ];
 
 export default function AuthorityBar() {
