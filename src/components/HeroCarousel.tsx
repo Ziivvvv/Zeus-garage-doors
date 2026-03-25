@@ -44,15 +44,27 @@ export default function HeroCarousel() {
                   >
                     Zeus Garage Doors
                   </motion.p>
-                  <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.35, duration: 0.7 }}
-                    className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6 drop-shadow-lg"
-                    style={{ textWrap: "balance" }}
-                  >
-                    {slide.headline}
-                  </motion.h1>
+                  {i === 0 ? (
+                    <motion.h1
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.35, duration: 0.7 }}
+                      className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6 drop-shadow-lg"
+                      style={{ textWrap: "balance" }}
+                    >
+                      {slide.headline}
+                    </motion.h1>
+                  ) : (
+                    <motion.h2
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.35, duration: 0.7 }}
+                      className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-6 drop-shadow-lg"
+                      style={{ textWrap: "balance" }}
+                    >
+                      {slide.headline}
+                    </motion.h2>
+                  )}
                   <motion.p
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}

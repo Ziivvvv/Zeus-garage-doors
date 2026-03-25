@@ -1,17 +1,12 @@
 /**
  * pages/ContactPage.tsx — Zeus Garage Doors
- * Contact page with form UI and business info
+ * Contact page — form powered by the shared <QuoteForm /> component.
  */
 
 import SEOHead from "../components/SEOHead";
+import QuoteForm from "../components/QuoteForm";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Clock, Phone } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { Textarea } from "../components/ui/textarea";
-import { Label } from "../components/ui/label";
-import { useState } from "react";
-import { useToast } from "../hooks/use-toast";
+import { MapPin, Clock, Phone } from "lucide-react";
 
 const CONTACT_INFO = [
   {
@@ -19,12 +14,6 @@ const CONTACT_INFO = [
     label: "Phone",
     value: "425-555-0199",
     href: "tel:+14255550199",
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "zeusgaragedoorepair@gmail.com",
-    href: "mailto:zeusgaragedoorepair@gmail.com",
   },
   {
     icon: MapPin,
@@ -35,7 +24,7 @@ const CONTACT_INFO = [
   {
     icon: Clock,
     label: "Hours",
-    value: "Sun–Thu 6 AM – 9 PM · Fri 6 AM – 6 PM",
+    value: "Sun–Thu 6 AM – 10 PM · Fri 6 AM – 6 PM · Sat Closed",
     href: null,
   },
 ];
@@ -53,28 +42,11 @@ const fadeUp = {
 };
 
 export default function ContactPage() {
-  const { toast } = useToast();
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitting(true);
-    // Simulated — no backend wired
-    setTimeout(() => {
-      setSubmitting(false);
-      toast({
-        title: "Message received!",
-        description: "We'll get back to you within 1 business hour.",
-      });
-      (e.target as HTMLFormElement).reset();
-    }, 1200);
-  };
-
   return (
     <>
       <SEOHead
         title="Contact Zeus Garage Doors | Kirkland & Eastside WA"
-        description="Get in touch with Zeus Garage Doors for same-day garage door repair in Kirkland, Bellevue, Redmond, and the Eastside. Call 425-555-0199 or email us."
+        description="Get in touch with Zeus Garage Doors for same-day garage door repair in Kirkland, Bellevue, Redmond, and the Eastside. Call 425-555-0199."
         canonical="/contact"
         pageType="contact"
         breadcrumbs={[
@@ -83,7 +55,7 @@ export default function ContactPage() {
         ]}
       />
 
-      {/* ── HERO */}
+      {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative bg-background pt-28 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_20%,hsl(var(--gold)/0.06),transparent_60%)]" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -115,11 +87,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ── MAIN CONTENT */}
+      {/* ── MAIN CONTENT ──────────────────────────────────────────────────── */}
       <section className="bg-background pb-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
-            {/* ── FORM */}
+
+            {/* ── FORM (3 cols) */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -130,86 +103,19 @@ export default function ContactPage() {
                 variants={fadeUp}
                 custom={0}
                 id="estimate"
-                className="bg-secondary rounded-xl border border-border p-8"
+                className="bg-secondary rounded-2xl border border-border p-8"
               >
-                <h2 className="font-display text-2xl font-bold text-foreground mb-6">
+                <h2 className="font-display text-2xl font-bold text-foreground mb-2">
                   Request a Free Estimate
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
-                    <div className="space-y-2">
-                      <Label htmlFor="name" className="text-foreground">Name</Label>
-                      <Input
-                        id="name"
-                        placeholder="Your full name"
-                        required
-                        className="bg-background border-border"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-foreground">Phone</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="(425) 555-0000"
-                        required
-                        className="bg-background border-border"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground">Email</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="you@example.com"
-                      required
-                      className="bg-background border-border"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="service" className="text-foreground">Service Needed</Label>
-                    <select
-                      id="service"
-                      required
-                      className="flex h-10 w-full rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                    >
-                      <option value="">Select a service…</option>
-                      <option value="spring">Broken Spring Replacement</option>
-                      <option value="opener">Opener Repair or Install</option>
-                      <option value="off-track">Off-Track Door Repair</option>
-                      <option value="cable">Cable Replacement</option>
-                      <option value="panel">Panel Replacement</option>
-                      <option value="new">New Door Installation</option>
-                      <option value="other">Other / Not Sure</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message" className="text-foreground">
-                      Describe the Issue
-                    </Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell us what's happening with your garage door…"
-                      rows={4}
-                      className="bg-background border-border resize-none"
-                    />
-                  </div>
-                  <Button
-                    type="submit"
-                    disabled={submitting}
-                    className="w-full bg-primary text-primary-foreground font-semibold py-3 hover:opacity-90 active:scale-[0.97] transition-all"
-                  >
-                    {submitting ? "Sending…" : "Send Request"}
-                  </Button>
-                  <p className="text-muted-foreground text-xs text-center">
-                    We'll respond within 1 hour during business hours.
-                  </p>
-                </form>
+                <p className="text-muted-foreground text-sm mb-6">
+                  We'll call you back promptly during business hours (Mon–Sat).
+                </p>
+                <QuoteForm />
               </motion.div>
             </motion.div>
 
-            {/* ── CONTACT INFO */}
+            {/* ── CONTACT INFO (2 cols) */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -246,25 +152,33 @@ export default function ContactPage() {
 
               <motion.div
                 variants={fadeUp}
-                custom={4}
-                className="bg-secondary rounded-xl border border-border p-6 mt-8"
+                custom={3}
+                className="bg-[hsl(var(--navy))] rounded-2xl p-6 mt-8"
               >
-                <h3 className="text-foreground font-semibold mb-3">
+                <p className="text-[hsl(var(--primary))] text-xs font-semibold uppercase tracking-widest mb-2">
+                  Emergency Service
+                </p>
+                <h3 className="text-white font-display font-bold text-lg mb-3">
                   Need Help Fast? Call Now
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  Garage door stuck open or off-track? Call us during business
-                  hours for same-day service across King and Snohomish Counties.
+                <p className="text-white/70 text-sm mb-5 leading-relaxed">
+                  Door stuck open or off-track? We dispatch same-day across King
+                  and Snohomish Counties.
                 </p>
                 <a
                   href="tel:+14255550199"
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-semibold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity active:scale-[0.97]"
+                  className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-xl text-white transition-all active:scale-[0.97]"
+                  style={{
+                    background: "linear-gradient(135deg, hsl(43 90% 50%), hsl(36 95% 44%))",
+                    boxShadow: "0 4px 20px hsl(43 90% 48% / 0.4)",
+                  }}
                 >
                   <Phone className="w-4 h-4" />
                   425-555-0199
                 </a>
               </motion.div>
             </motion.div>
+
           </div>
         </div>
       </section>

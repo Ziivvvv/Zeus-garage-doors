@@ -6,7 +6,7 @@ const services = [
   {
     icon: Wrench,
     title: "Garage Door Spring Repair",
-    desc: "When a torsion or extension spring breaks, your garage door won't open safely. Zeus Garage Doors replaces broken garage door springs same-day across Kirkland, Bellevue, and the Eastside. We stock high-cycle springs for all door sizes, include a lifetime warranty on every part, and restore full operation in a single visit.",
+    desc: "When a torsion or extension spring breaks, your garage door won't open safely. Zeus Garage Doors replaces broken garage door springs same-day across Kirkland, Bellevue, and the Eastside. We stock high-cycle springs for all door sizes, include a professional service warranty on every part, and restore full operation in a single visit.",
     path: "/services/spring-replacement",
   },
   {
@@ -18,7 +18,7 @@ const services = [
   {
     icon: AlertTriangle,
     title: "Emergency Garage Door Repair",
-    desc: "A stuck, jammed, or fallen garage door is a safety hazard that needs immediate attention. Zeus Garage Doors provides emergency repair service across Kirkland, Bellevue, Redmond, and the greater Eastside, 7 days a week. We dispatch a certified technician fast — most emergency repairs, including off-track doors and broken cables, are completed the same day.",
+    desc: "A stuck, jammed, or fallen garage door is a safety hazard that needs immediate attention. Zeus Garage Doors provides emergency repair service across Kirkland, Bellevue, Redmond, and the greater Eastside, Sunday through Friday. We dispatch a certified technician promptly — most emergency repairs, including off-track doors and broken cables, are completed the same day.",
     path: "/services/off-track-repair",
   },
   {

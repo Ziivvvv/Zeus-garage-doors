@@ -1,5 +1,5 @@
 /**
- * pages/locations/LynnwoodPage.tsx — Zeus Garage Doors
+ * pages/locations/LynnwoodLocation.tsx — Zeus Garage Doors
  * Target: Garage Door Repair Lynnwood WA, I-5 corridor
  * Unique content: Commuter focus, Alderwood area, mix of old/new homes
  */
@@ -25,7 +25,7 @@ const LYNNWOOD_FAQS = [
   },
 ];
 
-export default function LynnwoodPage() {
+export default function LynnwoodLocation() {
   return (
     <AreaPage
       metaTitle="Garage Door Repair Lynnwood WA | Fast Service | Zeus"
@@ -34,7 +34,7 @@ export default function LynnwoodPage() {
       cityName="Lynnwood"
       stateName="WA"
       countyName="Snohomish County"
-      
+
       /* FEATURED SNIPPET TARGET: 40-60 WORDS */
       directAnswer="Zeus Garage Doors provides expert, same-day garage door repair in Lynnwood, WA. From broken spring replacement to smart opener installations, we serve Alderwood, Meadowdale, and Perrinville. Our local technicians offer honest, transparent pricing after a free on-site assessment. Call 425-555-0199 for fast service near the I-5 corridor."
 
@@ -101,9 +101,9 @@ export default function LynnwoodPage() {
         "No Hidden Fees — Exact Pricing Upfront",
         "Top-Rated Local Business — Not a Franchise",
       ]}
-      
+
       faqs={LYNNWOOD_FAQS}
-      
+
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: "Service Areas", url: "/locations" },

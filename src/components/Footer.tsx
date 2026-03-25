@@ -25,6 +25,7 @@ const LOCATIONS = [
   { label: "Lynnwood, WA", href: "/locations/lynnwood-wa" },
   { label: "Bothell, WA", href: "/locations/bothell-wa" },
   { label: "Woodinville, WA", href: "/locations/woodinville-wa" },
+  { label: "Kenmore, WA", href: "/locations/kenmore-wa" },
 ];
 
 const NEIGHBORHOODS = [
@@ -187,7 +188,7 @@ export default function Footer() {
 
             <div className="text-white/60 text-xs text-center md:text-left">
               <p className="text-white/90 font-semibold text-sm mb-1">Hours</p>
-              <p>Sunday – Thursday: 6:00 AM – 9:00 PM</p>
+              <p>Sunday – Thursday: 6:00 AM – 10:00 PM</p>
               <p>Friday: 6:00 AM – 6:00 PM</p>
               <p>Saturday: Closed</p>
             </div>

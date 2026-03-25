@@ -20,7 +20,7 @@ export default function CTASection() {
               Whether it's a broken spring at midnight or a new door installation, our certified technicians respond fast. Most repairs completed same-day with upfront pricing—no surprises.
             </p>
             <ul className="space-y-3 text-sm text-slate-600">
-              {["Same-day & emergency service available 7 days", "26-point safety inspection on every visit", "Lifetime warranty on spring replacements", "Licensed, bonded & insured in Washington state", "0% financing available — ask about our 18-month plan"].map((t) => (
+              {["Same-day & emergency service, Sunday–Friday", "26-point safety inspection on every visit", "Professional service warranty on spring replacements", "Licensed, bonded & insured in Washington state", "Honest upfront pricing — confirmed on-site"].map((t) => (
                 <li key={t} className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-blue-900 flex-shrink-0" />
                   {t}

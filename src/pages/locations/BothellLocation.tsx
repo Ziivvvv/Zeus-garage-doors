@@ -1,5 +1,5 @@
 /**
- * pages/locations/BothellPage.tsx — Zeus Garage Doors
+ * pages/locations/BothellLocation.tsx — Zeus Garage Doors
  * Target: Garage Door Repair Bothell WA, tech corridor, older & new homes
  * Unique content: Canyon Park, SR 522, mix of King and Snohomish counties
  */
@@ -25,7 +25,7 @@ const BOTHELL_FAQS = [
   },
 ];
 
-export default function BothellPage() {
+export default function BothellLocation() {
   return (
     <AreaPage
       metaTitle="Garage Door Repair Bothell WA | Local Experts | Zeus"
@@ -34,7 +34,7 @@ export default function BothellPage() {
       cityName="Bothell"
       stateName="WA"
       countyName="King & Snohomish Counties"
-      
+
       /* FEATURED SNIPPET TARGET: 40-60 WORDS */
       directAnswer="Zeus Garage Doors provides fast, expert garage door repair in Bothell, WA. From broken spring replacement to smart opener upgrades, we serve Canyon Park, Thrasher's Corner, and North Creek. Our licensed local technicians offer honest, transparent pricing after a free on-site assessment. Call 425-555-0199 for same-day service."
 
@@ -101,9 +101,9 @@ export default function BothellPage() {
         "No Hidden Fees — Exact Pricing Upfront",
         "Same-Day Service Availability",
       ]}
-      
+
       faqs={BOTHELL_FAQS}
-      
+
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: "Service Areas", url: "/locations" },

@@ -22,6 +22,8 @@ export interface ServicePageProps {
   metaDescription: string;
   canonical: string;
   serviceName: string;
+  /** Optional override for the H1 tag only (serviceName is still used everywhere else) */
+  pageH1?: string;
   serviceTagline: string;
   /** CRITICAL: Featured snippet block — 40-60 words, direct answer format */
   directAnswer: string;
@@ -30,13 +32,25 @@ export interface ServicePageProps {
     alt: string;
     title: string;
   };
+  /** Override the H2 for the "What's Included" section */
+  whatWeDoHeading?: string;
   whatWeDoItems: string[];
+  /** Override the H2 for the "Warning Signs" section */
+  warningSignsHeading?: string;
   warningSignsItems: string[];
+  /** Override the H2 for the "Why Zeus" section */
+  whyZeusHeading?: string;
   whyZeusPoints: {
     icon: string;
     heading: string;
     body: string;
   }[];
+  /**
+   * Additional editorial content blocks rendered between "Why Zeus" and the
+   * Cities section. Each block adds a semantic H2 + body paragraph for word
+   * count depth and topical authority.
+   */
+  contentBlocks?: { heading: string; body: string }[];
   relatedEntities: string[];
   faqs: FAQItem[];
   breadcrumbs: { name: string; url: string }[];
@@ -137,12 +151,17 @@ export default function ServicePage({
   metaDescription,
   canonical,
   serviceName,
+  pageH1,
   serviceTagline,
   directAnswer,
   heroImage,
+  whatWeDoHeading,
   whatWeDoItems,
+  warningSignsHeading,
   warningSignsItems,
+  whyZeusHeading,
   whyZeusPoints,
+  contentBlocks,
   relatedEntities,
   faqs,
   breadcrumbs,
@@ -189,7 +208,7 @@ export default function ServicePage({
               </p>
 
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-playfair leading-tight mb-5">
-                {serviceName}
+                {pageH1 ?? serviceName}
               </h1>
 
               <p className="text-xl text-white/70 mb-8 leading-relaxed">
@@ -255,7 +274,7 @@ export default function ServicePage({
                   id="service-details-heading"
                   className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-6"
                 >
-                  What's Included in Our {serviceName}
+                  {whatWeDoHeading ?? `What's Included in Our ${serviceName}`}
                 </h2>
                 <ul className="space-y-3" role="list">
                   {whatWeDoItems.map((item, i) => (
@@ -290,7 +309,7 @@ export default function ServicePage({
               <FadeIn delay={0.1}>
                 <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
                   <h2 className="text-2xl font-bold text-navy font-playfair mb-2">
-                    Signs You Need This Service
+                    {warningSignsHeading ?? "Signs You Need This Service"}
                   </h2>
                   <p className="text-slate-500 text-sm mb-6">
                     If you're experiencing any of these in Kirkland, Bellevue, or the Eastside area — call us today.
@@ -332,7 +351,7 @@ export default function ServicePage({
                 id="why-zeus-heading"
                 className="text-3xl lg:text-4xl font-bold text-navy font-playfair"
               >
-                Why Kirkland Homeowners Choose Zeus
+                {whyZeusHeading ?? "Why Kirkland Homeowners Choose Zeus"}
               </h2>
               <p className="text-charcoal/60 mt-4 text-lg max-w-xl mx-auto">
                 Local owner. Same-day service. We come to you, explain everything clearly, and stand behind our price.
@@ -358,6 +377,24 @@ export default function ServicePage({
             </div>
           </div>
         </section>
+
+        {/* ── ADDITIONAL CONTENT BLOCKS (word count depth + topical authority) */}
+        {contentBlocks && contentBlocks.length > 0 && (
+          <section className="py-16 lg:py-20 bg-offwhite" aria-label="Additional service information">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+              {contentBlocks.map((block, i) => (
+                <FadeIn key={i}>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-navy font-playfair mb-4">
+                    {block.heading}
+                  </h2>
+                  <p className="text-charcoal leading-relaxed text-base lg:text-lg whitespace-pre-line">
+                    {block.body}
+                  </p>
+                </FadeIn>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* ── CITIES WE SERVE */}
         <section

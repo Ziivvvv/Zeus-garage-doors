@@ -14,6 +14,7 @@ import Navbar from "./components/Navbar";
 import PromoBar from "./components/PromoBar";
 import Footer from "./components/Footer";
 import StickyMobileFooter from "./components/StickyMobileFooter";
+import StickyQuoteCTA from "./components/StickyQuoteCTA";
 
 // ── Lazy imports for code splitting (improves Core Web Vitals)
 import { lazy, Suspense } from "react";
@@ -39,13 +40,14 @@ const NewInstallationPage = lazy(() => import("./pages/services/NewInstallationP
 
 
 // Location pages
-const KirklandPage = lazy(() => import("./pages/locations/KirklandPage"));
-const BellevuePage = lazy(() => import("./pages/locations/BellevuePage"));
-const RedmondPage = lazy(() => import("./pages/locations/RedmondPage"));
-const MercerIslandPage = lazy(() => import("./pages/locations/MercerIslandPage"));
-const LynnwoodPage = lazy(() => import("./pages/locations/LynnwoodPage"));
-const BothellPage = lazy(() => import("./pages/locations/BothellPage"));
-const WoodinvillePage = lazy(() => import("./pages/locations/WoodinvillePage"));
+const KirklandPage = lazy(() => import("./pages/locations/KirklandLocation"));
+const BellevuePage = lazy(() => import("./pages/locations/BellevueLocation"));
+const RedmondPage = lazy(() => import("./pages/locations/RedmondLocation"));
+const MercerIslandPage = lazy(() => import("./pages/locations/MercerIslandLocation"));
+const LynnwoodPage = lazy(() => import("./pages/locations/LynnwoodLocation"));
+const BothellPage = lazy(() => import("./pages/locations/BothellLocation"));
+const WoodinvillePage = lazy(() => import("./pages/locations/WoodinvilleLocation"));
+const KenmorePage = lazy(() => import("./pages/locations/KenmoreLocation"));
 
 // Blog
 const BlogIndex = lazy(() => import("./pages/BlogIndex"));
@@ -74,6 +76,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <Footer />
       <StickyMobileFooter />
+      <StickyQuoteCTA />
     </div>
   );
 }
@@ -142,6 +145,7 @@ const App = () => (
               <Route path="/locations/lynnwood-wa" element={<LynnwoodPage />} />
               <Route path="/locations/bothell-wa" element={<BothellPage />} />
               <Route path="/locations/woodinville-wa" element={<WoodinvillePage />} />
+              <Route path="/locations/kenmore-wa" element={<KenmorePage />} />
               <Route path="/areas/:slug" element={<AreaPage />} />
 
               {/* ── 404 */}

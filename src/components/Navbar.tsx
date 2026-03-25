@@ -58,6 +58,7 @@ const LOCATIONS_NAV = [
   { label: "Lynnwood, WA", href: "/locations/lynnwood-wa" },
   { label: "Bothell, WA", href: "/locations/bothell-wa" },
   { label: "Woodinville, WA", href: "/locations/woodinville-wa" },
+  { label: "Kenmore, WA", href: "/locations/kenmore-wa" },
 ];
 
 const PRIMARY_NAV = [

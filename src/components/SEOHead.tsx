@@ -78,6 +78,7 @@ const BUSINESS = {
     "Lynnwood",
     "Bothell",
     "Woodinville",
+    "Kenmore",
   ],
   sameAs: [
     "https://www.yelp.com/biz/zeus-garage-doors",
@@ -131,7 +132,7 @@ function buildLocalBusinessSchema(cityName?: string) {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
         opens: "06:00",
-        closes: "21:00",
+        closes: "22:00",
       },
       {
         "@type": "OpeningHoursSpecification",

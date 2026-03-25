@@ -1,5 +1,5 @@
 /**
- * pages/locations/KirklandPage.tsx — Zeus Garage Doors
+ * pages/locations/KirklandLocation.tsx — Zeus Garage Doors
  * Garage Door Repair in Kirkland, WA — primary target page
  * Unique content: ~600 words, PNW weather signals, all neighborhoods
  */
@@ -25,7 +25,7 @@ const KIRKLAND_FAQS = [
   },
 ];
 
-export default function KirklandPage() {
+export default function KirklandLocation() {
   return (
     <AreaPage
       metaTitle="Garage Door Repair in Kirkland, WA | Same Day | Zeus Garage Doors"

@@ -1,5 +1,5 @@
 /**
- * pages/locations/MercerIslandPage.tsx — Zeus Garage Doors
+ * pages/locations/MercerIslandLocation.tsx — Zeus Garage Doors
  * Target: Garage Door Repair Mercer Island WA, High-end target page
  * Unique content: Lakefront humidity, custom wood doors, quiet operation
  */
@@ -25,7 +25,7 @@ const MERCER_ISLAND_FAQS = [
   },
 ];
 
-export default function MercerIslandPage() {
+export default function MercerIslandLocation() {
   return (
     <AreaPage
       metaTitle="Garage Door Repair Mercer Island WA | Premium Service | Zeus"
@@ -34,7 +34,7 @@ export default function MercerIslandPage() {
       cityName="Mercer Island"
       stateName="WA"
       countyName="King County"
-      
+
       /* FEATURED SNIPPET TARGET: 40-60 WORDS */
       directAnswer="Zeus Garage Doors provides premium, same-day garage door repair on Mercer Island, WA, including broken spring replacement, quiet opener installation, and custom wood door service. Serving both the North and South End, we specialize in rust-resistant parts for lakefront homes. Call 425-555-0199 for a local expert."
 
@@ -101,9 +101,9 @@ export default function MercerIslandPage() {
         "Fully Licensed, Bonded & Insured WA Contractor",
         "Direct Communication — No Call Centers",
       ]}
-      
+
       faqs={MERCER_ISLAND_FAQS}
-      
+
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: "Service Areas", url: "/locations" },

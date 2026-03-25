@@ -234,7 +234,7 @@ export default function AreaPage({
                       Serving {cityName} & Eastside WA
                     </h3>
                     <p className="text-white/60 text-sm mb-4">
-                      Same-day service available 7 days a week
+                      Same-day service, Sunday–Friday
                     </p>
                     <a
                       href="tel:+14255550199"
