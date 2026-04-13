@@ -249,9 +249,9 @@ export default function ServicePage({
         </section>
 
         {/* ── TRUST SIGNALS BAR */}
-        <div className="bg-forest py-4">
+        <div className="bg-gold py-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-white text-sm font-medium">
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-navy text-sm font-medium">
               <span>⚡ Same-Day Available</span>
               <span>🔧 Licensed Technicians</span>
               <span>💰 Upfront Pricing</span>
@@ -432,31 +432,31 @@ export default function ServicePage({
 
         {/* ── FINAL CTA */}
         <section
-          className="bg-forest py-16 lg:py-20"
+          className="bg-gold py-16 lg:py-20"
           aria-labelledby="service-cta-heading"
         >
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <FadeIn>
               <h2
                 id="service-cta-heading"
-                className="text-3xl lg:text-4xl font-bold text-white font-playfair mb-4"
+                className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-4"
               >
                 Need {serviceName} Today?
               </h2>
-              <p className="text-white/80 text-lg mb-8">
+              <p className="text-navy text-lg mb-8">
                 Zeus Garage Doors serves Kirkland, Bellevue, Redmond, and all Eastside WA communities. Same-day service available. No phone quotes — we come to you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:+14255550199"
-                  className="bg-white text-forest hover:bg-offwhite font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
+                  className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                   aria-label={`Call Zeus Garage Doors for ${serviceName}`}
                 >
                   📞 425-555-0199
                 </a>
                 <Link
                   to="/contact#estimate"
-                  className="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+                  className="border-2 border-navy text-navy hover:bg-navy/10 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
                 >
                   Request Estimate
                 </Link>

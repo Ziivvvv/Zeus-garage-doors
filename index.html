@@ -54,6 +54,16 @@
   <!-- Theme color (mobile browser chrome) -->
   <meta name="theme-color" content="#1B2A3B" />
 
+  <!-- Microsoft Clarity — session recording & heatmaps (zero React overhead) -->
+  <!-- Replace YOUR_CLARITY_ID_HERE with your Project ID from clarity.microsoft.com -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "YOUR_CLARITY_ID_HERE");
+  </script>
+
   <!-- Critical CSS: font-face variables for CLS prevention -->
   <style>
     :root {

@@ -1,69 +1,99 @@
-import { Star, Shield, CheckCircle, Wrench, Gift, Award } from "lucide-react";
-
-const TRUST_BADGES = [
-  { icon: Star,        label: "5-Star Rated",              sub: "80+ Google & Yelp Reviews" },
-  { icon: Shield,      label: "Fully Licensed & Insured",  sub: "Washington State Contractor" },
-  { icon: Wrench,      label: "85% One-Visit Fix Rate",    sub: "Fully Stocked Truck Every Call" },
-  { icon: CheckCircle, label: "100% Satisfaction",         sub: "Guaranteed on Every Job" },
-];
+import { Shield, CheckCircle, Wrench, Gift, Award } from "lucide-react";
+import AnimatedRating from "@/components/AnimatedRating";
 
 export default function AuthorityBar() {
   return (
-    <section className="bg-white border-b border-slate-200 shadow-sm" aria-label="Trust signals and special offers">
+    <section className="bg-navy border-b border-white/10" aria-label="Trust signals and special offers">
 
-      {/* ── Row 1: Trust badges */}
+      {/* ── Row 1: Trust signals */}
       <div className="container mx-auto px-4 lg:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          {TRUST_BADGES.map(({ icon: Icon, label, sub }) => (
-            <div key={label} className="flex items-center gap-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center shadow-md">
-                <Icon size={20} className="text-white" aria-hidden="true" />
-              </div>
-              <div>
-                <p className="font-semibold text-sm text-slate-900 leading-tight">{label}</p>
-                <p className="text-xs text-slate-500 mt-0.5">{sub}</p>
-              </div>
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0 lg:divide-x lg:divide-white/10">
+
+          {/* Animated star rating */}
+          <div className="lg:pr-10">
+            <AnimatedRating />
+          </div>
+
+          {/* 85% one-visit fix rate — mandatory business rule, always prominent */}
+          <div className="lg:px-10 flex items-center gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center shadow-md">
+              <Wrench size={20} className="text-gold" aria-hidden="true" />
             </div>
-          ))}
+            <div>
+              <p className="text-gold font-bold text-sm leading-tight">
+                85% one-visit fix rate
+              </p>
+              <p className="text-white text-xs mt-0.5">
+                fully stocked truck on every call
+              </p>
+            </div>
+          </div>
+
+          {/* Licensed & Insured */}
+          <div className="lg:px-10 flex items-center gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shadow-md">
+              <Shield size={20} className="text-white" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-white font-semibold text-sm leading-tight">
+                Fully Licensed &amp; Insured
+              </p>
+              <p className="text-white text-xs mt-0.5">Washington State Contractor</p>
+            </div>
+          </div>
+
+          {/* 100% Satisfaction */}
+          <div className="lg:pl-10 flex items-center gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shadow-md">
+              <CheckCircle size={20} className="text-white" aria-hidden="true" />
+            </div>
+            <div>
+              <p className="text-white font-semibold text-sm leading-tight">
+                100% Satisfaction
+              </p>
+              <p className="text-white text-xs mt-0.5">Guaranteed on every job</p>
+            </div>
+          </div>
+
         </div>
       </div>
 
       {/* ── Row 2: Special Offers */}
-      <div className="border-t border-amber-200/80 bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50">
+      <div className="border-t border-white/10 bg-white/5">
         <div className="container mx-auto px-4 lg:px-8 py-4">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10">
 
-            <p className="text-amber-700 text-xs font-bold uppercase tracking-widest hidden sm:block flex-shrink-0">
+            <p className="text-gold text-xs font-bold uppercase tracking-widest hidden sm:block flex-shrink-0">
               🏷️ Special Offers
             </p>
 
             {/* Offer 1 */}
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-amber-500 flex items-center justify-center flex-shrink-0 shadow-sm">
-                <Gift size={16} className="text-white" aria-hidden="true" />
+              <div className="w-9 h-9 rounded-full bg-gold/20 border border-gold/30 flex items-center justify-center flex-shrink-0">
+                <Gift size={16} className="text-gold" aria-hidden="true" />
               </div>
               <div>
-                <p className="text-slate-900 text-sm font-semibold leading-tight">
-                  <span className="text-amber-600 font-extrabold text-base">10% Off</span>{" "}
+                <p className="text-white text-sm font-semibold leading-tight">
+                  <span className="text-gold font-extrabold text-base">10% Off</span>{" "}
                   for First-Time Customers
                 </p>
-                <p className="text-slate-500 text-xs">Mention at booking — any service</p>
+                <p className="text-white text-xs">Mention at booking — any service</p>
               </div>
             </div>
 
-            <span className="text-amber-300 hidden sm:block text-lg" aria-hidden="true">|</span>
+            <span className="text-white/20 hidden sm:block text-lg" aria-hidden="true">|</span>
 
             {/* Offer 2 */}
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-amber-600 flex items-center justify-center flex-shrink-0 shadow-sm">
-                <Award size={16} className="text-white" aria-hidden="true" />
+              <div className="w-9 h-9 rounded-full bg-gold/20 border border-gold/30 flex items-center justify-center flex-shrink-0">
+                <Award size={16} className="text-gold" aria-hidden="true" />
               </div>
               <div>
-                <p className="text-slate-900 text-sm font-semibold leading-tight">
-                  <span className="text-amber-600 font-extrabold text-base">12.5% Off</span>{" "}
+                <p className="text-white text-sm font-semibold leading-tight">
+                  <span className="text-gold font-extrabold text-base">12.5% Off</span>{" "}
                   for Veterans &amp; Seniors
                 </p>
-                <p className="text-slate-500 text-xs">Zeus honors those who served</p>
+                <p className="text-white text-xs">Zeus honors those who served</p>
               </div>
             </div>
 

@@ -175,7 +175,7 @@ export default function AreaPage({
               <div className="flex flex-wrap gap-4">
                 <a
                   href="tel:+14255550199"
-                  className="bg-forest hover:bg-forest-dark text-white font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
+                  className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                   aria-label={`Call Zeus Garage Doors in ${cityName}`}
                 >
                   📞 Call for Same-Day Service
@@ -260,7 +260,7 @@ export default function AreaPage({
                     </p>
                     <a
                       href="tel:+14255550199"
-                      className="block w-full text-center bg-forest hover:bg-forest-dark text-white font-bold py-3 rounded-xl transition-colors mb-3"
+                      className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                     >
                       📞 425-555-0199
                     </a>
@@ -412,30 +412,30 @@ export default function AreaPage({
 
         {/* ── FINAL CTA */}
         <section
-          className="bg-forest py-16 lg:py-20"
+          className="bg-gold py-16 lg:py-20"
           aria-labelledby={`cta-${cityName.toLowerCase()}`}
         >
           <div className="max-w-3xl mx-auto px-4 text-center">
             <FadeIn>
               <h2
                 id={`cta-${cityName.toLowerCase()}`}
-                className="text-3xl lg:text-4xl font-bold text-white font-playfair mb-4"
+                className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-4"
               >
                 Need Garage Door Repair in {cityName}?
               </h2>
-              <p className="text-white/80 text-lg mb-8">
+              <p className="text-navy text-lg mb-8">
                 Zeus Garage Doors is your same-day, local choice for garage door repair, spring replacement, opener service, and more throughout {cityName}, {stateName}.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:+14255550199"
-                  className="bg-white text-forest hover:bg-offwhite font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
+                  className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
                   📞 425-555-0199
                 </a>
                 <Link
                   to="/contact#estimate"
-                  className="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+                  className="border-2 border-navy text-navy hover:bg-navy/10 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
                 >
                   Request Estimate
                 </Link>
