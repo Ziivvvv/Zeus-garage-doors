@@ -26,27 +26,28 @@ const LOCATIONS = [
   { label: "Bothell, WA", href: "/locations/bothell-wa" },
   { label: "Woodinville, WA", href: "/locations/woodinville-wa" },
   { label: "Kenmore, WA", href: "/locations/kenmore-wa" },
+  { label: "Seattle, WA", href: "/locations/seattle-wa" },
 ];
 
 const NEIGHBORHOODS = [
-  { label: "Juanita", href: "/locations/kirkland-wa#juanita" },
-  { label: "Totem Lake", href: "/locations/kirkland-wa#totem-lake" },
-  { label: "Finn Hill", href: "/locations/kirkland-wa#finn-hill" },
-  { label: "Houghton", href: "/locations/kirkland-wa#houghton" },
-  { label: "Bridle Trails", href: "/locations/kirkland-wa#bridle-trails" },
-  { label: "Kingsgate", href: "/locations/kirkland-wa#kingsgate" },
-  { label: "Somerset, Bellevue", href: "/locations/bellevue-wa#somerset" },
-  { label: "Crossroads, Bellevue", href: "/locations/bellevue-wa#crossroads" },
-  { label: "Factoria, Bellevue", href: "/locations/bellevue-wa#factoria" },
-  { label: "Eastgate, Bellevue", href: "/locations/bellevue-wa#eastgate" },
-  { label: "Lakemont, Bellevue", href: "/locations/bellevue-wa#lakemont" },
-  { label: "Education Hill", href: "/locations/redmond-wa#education-hill" },
-  { label: "Overlake, Redmond", href: "/locations/redmond-wa#overlake" },
-  { label: "Grass Lawn", href: "/locations/redmond-wa#grass-lawn" },
-  { label: "Hollywood Hill", href: "/locations/woodinville-wa#hollywood-hill" },
-  { label: "Canyon Park, Bothell", href: "/locations/bothell-wa#canyon-park" },
-  { label: "Meadowdale, Lynnwood", href: "/locations/lynnwood-wa#meadowdale" },
-  { label: "Alderwood, Lynnwood", href: "/locations/lynnwood-wa#alderwood" },
+  { label: "Juanita", href: "/locations/kirkland-wa" },
+  { label: "Totem Lake", href: "/locations/kirkland-wa" },
+  { label: "Finn Hill", href: "/locations/kirkland-wa" },
+  { label: "Houghton", href: "/locations/kirkland-wa" },
+  { label: "Bridle Trails", href: "/locations/kirkland-wa" },
+  { label: "Kingsgate", href: "/locations/kirkland-wa" },
+  { label: "Somerset, Bellevue", href: "/locations/bellevue-wa" },
+  { label: "Crossroads, Bellevue", href: "/locations/bellevue-wa" },
+  { label: "Factoria, Bellevue", href: "/locations/bellevue-wa" },
+  { label: "Eastgate, Bellevue", href: "/locations/bellevue-wa" },
+  { label: "Lakemont, Bellevue", href: "/locations/bellevue-wa" },
+  { label: "Education Hill", href: "/locations/redmond-wa" },
+  { label: "Overlake, Redmond", href: "/locations/redmond-wa" },
+  { label: "Grass Lawn", href: "/locations/redmond-wa" },
+  { label: "Hollywood Hill", href: "/locations/woodinville-wa" },
+  { label: "Canyon Park, Bothell", href: "/locations/bothell-wa" },
+  { label: "Meadowdale, Lynnwood", href: "/locations/lynnwood-wa" },
+  { label: "Alderwood, Lynnwood", href: "/locations/lynnwood-wa" },
 ];
 
 const COMPANY = [
@@ -119,7 +120,7 @@ export default function Footer() {
               { icon: "⚡", text: "Same-Day Service Available" },
               { icon: "🏆", text: "Licensed & Insured" },
               { icon: "💯", text: "Honest Upfront Pricing" },
-              { icon: "🔧", text: "LiftMaster Certified" },
+              { icon: "🔧", text: "LiftMaster Specialist" },
               { icon: "📍", text: "Locally Owned — Kirkland, WA" },
             ].map((trust) => (
               <div
@@ -188,11 +189,11 @@ export default function Footer() {
 
             <div className="text-white/60 text-xs text-center md:text-left">
               <p className="text-white/90 font-semibold text-sm mb-1">Hours</p>
-              <p>Sunday – Thursday: 6:00 AM – 10:00 PM</p>
-              <p>Friday: 6:00 AM – 6:00 PM</p>
+              <p>Sunday – Thursday: 6:00 AM – 10:00 PM (PT)</p>
+              <p>Friday: 6:00 AM – 6:00 PM (PT)</p>
               <p>Saturday: Closed</p>
               <p className="text-red-400/80 mt-2 leading-snug">
-                * Emergency dispatch available 24/7 for urgent repairs.
+                * Night emergency dispatch available Sun–Thur after hours. Not available Fri night or Sat.
               </p>
             </div>
           </div>
@@ -232,6 +233,13 @@ export default function Footer() {
               { text: "Luxury Door Repair Mercer Island", href: "/locations/mercer-island-wa" },
               { text: "Spring Replacement Lynnwood WA", href: "/services/spring-replacement" },
               { text: "New Garage Door Installation Kirkland", href: "/services/new-installation" },
+              { text: "Garage Door Repair Seattle WA", href: "/locations/seattle-wa" },
+              { text: "Emergency Garage Door Repair Seattle", href: "/locations/seattle-wa" },
+              { text: "Garage Door Spring Replacement Seattle", href: "/services/spring-replacement" },
+              { text: "Alley Garage Door Repair Seattle", href: "/locations/seattle-wa" },
+              { text: "Garage Door Repair Queen Anne Seattle", href: "/locations/seattle-wa" },
+              { text: "Garage Door Repair Capitol Hill Seattle", href: "/locations/seattle-wa" },
+              { text: "Garage Door Repair Ballard Seattle", href: "/locations/seattle-wa" },
             ].map((link) => (
               <Link
                 key={link.href + link.text}
@@ -250,7 +258,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/40">
           <p>
             © {currentYear} Zeus Garage Doors and Gate Repair LLC. All rights reserved.
-            Serving Kirkland, Bellevue, Redmond, Bothell, Lynnwood, Mercer Island, Woodinville &amp; Kenmore.
+            Serving Kirkland, Bellevue, Redmond, Bothell, Lynnwood, Mercer Island, Woodinville, Kenmore &amp; Seattle.
           </p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-white/70 transition-colors">
@@ -259,9 +267,9 @@ export default function Footer() {
             <Link to="/terms" className="hover:text-white/70 transition-colors">
               Terms
             </Link>
-            <Link to="/sitemap.xml" className="hover:text-white/70 transition-colors">
+            <a href="/sitemap.xml" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors">
               Sitemap
-            </Link>
+            </a>
           </div>
         </div>
       </div>

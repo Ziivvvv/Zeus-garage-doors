@@ -22,6 +22,7 @@ export default function PrivacyPage() {
         description="Read the privacy policy for Zeus Garage Doors. Learn how we collect, use, and protect your personal information."
         canonical="/privacy"
         pageType="about"
+        noIndex={true}
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Privacy Policy", url: "/privacy" },

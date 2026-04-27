@@ -1,15 +1,13 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import StickyMobileFooter from "@/components/StickyMobileFooter";
+import SEOHead from "@/components/SEOHead";
 
 const articles: Record<string, { title: string; date: string; content: string }> = {
   "how-to-know-garage-door-spring-broken": {
     title: "5 Signs Your Garage Door Spring Is About to Snap",
     date: "March 15, 2026",
-    content: `Your garage door springs do the heavy lifting—literally. A standard two-car garage door weighs 200–300 pounds, and the springs counterbalance that weight so the opener (and you) don't have to. When springs fail, it's loud, sudden, and potentially dangerous.\n\nHere are five warning signs that your springs are nearing the end of their lifespan:\n\n**1. The Door Feels Heavier Than Usual**\nDisconnect the opener and lift the door manually. A properly balanced door should stay open at about waist height without support. If it drops or feels like it weighs a ton, your springs are losing tension.\n\n**2. Visible Gaps in the Coils**\nTorsion springs are mounted above the door. Look for gaps or stretched sections between the coils—this indicates the spring has expanded and weakened.\n\n**3. The Door Opens Unevenly**\nIf one side rises faster than the other, one of your extension springs (if you have a pair) may be failing. This uneven load stresses the tracks and opener.\n\n**4. A Loud Bang From the Garage**\nMany homeowners report hearing what sounds like a gunshot or firework from the garage. That's the sound of a spring snapping. If you hear it, do NOT attempt to open the door.\n\n**5. The Opener Struggles or Stalls**\nWhen springs weaken, the opener motor compensates by working harder. If your opener strains, reverses, or stalls mid-cycle, failing springs are a likely culprit.\n\n**What to Do Next**\nIf you notice any of these signs, call Zeus Garage Doors at (425) 123-4567 for a free inspection. We carry springs on every truck and can replace them same-day in most cases. All spring replacements include a professional service warranty.`,
+    content: `Your garage door springs do the heavy lifting—literally. A standard two-car garage door weighs 200–300 pounds, and the springs counterbalance that weight so the opener (and you) don't have to. When springs fail, it's loud, sudden, and potentially dangerous.\n\nHere are five warning signs that your springs are nearing the end of their lifespan:\n\n**1. The Door Feels Heavier Than Usual**\nDisconnect the opener and lift the door manually. A properly balanced door should stay open at about waist height without support. If it drops or feels like it weighs a ton, your springs are losing tension.\n\n**2. Visible Gaps in the Coils**\nTorsion springs are mounted above the door. Look for gaps or stretched sections between the coils—this indicates the spring has expanded and weakened.\n\n**3. The Door Opens Unevenly**\nIf one side rises faster than the other, one of your extension springs (if you have a pair) may be failing. This uneven load stresses the tracks and opener.\n\n**4. A Loud Bang From the Garage**\nMany homeowners report hearing what sounds like a gunshot or firework from the garage. That's the sound of a spring snapping. If you hear it, do NOT attempt to open the door.\n\n**5. The Opener Struggles or Stalls**\nWhen springs weaken, the opener motor compensates by working harder. If your opener strains, reverses, or stalls mid-cycle, failing springs are a likely culprit.\n\n**What to Do Next**\nIf you notice any of these signs, call Zeus Garage Doors at 425-555-0199 for a free inspection. We carry springs on every truck and can replace them same-day in most cases. All spring replacements include a professional service warranty.`,
   },
   "torsion-vs-extension-springs": {
     title: "Torsion vs. Extension Springs: Which Does Your Door Use?",
@@ -26,11 +24,19 @@ const articles: Record<string, { title: string; date: string; content: string }>
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const article = articles[slug || ""] || articles["how-to-know-garage-door-spring-broken"];
+  const canonicalSlug = slug && articles[slug] ? slug : "how-to-know-garage-door-spring-broken";
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main className="pt-16">
+    <>
+      <SEOHead
+        title={`${article.title} | Zeus Garage Doors`}
+        description={article.content.replace(/\*\*/g, "").slice(0, 155).trim() + "…"}
+        canonical={`/blog/${canonicalSlug}`}
+        pageType="blog"
+        datePublished={article.date}
+        ogType="article"
+      />
+      <main id="main-content" className="pt-16">
         <section className="py-20 bg-navy-gradient">
           <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -83,9 +89,6 @@ export default function BlogPost() {
           </div>
         </section>
       </main>
-      <Footer />
-      <StickyMobileFooter />
-      <div className="h-14 lg:hidden" />
-    </div>
+    </>
   );
 }

@@ -4,19 +4,19 @@
  */
 
 import ServicePage from "../../components/ServicePage";
-import { GENERAL_FAQS } from "../../components/FAQAccordion";
+import { GENERAL_FAQS, UNIVERSAL_FAQS } from "../../components/FAQAccordion";
 
 export default function PanelReplacementPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Panel Replacement | Fix Dented Doors | Zeus"
-      metaDescription="Dented or backed into your garage door? We replace damaged sections and panels for Amarr, Clopay, Wayne Dalton, and more in Kirkland & Eastside WA. Call 425-555-0199."
+      metaDescription="Dented garage door? Zeus replaces damaged panels & sections for Amarr, Clopay & Wayne Dalton in Seattle, Kirkland & Eastside WA. Call 425-555-0199."
       canonical="/services/panel-replacement"
       serviceName="Panel Replacement"
       serviceTagline="Don't replace the whole door if you don't have to. We source and install matching replacement sections for dented, cracked, or rotted garage doors."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides individual garage door panel replacement in Kirkland, Bellevue, and Redmond. If you dented the bottom or middle section, we can match and install a replacement panel without replacing the entire door. Call 425-555-0199 for a free on-site assessment."
+      directAnswer="Zeus Garage Doors provides individual garage door panel replacement in Seattle, Kirkland, Bellevue, and the Eastside. If you dented the bottom or middle section, we can match and install a replacement panel without replacing the entire door. Call 425-555-0199 for a free on-site assessment."
       heroImage={{
         src: "/images/garage-door-panel-replacement.webp",
         alt: "Technician replacing a dented garage door panel section",
@@ -72,7 +72,13 @@ export default function PanelReplacementPage() {
           question: "Will the new garage door panel match the old ones exactly?",
           answer: "We order the exact part from the original manufacturer. However, if your current door is several years old, the paint may have faded slightly from the sun, so there might be a minor color variance. Painting the door after replacement is always an option.",
           schemaAnswer: "We order exact OEM replacement panels, but slight color variations may occur if the original door has faded from sun exposure over the years."
-        }
+        },
+        // Universal: panel replacement + insurance — directly relevant to this page
+        ...UNIVERSAL_FAQS.filter(f =>
+          f.question.includes("just one panel") ||
+          f.question.includes("insurance") ||
+          f.question.includes("How long does a garage door last")
+        ),
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },

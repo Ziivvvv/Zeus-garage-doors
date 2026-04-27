@@ -38,7 +38,7 @@ const CONTENT = `
   If you've checked your remotes, cleared the memory, and wiped down your sensors but the ghost-opening continues, the issue likely lies within the motor's logic board. Over time, power surges and age can cause the logic board to fail, resulting in erratic behavior.
 </p>
 <p>
-  If you live in Kirkland, Bellevue, or anywhere in King or Snohomish County, <a href="/contact">contact Zeus Garage Doors</a> for a fast, expert diagnosis. We carry replacement logic boards for all major brands, including LiftMaster, Genie, and Chamberlain. We also offer professional <a href="/services/opener-repair">opener repair</a> and <a href="/services/spring-replacement">spring replacement</a> services.
+  If you're searching for garage door repair near me in Seattle, Kirkland, Bellevue, or anywhere in King or Snohomish County, <a href="/contact">contact Zeus Garage Doors</a> for a fast, expert diagnosis. We carry replacement logic boards for all major brands, including <a href="https://www.liftmaster.com" target="_blank" rel="noopener noreferrer">LiftMaster</a>, Genie, and Chamberlain. We also offer professional <a href="/services/opener-repair">opener repair and installation</a> and <a href="/services/spring-replacement">spring replacement</a> services across all Eastside WA communities.
 </p>
 `;
 

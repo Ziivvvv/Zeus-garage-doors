@@ -288,6 +288,76 @@ export const OPENER_FAQS: FAQItem[] = [
   },
 ];
 
+// ─────────────────────────────────────────────
+// UNIVERSAL FAQ SET
+// These answers contain NO company name — written in neutral, encyclopedic
+// voice so Google AI Overviews, ChatGPT, and other AI tools cite this page
+// as the authoritative source. Direct-answer format (answer in sentence 1).
+// ─────────────────────────────────────────────
+
+export const UNIVERSAL_FAQS: FAQItem[] = [
+  {
+    question: "Why won't my garage door close all the way?",
+    answer: `The most common reason a garage door won't close all the way is misaligned or blocked safety sensors. Every modern garage door opener has two sensors mounted near the floor on each side of the door — one sends an infrared beam, one receives it. If those sensors are out of alignment, have dirt on the lens, or something is crossing the beam, the opener will refuse to close and the wall button light will flash. <strong>Fix it in three steps:</strong> (1) Clear any object in the door's path. (2) Wipe both sensor lenses with a dry cloth. (3) Gently realign each sensor bracket until both indicator lights are solid (usually green on one side, amber on the other). If sensors are fine, the opener's down-travel limit may have drifted — consult your opener manual to adjust it.`,
+    schemaAnswer: `The most common cause is misaligned or dirty safety sensors at the base of the tracks. Clear any obstructions, wipe both lenses, and realign the sensors until both indicator lights are solid. If sensors are fine, the opener's down-travel limit setting may need adjustment.`,
+  },
+  {
+    question: "Why does my garage door reverse before it touches the ground?",
+    answer: `A garage door that reverses just before closing has either a safety sensor obstruction or an incorrect close-force or travel-limit setting in the opener. Start with the sensors — even a spider web across the beam can trigger a false reversal. If the sensors look clear, the opener's sensitivity is set too high: the door is "feeling" resistance before it reaches the floor and interpreting it as an obstacle. Consult your opener's manual to reduce the down-force sensitivity by one or two steps. You can also test by placing a 2x4 flat on the floor — the door should contact it, feel resistance, and reverse. If it reverses before touching anything, lower the force setting.`,
+    schemaAnswer: `Reversal before the ground usually means a sensor obstruction (even a spider web) or that the opener's down-force sensitivity is set too high. Clear the sensor path first, then reduce the close-force setting in the opener's menu. The door should only reverse when it contacts an actual obstacle.`,
+  },
+  {
+    question: "How do I manually open my garage door when the power is out?",
+    answer: `Pull the red emergency release cord that hangs from the opener's trolley carriage — this disconnects the door from the drive system so it can be operated by hand. Grip the door with both hands and lift straight up. A correctly balanced door will stay open on its own once raised. <strong>Critical warning:</strong> never pull the release cord when the door is open and under spring tension — wait until the door is fully closed. If the springs are broken, the door will be extremely heavy and may fall; call a technician before attempting manual operation in that case. To reconnect the door to the opener: pull the release cord back toward the door until you hear it click into the trolley, then run the opener once to re-engage.`,
+    schemaAnswer: `Pull the red emergency release cord hanging from the opener trolley to disconnect the door. Lift with both hands — a properly balanced door stays open on its own. Warning: never pull the cord with the door open under spring tension, and if springs are broken, the door will be dangerously heavy.`,
+  },
+  {
+    question: "Why is my garage door making a loud grinding or squeaking noise?",
+    answer: `Different noises point to different components. A <strong>grinding sound</strong> almost always means worn steel rollers — the wheels that travel in the tracks. Steel rollers wear out and create metal-on-metal contact; replacing them with nylon rollers eliminates the noise permanently and requires no lubrication. A <strong>high-pitched squeak</strong> is usually dry hinges or a dry torsion spring — apply white lithium grease or a dedicated garage door lubricant to all hinges and along the spring coils (not the tracks themselves, which should stay clean and dry). A <strong>rattling or banging</strong> during movement means loose hardware — go around the door and tighten all visible bolts and hinge screws with a socket wrench. If the grinding comes from the opener motor during operation, the drive gears inside the motor unit are likely stripped and need replacing.`,
+    schemaAnswer: `Grinding = worn steel rollers (replace with nylon). Squeaking = dry hinges or spring (apply white lithium grease). Rattling = loose hardware (tighten all bolts). Grinding from the motor unit = stripped drive gears requiring professional repair.`,
+  },
+  {
+    question: "My garage door remote stopped working — what should I check first?",
+    answer: `Work through this checklist in order: <strong>(1) Replace the battery</strong> — most remotes use a CR2032 coin cell or a 9V battery; even a battery with partial charge causes intermittent failures. <strong>(2) Test the wall button</strong> — if the wall button works but the remote doesn't, the remote needs reprogramming, not the opener. Press and release the "Learn" button on the motor unit until its indicator light comes on, then press your remote button once; the opener light should flash to confirm pairing. <strong>(3) Check the antenna wire</strong> — a small wire hangs from the bottom of the motor unit; if it's coiled or tucked away, signal range drops significantly. <strong>(4) Check for lock mode</strong> — most openers have a vacation lock feature that disables all remotes; look for a lock button on the wall panel. <strong>(5) Inspect for interference</strong> — new LED bulbs, wireless devices, or a neighbor's new opener on the same frequency can block the signal.`,
+    schemaAnswer: `Check in this order: replace the battery; test whether the wall button works (if yes, reprogram the remote via the Learn button on the motor); check that the antenna wire is hanging straight; confirm lock mode is off; and look for radio frequency interference from nearby LED bulbs or wireless devices.`,
+  },
+  {
+    question: "What regular maintenance does a garage door need?",
+    answer: `A garage door needs a full service check twice a year — spring and fall are ideal. The routine: <strong>Lubricate</strong> all hinges, rollers, and the torsion spring coils with white lithium grease or a garage door-specific spray (never WD-40, which strips existing lubrication). <strong>Tighten</strong> all bolts, lag screws, and track brackets — vibration loosens hardware over time. <strong>Inspect weatherstripping</strong> at the bottom and sides and replace any sections that are cracked or no longer making contact. <strong>Test auto-reverse safety</strong>: place a 2x4 flat on the floor in the door's path — the door must reverse within 2 seconds of contact; if it doesn't, adjust the opener's down-force setting or call a technician. <strong>Test door balance</strong>: disconnect the opener and lift the door by hand to waist height and let go — it should float in place; if it drops or rises, the spring tension needs professional adjustment.`,
+    schemaAnswer: `Service twice a year: lubricate hinges, rollers, and spring coils with white lithium grease; tighten all hardware bolts; replace cracked weatherstripping; test auto-reverse with a 2x4 on the floor; and test balance by lifting the door halfway manually — it should stay put without help.`,
+  },
+  {
+    question: "How long does a garage door last?",
+    answer: `A well-maintained garage door system has different lifespans for each component. The <strong>door panels themselves</strong> typically last 20 to 30 years — steel panels can last even longer with periodic painting to prevent rust. <strong>Torsion springs</strong> are rated for 10,000 cycles (one open + one close = one cycle), which equals roughly 7 to 10 years for a typical household using the door 4 times per day. High-cycle springs rated to 25,000 or 50,000 cycles are available and make sense for busy households. <strong>Openers</strong> last 10 to 15 years on average. <strong>Cables</strong> and <strong>rollers</strong> typically last 7 to 12 years and should be inspected annually. In the Pacific Northwest, springs and cables corrode faster than in dry climates — oil-tempered or galvanized springs significantly extend service life in high-humidity areas.`,
+    schemaAnswer: `Door panels last 20–30 years. Torsion springs last 7–10 years (10,000 cycles). Openers last 10–15 years. Cables and rollers last 7–12 years. In humid climates like the Pacific Northwest, oil-tempered or galvanized springs significantly extend lifespan.`,
+  },
+  {
+    question: "How long do garage door openers last?",
+    answer: `The average garage door opener lasts 10 to 15 years with normal use. AC-powered chain-drive units from the 1990s often ran 15 to 20 years, but modern DC-powered belt-drive openers — while quieter — have more complex circuit boards that can fail sooner due to power surges. An opener approaching 15 years old that needs a major repair (logic board, motor replacement) is typically more cost-effective to replace than repair, especially since post-2006 models include required auto-reverse and UL 325 safety features that older units lack. Signs an opener is near end of life: slow response to remotes, inconsistent operation, grinding from the motor, or the unit failing to hold the door in the up position.`,
+    schemaAnswer: `Garage door openers last 10 to 15 years on average. Units over 15 years needing a major repair are usually better replaced than fixed, particularly since modern openers include UL 325 auto-reverse safety features that older units lack.`,
+  },
+  {
+    question: "Can you replace just one panel on a garage door?",
+    answer: `Yes — a single damaged section can be replaced without replacing the full door, provided the same panel is still available from the manufacturer. The ability to match depends on the brand, model, panel style, color, and age of the existing door. Panels for doors older than 10 to 15 years are frequently discontinued, making a perfect match impossible. When an exact match isn't available, a visually close panel can sometimes be used, though a slight color or texture difference will be visible. If more than two sections are damaged, or if the bottom section is severely bent (which typically damages the tracks, cables, and bottom brackets as well), full door replacement is almost always more economical and structurally sound.`,
+    schemaAnswer: `Yes, if the manufacturer still makes that panel. Match depends on brand, style, color, and age — panels over 10–15 years old are often discontinued. If more than two sections are damaged, or the bottom section is bent, full door replacement is usually the more cost-effective and structurally sound option.`,
+  },
+  {
+    question: "Does homeowners insurance cover garage door repair?",
+    answer: `Homeowners insurance covers garage door damage caused by a <strong>covered peril</strong> — vehicle impact, falling tree, storm damage (hail, high wind), fire, or vandalism. It does <strong>not</strong> cover mechanical failure, broken springs from normal wear, or rust and corrosion. If your vehicle backs into the door, that damage is typically handled by your <strong>auto insurance collision coverage</strong>, not your homeowners policy. Before filing any claim, calculate whether the repair or replacement cost exceeds your deductible — filing a claim for a $400 repair with a $500 deductible gains you nothing, and the claim record can raise your premium at renewal. Always get a written repair estimate before deciding whether to file.`,
+    schemaAnswer: `Homeowners insurance covers garage door damage from covered perils — vehicle impact, storm, fire, or vandalism. It does not cover mechanical failure or wear. Car-into-door damage is typically covered by auto insurance collision coverage. Compare repair cost to your deductible before filing.`,
+  },
+  {
+    question: "What causes garage door cables to break?",
+    answer: `Garage door lift cables fail for three main reasons. <strong>Age and fraying</strong> is the most common — the cable wraps around a drum thousands of times and individual wire strands break over years of use, weakening the cable until it snaps. <strong>Bottom bracket failure</strong>: when the bottom bracket that anchors the cable detaches or bends, the cable loses tension and goes slack, then wraps incorrectly on the drum, causing it to snap on the next operation. <strong>Spring failure</strong>: when a torsion spring breaks, the full weight of the door suddenly loads the cables — they were never designed to handle the unassisted weight of the door and can snap from the shock load. A fraying or slack cable is visible — if you see fraying strands or one side of the door is lower than the other, stop using the door and have the cable replaced immediately, as a broken cable causes the door to fall.`,
+    schemaAnswer: `The three main causes: (1) age and fraying from repeated drum wrapping over thousands of cycles; (2) bottom bracket failure that causes the cable to lose tension and spool incorrectly; (3) torsion spring breakage that shock-loads the cable with the full door weight. A fraying or slack cable means stop using the door immediately.`,
+  },
+  {
+    question: "Why won't my garage door open in cold weather?",
+    answer: `Cold weather causes several garage door problems. <strong>Frozen bottom weatherstrip</strong> is the most common — the rubber strip sealing the door to the floor freezes solid to the concrete overnight. Do not force the door open with the opener as this strains the spring and motor; instead, gently break the seal by hand or pour a small amount of warm water at the bottom edge. <strong>Thickened lubricants</strong>: standard lithium grease can congeal below 20°F, stiffening rollers and hinges enough to trigger the opener's obstruction sensors; switch to a low-temperature silicone-based lubricant. <strong>Metal contraction</strong>: steel tracks, springs, and cables contract in extreme cold, which can throw the door slightly out of alignment or cause the cable to become slack. If the door is frozen and you force it, you risk breaking a spring — the weakest point under load in cold conditions.`,
+    schemaAnswer: `Most common cause: the bottom weatherstrip freezes to the concrete overnight. Do not force it with the opener — break the seal gently by hand or with warm water. Also check lubricants (thicken below 20°F) and spring tension — cold metal contracts and can cause the door to feel stiff or bind.`,
+  },
+];
+
 export const GENERAL_FAQS: FAQItem[] = [
   {
     question: "Do you offer same-day garage door repair in Kirkland, WA?",

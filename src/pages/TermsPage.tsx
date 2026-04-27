@@ -22,6 +22,7 @@ export default function TermsPage() {
         description="Review the terms of service for Zeus Garage Doors. Understand our service agreements, warranties, and liability policies."
         canonical="/terms"
         pageType="about"
+        noIndex={true}
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Terms of Service", url: "/terms" },

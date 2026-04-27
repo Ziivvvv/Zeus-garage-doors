@@ -20,7 +20,7 @@ const CONTENT = `
 
 <h2>LiftMaster: The Professional's Choice</h2>
 <p>
-  LiftMaster (powered by Chamberlain) is the gold standard for professional installers. Their motors are incredibly durable, and they lead the market in Smart Home integration with their <strong>MyQ technology</strong>.
+  <a href="https://www.liftmaster.com" target="_blank" rel="noopener noreferrer">LiftMaster</a> (powered by Chamberlain) is the gold standard for professional installers. Their motors are incredibly durable, and they lead the market in Smart Home integration with their <strong>MyQ technology</strong>.
 </p>
 <p>
   <strong>Pros:</strong> Superior security features, extremely reliable logic boards, and excellent battery backup options (essential for power outages during our winter storms).
@@ -31,7 +31,7 @@ const CONTENT = `
 
 <h2>Genie: The Versatile Alternative</h2>
 <p>
-  Genie has made massive strides in recent years, particularly with their <strong>Aladdin Connect</strong> smart technology. They are known for being user-friendly and having very fast opening speeds.
+  <a href="https://www.geniecompany.com" target="_blank" rel="noopener noreferrer">Genie</a> has made massive strides in recent years, particularly with their <strong>Aladdin Connect</strong> smart technology. They are known for being user-friendly and having very fast opening speeds.
 </p>
 <p>
   <strong>Pros:</strong> Great screw-drive options (which handle temperature fluctuations well) and easy-to-program remotes.
@@ -62,7 +62,7 @@ const CONTENT = `
 export default function BestOpenerPNWPage() {
   return (
     <BlogPost
-      metaTitle="Best Garage Door Opener for PNW Weather | LiftMaster vs Genie"
+      metaTitle="Best Garage Door Opener for PNW | LiftMaster vs Genie"
       metaDescription="Choosing a garage door opener in Washington? Compare LiftMaster and Genie belt-drive systems for humidity resistance and smart home features."
       canonical="/blog/best-garage-door-opener-pnw"
       title="LiftMaster vs. Genie: What is the Best Garage Door Opener for PNW Weather?"

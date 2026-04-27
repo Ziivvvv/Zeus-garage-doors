@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
 import SEOHead from "../components/SEOHead";
+import { UNIVERSAL_FAQS } from "../components/FAQAccordion";
 import {
   Accordion,
   AccordionContent,
@@ -68,15 +69,17 @@ const LOCAL_FAQS = [
   },
 ];
 
+const ALL_FAQS = [...LOCAL_FAQS, ...UNIVERSAL_FAQS];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: LOCAL_FAQS.map((faq) => ({
+  mainEntity: ALL_FAQS.map((faq) => ({
     "@type": "Question",
     name: faq.question,
     acceptedAnswer: {
       "@type": "Answer",
-      text: faq.answer,
+      text: faq.schemaAnswer || faq.answer,
     },
   })),
 };
@@ -85,9 +88,9 @@ export default function LocalFAQPage() {
   return (
     <>
       <SEOHead
-        title="Eastside WA Garage Door FAQ | Kirkland, Bellevue, Redmond"
-        description="Local FAQ for garage door repair in King and Snohomish Counties. Get answers about service times, spring rust, custom doors, and storm-ready openers from Zeus Garage Doors."
-        canonical="https://zeusgaragedoorswa.com/local-faq"
+        title="Garage Door Repair FAQ | Complete Homeowner Guide"
+        description="Complete garage door repair FAQ — springs, openers, cables, maintenance, noise, cold weather, insurance coverage, and panel replacement. Plain answers."
+        canonical="/local-faq"
         pageType="about"
       />
 
@@ -99,19 +102,39 @@ export default function LocalFAQPage() {
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-4 max-w-3xl">
           <FadeIn>
+            <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">Complete Resource</p>
             <h1 className="text-4xl md:text-5xl font-bold text-navy mb-4 text-pretty">
-              Eastside Local FAQ
+              Garage Door Repair — Complete FAQ
             </h1>
-            <p className="text-lg text-navy/60 mb-12 text-pretty max-w-2xl">
-              Everything you need to know about garage door service in King and
-              Snohomish Counties.
+            <p className="text-lg text-navy/60 mb-4 text-pretty max-w-2xl">
+              Straightforward answers to the questions homeowners in Seattle, Kirkland, Bellevue, and across the Eastside search for most often. No fluff, no upsells.
+            </p>
+            <p className="text-sm text-navy/50 mb-12 max-w-2xl">
+              Covers: troubleshooting · springs · openers · cables · panels · maintenance · cold weather · insurance · noise · and more.
             </p>
           </FadeIn>
 
+          <FadeIn delay={0.05}>
+            <h2 className="text-xl font-bold text-navy mb-4">Troubleshooting & General Questions</h2>
+            <Accordion type="single" collapsible className="w-full mb-10">
+              {UNIVERSAL_FAQS.map((faq, i) => (
+                <AccordionItem key={`u-${i}`} value={`universal-${i}`}>
+                  <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-navy hover:no-underline">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-navy/70 leading-relaxed text-base">
+                    <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </FadeIn>
+
           <FadeIn delay={0.1}>
+            <h2 className="text-xl font-bold text-navy mb-4">Pacific Northwest & Local Service Questions</h2>
             <Accordion type="single" collapsible className="w-full">
               {LOCAL_FAQS.map((faq, i) => (
-                <AccordionItem key={i} value={`faq-${i}`}>
+                <AccordionItem key={`l-${i}`} value={`local-${i}`}>
                   <AccordionTrigger className="text-left text-base md:text-lg font-semibold text-navy hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>

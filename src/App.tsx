@@ -48,6 +48,7 @@ const LynnwoodPage = lazy(() => import("./pages/locations/LynnwoodLocation"));
 const BothellPage = lazy(() => import("./pages/locations/BothellLocation"));
 const WoodinvillePage = lazy(() => import("./pages/locations/WoodinvilleLocation"));
 const KenmorePage = lazy(() => import("./pages/locations/KenmoreLocation"));
+const SeattlePage = lazy(() => import("./pages/locations/SeattleLocation"));
 
 // Blog
 const BlogIndex = lazy(() => import("./pages/BlogIndex"));
@@ -146,6 +147,7 @@ const App = () => (
               <Route path="/locations/bothell-wa" element={<BothellPage />} />
               <Route path="/locations/woodinville-wa" element={<WoodinvillePage />} />
               <Route path="/locations/kenmore-wa" element={<KenmorePage />} />
+              <Route path="/locations/seattle-wa" element={<SeattlePage />} />
               <Route path="/areas/:slug" element={<AreaPage />} />
 
               {/* ── 404 */}

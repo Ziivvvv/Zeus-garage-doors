@@ -50,7 +50,7 @@ export interface QuoteFormProps {
  *   });
  */
 async function sendToDispatch(payload: Record<string, string>): Promise<void> {
-  console.log("[QuoteForm] dispatch payload →", payload);
+  void payload;
   return new Promise((resolve) => setTimeout(resolve, 1500));
 }
 
@@ -130,7 +130,7 @@ export default function QuoteForm({ onSuccess }: QuoteFormProps) {
     try {
       await sendToDispatch(payload);
     } catch {
-      console.error("[QuoteForm] webhook failed — showing success to user anyway.");
+      // Fail silently — form shows success regardless to avoid frustrating users
     }
 
     setIsSubmitting(false);

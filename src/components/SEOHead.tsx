@@ -42,6 +42,9 @@ export interface SEOHeadProps {
   // Open Graph
   ogImage?: string;
   ogType?: "website" | "article";
+
+  // Crawl control
+  noIndex?: boolean;
 }
 
 // ─────────────────────────────────────────────
@@ -54,8 +57,8 @@ const BUSINESS = {
   url: "https://zeusgaragedoorswa.com",
   telephone: "425-555-0199",
   email: "zeusgaragedoorepair@gmail.com",
-  logo: "https://zeusgaragedoorswa.com/logo.png",
-  image: "https://zeusgaragedoorswa.com/hero-bg.jpg",
+  logo: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
+  image: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
   description:
     "Professional garage door repair, spring replacement, and opener installation services in Kirkland, Bellevue, Redmond, and the greater Eastside area.",
   addressRegion: "WA",
@@ -80,11 +83,7 @@ const BUSINESS = {
     "Woodinville",
     "Kenmore",
   ],
-  sameAs: [
-    "https://www.yelp.com/biz/zeus-garage-doors",
-    "https://www.facebook.com/zeusgaragedoorswa",
-    "https://www.angi.com/companylist/us/wa/kirkland/zeus-garage-doors",
-  ],
+  sameAs: [],
 };
 
 // ─────────────────────────────────────────────
@@ -94,39 +93,31 @@ const BUSINESS = {
 function buildLocalBusinessSchema(cityName?: string) {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${BUSINESS.url}/#organization`,
+    "@type": "HomeAndConstructionBusiness",
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
+    description:
+      "Expert garage door repair and installation across Washington State. Fast, reliable service from the pros.",
     url: BUSINESS.url,
-    logo: BUSINESS.logo,
-    image: BUSINESS.image,
-    description: BUSINESS.description,
     telephone: BUSINESS.telephone,
-    email: BUSINESS.email,
-    priceRange: BUSINESS.priceRange,
-    currenciesAccepted: BUSINESS.currenciesAccepted,
-    paymentAccepted: BUSINESS.paymentAccepted,
     address: {
       "@type": "PostalAddress",
       addressLocality: cityName || BUSINESS.addressLocality,
       addressRegion: BUSINESS.addressRegion,
-      postalCode: BUSINESS.postalCode,
       addressCountry: BUSINESS.addressCountry,
     },
-    geo: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: BUSINESS.geo.latitude,
-        longitude: BUSINESS.geo.longitude,
-      },
-      geoRadius: BUSINESS.geo.radius,
-    },
-    areaServed: BUSINESS.areaServed.map((city) => ({
-      "@type": "City",
-      name: city,
-    })),
+    areaServed: [
+      { "@type": "City", name: "Seattle",       addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Kirkland",      addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Bellevue",      addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Redmond",       addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Mercer Island", addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Lynnwood",      addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Bothell",       addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Woodinville",   addressRegion: "WA", addressCountry: "US" },
+      { "@type": "City", name: "Kenmore",       addressRegion: "WA", addressCountry: "US" },
+    ],
+    priceRange: BUSINESS.priceRange,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -141,48 +132,6 @@ function buildLocalBusinessSchema(cityName?: string) {
         closes: "18:00",
       },
     ],
-    sameAs: BUSINESS.sameAs,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "80",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Garage Door Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Garage Door Spring Replacement",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Garage Door Opener Repair",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Garage Door Cable Replacement",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "New Garage Door Installation",
-          },
-        },
-      ],
-    },
   };
 }
 
@@ -240,6 +189,31 @@ function buildFAQSchema(faqs: FAQItem[]) {
   };
 }
 
+function buildWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BUSINESS.url}/#website`,
+    url: BUSINESS.url,
+    name: BUSINESS.name,
+    description: BUSINESS.description,
+    publisher: {
+      "@type": "Organization",
+      "@id": `${BUSINESS.url}/#organization`,
+      name: BUSINESS.name,
+      legalName: BUSINESS.legalName,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BUSINESS.url}/?s={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+}
+
 function buildBreadcrumbSchema(breadcrumbs: BreadcrumbItem[]) {
   return {
     "@context": "https://schema.org",
@@ -270,6 +244,7 @@ function buildArticleSchema(props: SEOHeadProps) {
       "@type": "Organization",
       "@id": `${BUSINESS.url}/#organization`,
       name: BUSINESS.name,
+      legalName: BUSINESS.legalName,
       logo: {
         "@type": "ImageObject",
         url: BUSINESS.logo,
@@ -316,14 +291,17 @@ export default function SEOHead({
   authorName,
   ogImage,
   ogType = "website",
+  noIndex = false,
 }: SEOHeadProps) {
-  const canonicalUrl = canonical
+  const canonicalUrl = canonical?.startsWith("https")
+    ? canonical
+    : canonical
     ? `https://zeusgaragedoorswa.com${canonical}`
     : "https://zeusgaragedoorswa.com";
 
   const finalOgImage =
     ogImage ||
-    "https://zeusgaragedoorswa.com/images/zeus-garage-doors-og.webp";
+    "https://zeusgaragedoorswa.com/zeus-logo-navbar.png";
 
   // Stable keys prevent re-runs when callers pass inline array literals
   const faqsKey = faqs ? faqs.map((f) => f.question).join("|") : "";
@@ -392,7 +370,9 @@ export default function SEOHead({
 
     // ── Robots / geo
     const additionalMeta: Record<string, string> = {
-      robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      robots: noIndex
+        ? "noindex, nofollow"
+        : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "geo.region": "US-WA",
       "geo.placename": cityName || "Kirkland",
       "geo.position": "47.6785;-122.2015",
@@ -408,6 +388,11 @@ export default function SEOHead({
       }
       tag.setAttribute("content", content);
     });
+
+    // ── Schema: WebSite + SearchAction (home page only)
+    if (pageType === "home") {
+      injectSchema("schema-website", buildWebSiteSchema());
+    }
 
     // ── Schema: LocalBusiness (every page)
     injectSchema("schema-localbusiness", buildLocalBusinessSchema(cityName));
@@ -447,7 +432,7 @@ export default function SEOHead({
         ogImage,
       }));
     }
-  }, [title, description, canonicalUrl, pageType, cityName, faqsKey, breadcrumbsKey]);
+  }, [title, description, canonicalUrl, pageType, cityName, faqsKey, breadcrumbsKey, noIndex]);
 
   return null; // All injection is done via useEffect into document.head
 }

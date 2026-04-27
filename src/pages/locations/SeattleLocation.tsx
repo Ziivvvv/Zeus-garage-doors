@@ -1,13 +1,22 @@
 /**
- * pages/locations/BellevueLocation.tsx — Zeus Garage Doors
- * Target: "Garage Door Repair Bellevue WA" — 1,600+ words
+ * pages/locations/SeattleLocation.tsx — Zeus Garage Doors
+ * Target: "Garage Door Repair Seattle WA" + neighborhood clusters
+ * Angle: Seattle's pre-1960 housing stock, alley garages, hillside driveways, marine climate
  * Schema: LocalBusiness + Service + FAQPage + BreadcrumbList via SEOHead
- * Strategy: Modern Glass & Aluminum Doors · Smart Opener Tech · Professional Positioning
  */
 
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Clock, Shield, Wrench, MapPin, AlertTriangle, CheckCircle, Zap, Home, Cpu } from "lucide-react";
+import {
+  Clock,
+  Shield,
+  Wrench,
+  MapPin,
+  AlertTriangle,
+  CheckCircle,
+  Zap,
+  Home,
+} from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import FAQAccordion from "@/components/FAQAccordion";
 import QuoteForm from "@/components/QuoteForm";
@@ -15,109 +24,115 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides same-day garage door repair in Bellevue, WA — specializing in modern glass and aluminum door systems, smart opener installation and commissioning, spring replacement, and off-track repair. Kirkland-based, we serve Somerset, Bridle Trails, Meydenbauer Bay, and every Bellevue neighborhood with the same professional standard we bring to our home market. Call 425-555-0199.";
+  "Zeus Garage Doors provides same-day garage door repair in Seattle, WA — specializing in older wooden door replacement, alley-garage access, hillside spring calibration, and full smart opener installation. Kirkland-based with a short cross-lake dispatch time, we serve Queen Anne, Capitol Hill, Ballard, Fremont, Magnolia, Green Lake, and every Seattle neighborhood. Call 425-555-0199.";
 
-const BELLEVUE_FAQS = [
+const SEATTLE_FAQS = [
   {
-    question: "Do you repair modern glass and aluminum garage doors in Bellevue?",
+    question: "Do you repair old wooden garage doors in Seattle?",
     answer:
-      "Yes — modern glass and aluminum door systems are our primary specialty in Bellevue. Tempered glass panel doors, full-view aluminum-frame systems, and contemporary frosted-glass designs require different handling than traditional steel doors: precise torque specs for the lighter frame weight, neoprene bottom-seal replacement, and hardware that won't corrode against aluminum. We carry the parts and have the experience to service these systems correctly in a single visit.",
+      "Yes. Seattle's dense pre-1960 housing stock — especially in Ballard, Fremont, Capitol Hill, and Wallingford — is full of original wooden doors that have rotted at the base, warped from decades of moisture, or broken at panel joints. We assess each wooden door individually: minor rot can be repaired and sealed, but severe structural damage or full-panel warping typically means replacement is the more cost-effective path. We carry modern steel and insulated door systems that match the character of older Seattle homes and can be installed same-day in most cases.",
   },
   {
-    question: "Do you install smart garage door openers in Bellevue, WA?",
+    question: "Can you access alley garages in Capitol Hill, Ballard, and Fremont?",
     answer:
-      "Yes. We install and commission LiftMaster myQ-enabled openers, Chamberlain smart series, and wall-mount jackshaft models — including full Wi-Fi setup, smartphone app pairing, and auto-close scheduling. For Bellevue homeowners integrating with Amazon Alexa, Google Home, or Ring security ecosystems, we configure the myQ integration at the time of install. We also carry the LiftMaster 8500W wall-mount model for modern high-ceiling garages where a standard trolley-rail system won't fit cleanly.",
+      "Yes — alley-garage access is standard for our Seattle service calls. A large portion of Seattle's residential garages are detached structures accessed from rear alleys, particularly in Capitol Hill, First Hill, Ballard, Fremont, and Wallingford. Our technicians are experienced with tight alley clearances, older detached garage structures with limited headroom, and the specific challenges these spaces present: non-standard door widths, low-clearance track systems, and openers that need wall-mount or jackshaft configurations because ceiling space is insufficient for a trolley rail.",
   },
   {
-    question: "How does Somerset's hillside terrain affect garage door springs?",
+    question: "How does Seattle's heavy rainfall affect garage door springs and cables?",
     answer:
-      "Somerset's steep inclines create a subtle but important effect: the gravity-assist on opening can mask spring tension loss that would be obvious on a flat driveway. A door that opens easily on an inclined driveway may actually have weakened springs that will fail under the full load of closing. We test Somerset doors using the mid-point manual lift test — disconnect the opener, lift the door to waist height, and release. A properly tensioned door holds in place. If it drifts in either direction, spring adjustment or replacement is needed.",
+      "Seattle's consistent rainfall and marine air from Puget Sound create one of the most corrosive environments for garage door hardware on the West Coast. Torsion spring coils develop surface rust and micro-fractures faster than in drier climates. Lift cables — particularly standard galvanized steel — can begin fraying in as little as 18–24 months in West Seattle or Magnolia. We default to high-cycle galvanized torsion springs and stainless-core lift cables on all Seattle service calls. These are the appropriate specification for the climate, not an upgrade we charge extra for.",
   },
   {
-    question: "Do you service Bridle Trails and Meydenbauer Bay in Bellevue?",
+    question: "Do you install smart garage door openers in Seattle?",
     answer:
-      "Yes. Bridle Trails is one of our regular service areas — large equestrian properties, oversized garage bays, and RV doors are common there, and our trucks are stocked with the heavy-duty hardware these systems require. Meydenbauer Bay's waterfront location places it in one of the highest-corrosion environments on our Eastside service map. We use stainless-core lift cables and heavily galvanized springs as standard on Meydenbauer Bay calls — not as an upgrade.",
+      "Yes. We install and fully commission LiftMaster myQ-enabled openers, Chamberlain smart series, and wall-mount jackshaft models for Seattle homes — including complete Wi-Fi setup, smartphone app pairing, auto-close scheduling, and smart home integration with Amazon Alexa, Google Home, and Ring security systems. For older Seattle garages with limited ceiling headroom — common in Capitol Hill, Fremont, and Ballard — we specifically recommend the LiftMaster 8500W jackshaft wall-mount, which installs beside the door with no ceiling rail required.",
   },
   {
-    question: "What is your service schedule for Bellevue garage door repair?",
+    question: "How does a steep driveway in Queen Anne or Capitol Hill affect my garage door?",
     answer:
-      "We are available Sunday through Thursday 6:00 AM to 10:00 PM (PT), and Friday 6:00 AM to 6:00 PM (PT). Saturday is our only closed day. Same-day service is standard for most Bellevue calls — not a premium tier. For urgent situations such as broken springs, doors stuck open, or cables snapped, we prioritize dispatch from our Kirkland base directly to your Bellevue address.",
+      "Steep hillside driveways — especially in Queen Anne, Capitol Hill, and Magnolia — create a gravity-assist effect during door opening that can disguise weakened torsion springs. On a flat driveway, undertensioned springs feel obviously heavy. On a slope, gravity helps open the door so the spring wear is invisible until the door fails to hold on closing — or the spring snaps entirely under the return load. We use the mid-point balance test on all Seattle hillside calls: disconnect the opener, lift the door manually to waist height, release. A properly balanced door holds in place. Drift in either direction means spring service is needed.",
   },
   {
-    question: "What opener do you recommend for a Bellevue home with a glass garage door?",
+    question: "What are your service hours for Seattle garage door repair?",
     answer:
-      "For glass-panel doors, we recommend belt-drive or jackshaft openers over chain-drive. Chain-drive vibration transmits through the opener rail and into the door, which can cause glass panels to rattle or — over time — stress the frame connections. The LiftMaster 8500W jackshaft mounts beside the door on the wall, eliminating ceiling rail entirely and producing near-silent operation. The myQ ecosystem connects to your smartphone and integrates with most major smart home platforms. We install and fully commission these same-day.",
+      "We are available Sunday through Thursday 6:00 AM to 10:00 PM (PT), and Friday 6:00 AM to 6:00 PM (PT). Saturday is our only closed day. Same-day service is our standard for Seattle — not a premium tier. Our Kirkland base puts us 20–30 minutes from most Seattle neighborhoods via SR-520 or I-90, depending on traffic.",
   },
   {
-    question: "Do you offer emergency garage door service after hours in Bellevue?",
+    question: "Do you offer after-hours emergency garage door repair in Seattle?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Bellevue. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. Zeus Garage Doors provides night emergency dispatch for urgent garage door repairs in Seattle outside of regular business hours. A broken spring, a door stuck open overnight, or a cable snapped and blocking your car are not situations that can wait until morning. Call 425-555-0199 for emergency service. Night emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
 const SERVICES = [
   {
-    name: "Modern Glass & Aluminum Door Repair",
+    name: "Old & Wooden Door Replacement",
     href: "/services/panel-replacement",
-    icon: Cpu,
-    desc: "Tempered glass panel repair, aluminum frame service, bottom-seal replacement, and hardware maintenance for Bellevue's contemporary door systems. Proper torque specs and corrosion-resistant parts are standard.",
+    icon: Home,
+    desc: "Seattle's pre-1960 housing stock is full of rotted wooden doors and original track systems decades past their service life. We assess and replace — same-day for most Seattle residential calls.",
   },
   {
-    name: "Spring Replacement",
+    name: "Torsion Spring Replacement",
     href: "/services/spring-replacement",
     icon: Wrench,
-    desc: "High-cycle torsion spring replacement calibrated for your door's exact weight — including lighter aluminum-frame systems and heavier Somerset hillside doors. Professional service warranty on every installation.",
+    desc: "High-cycle galvanized springs calibrated precisely for your door weight — including hillside homes in Queen Anne and Capitol Hill where inclined driveways mask tension loss. Professional service warranty on every installation.",
   },
   {
     name: "Smart Opener Installation",
     href: "/services/opener-repair",
     icon: Zap,
-    desc: "LiftMaster myQ, Chamberlain smart series, and jackshaft wall-mount installation. Full Wi-Fi commissioning, app setup, and smart home integration (Alexa, Google Home, Ring). Same-day install.",
+    desc: "LiftMaster myQ, jackshaft wall-mount models, and full smart home commissioning. For Seattle's low-headroom alley garages, the LiftMaster 8500W is our go-to — no ceiling rail required.",
   },
   {
-    name: "Off-Track Door Repair",
+    name: "Emergency Off-Track Repair",
     href: "/services/off-track-repair",
     icon: AlertTriangle,
-    desc: "Emergency same-day realignment for doors that have jumped a roller or derailed. Do not force a glass-panel door off its track — contact us immediately to prevent panel fracture.",
+    desc: "Alley garages stuck open are a direct security risk for Seattle homeowners. We prioritize emergency dispatch — same-day, including evenings Sunday through Thursday.",
   },
   {
     name: "Cable Replacement",
     href: "/services/cable-replacement",
     icon: Shield,
-    desc: "Stainless-core lift cables for Bellevue's waterfront and valley-corridor properties. Lake Washington and Meydenbauer Bay proximity accelerates standard cable corrosion — we upgrade proactively.",
+    desc: "Stainless-core lift cables designed for Seattle's marine climate. Puget Sound's salt air and year-round rainfall accelerate standard cable corrosion — we install the right spec from the first visit.",
   },
   {
-    name: "New Door Installation",
+    name: "New Garage Door Installation",
     href: "/services/new-installation",
     icon: Home,
-    desc: "Full-view glass, aluminum-frame, insulated contemporary panel, and traditional steel installation — with opener included. We match Bellevue's architectural aesthetic precisely.",
+    desc: "Full new door installations for Seattle's diverse housing stock — from craftsman character homes in Ballard to modern builds in South Lake Union. Steel, wood-look, insulated, and carriage-style options.",
   },
 ];
 
 const NEIGHBORHOODS = [
   {
-    name: "Somerset",
-    blurb: "Bellevue's premier hillside neighborhood. Inclined driveways require precision spring calibration — we test balance at mid-point lift, not just at full open.",
+    name: "Queen Anne",
+    blurb:
+      "Seattle's steepest hillside neighborhood. Inclined driveways mask spring tension loss — we run the mid-point balance test on every Queen Anne call. Older craftsman homes with original wooden doors are common here.",
   },
   {
-    name: "Bridle Trails",
-    blurb: "Large equestrian properties with oversized garage bays and RV doors. Our trucks carry the heavy-duty hardware these homes demand — no waiting on parts orders.",
+    name: "Capitol Hill",
+    blurb:
+      "Dense pre-1960 housing with a high concentration of alley-accessed detached garages. Low ceiling clearance in many structures requires jackshaft openers. We know Capitol Hill's garage layout well.",
   },
   {
-    name: "Meydenbauer Bay",
-    blurb: "Waterfront proximity creates one of the highest-corrosion environments on the Eastside. Stainless-core cables and galvanized springs are standard — not optional — for Meydenbauer service calls.",
+    name: "Ballard",
+    blurb:
+      "Ballard's original Scandinavian craftsman homes have some of the oldest garage door hardware in Seattle. Rotted wooden panels, seized original tracks, and springs that have never been replaced — we service all of it.",
   },
   {
-    name: "Downtown Bellevue",
-    blurb: "High-rise condos, modern townhomes, and luxury developments with full-view glass systems. We are Bellevue's glass-door specialist — the right technician for contemporary architectural builds.",
+    name: "Fremont",
+    blurb:
+      "Eclectic mix of older homes and newer infill construction. Alley garage access is common in the core residential blocks. Tech workers in Fremont frequently request smart opener upgrades alongside repairs.",
   },
   {
-    name: "Factoria",
-    blurb: "Dense residential near I-90 and I-405. Same-day service for all major door brands and opener systems — springs, cables, sensors, and full new installations.",
+    name: "Magnolia",
+    blurb:
+      "Elevated peninsula with direct Puget Sound exposure — among the highest marine-corrosion environments in Seattle. Stainless-core cables and galvanized springs are standard for Magnolia calls, not an upgrade.",
   },
   {
-    name: "Crossroads",
-    blurb: "Diverse housing stock from multi-family to established single-family. We cover the full service spectrum from routine tune-ups to complete system replacements.",
+    name: "Green Lake & Wallingford",
+    blurb:
+      "Established residential neighborhoods with a mix of older craftsman and mid-century housing stock. Same-day service for spring, cable, opener, and full door replacement for all major door brands.",
   },
 ];
 
@@ -148,23 +163,23 @@ function FadeIn({
 const BREADCRUMBS = [
   { name: "Home", url: "/" },
   { name: "Service Areas", url: "/locations" },
-  { name: "Bellevue, WA", url: "/locations/bellevue-wa" },
+  { name: "Seattle, WA", url: "/locations/seattle-wa" },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function BellevueLocation() {
+export default function SeattleLocation() {
   return (
     <>
       <SEOHead
-        title="Garage Door Repair Bellevue WA | Zeus Garage Doors"
-        description="Same-day garage door repair in Bellevue, WA. Modern doors, smart openers & spring service. Licensed & insured. Flat-rate pricing. Call 425-555-0199."
-        canonical="/locations/bellevue-wa"
+        title="Garage Door Repair Seattle WA | Zeus Garage Doors"
+        description="Expert garage door repair in Seattle, WA. Old homes, alley garages, hillside springs & smart opener installs. Same-day service. Call 425-555-0199."
+        canonical="/locations/seattle-wa"
         pageType="location"
-        cityName="Bellevue"
-        serviceName="Garage Door Repair Bellevue WA"
+        cityName="Seattle"
+        serviceName="Garage Door Repair Seattle WA"
         serviceDescription={DIRECT_ANSWER}
-        faqs={BELLEVUE_FAQS}
+        faqs={SEATTLE_FAQS}
         breadcrumbs={BREADCRUMBS}
       />
 
@@ -173,7 +188,7 @@ export default function BellevueLocation() {
         {/* ── HERO ────────────────────────────────────────────────────────── */}
         <section
           className="relative bg-navy pt-32 pb-20 lg:pt-40 lg:pb-28"
-          aria-label="Garage door repair in Bellevue hero"
+          aria-label="Garage door repair in Seattle hero"
         >
           <div
             className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy/90"
@@ -216,10 +231,10 @@ export default function BellevueLocation() {
                 transition={{ duration: 0.6 }}
               >
                 <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
-                  Modern Doors · Smart Technology · Bellevue, WA
+                  Old Homes · Alley Garages · Seattle, WA
                 </p>
                 <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white font-playfair leading-tight mb-5">
-                  Garage Door Repair in Bellevue, WA
+                  Garage Door Repair in Seattle, WA
                 </h1>
 
                 <div
@@ -239,7 +254,7 @@ export default function BellevueLocation() {
                   <div className="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 rounded-full px-4 py-2">
                     <MapPin size={14} className="text-gold flex-shrink-0" />
                     <span className="text-gold text-xs font-bold uppercase tracking-wide">
-                      Kirkland-Based · Bellevue's Modern Door Specialist
+                      Kirkland-Based · 20–30 Min to Seattle
                     </span>
                   </div>
                   <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
@@ -254,7 +269,7 @@ export default function BellevueLocation() {
                   <a
                     href="tel:+14255550199"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
-                    aria-label="Call Zeus Garage Doors in Bellevue"
+                    aria-label="Call Zeus Garage Doors in Seattle"
                   >
                     📞 Call for Same-Day Service
                   </a>
@@ -267,7 +282,7 @@ export default function BellevueLocation() {
                 </div>
               </motion.div>
 
-              {/* Right — QuoteForm (Placement #1) */}
+              {/* Right — QuoteForm */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -278,7 +293,7 @@ export default function BellevueLocation() {
                   Free Estimate — No Obligation
                 </p>
                 <h2 className="font-playfair text-xl font-bold text-navy mb-1">
-                  Get Your Bellevue Quote
+                  Get Your Seattle Quote
                 </h2>
                 <p className="text-charcoal/60 text-sm mb-5">
                   We'll call you back promptly during business hours (Sun–Fri).
@@ -290,49 +305,54 @@ export default function BellevueLocation() {
         </section>
 
         {/* ── INTRO ───────────────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="intro-bellevue">
+        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="intro-seattle">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-3 gap-12 items-start">
 
               <FadeIn className="lg:col-span-2 space-y-5">
                 <h2
-                  id="intro-bellevue"
+                  id="intro-seattle"
                   className="text-3xl lg:text-4xl font-bold text-navy font-playfair"
                 >
-                  Garage Door Experts Built for Bellevue's Modern Standard
+                  Built for Seattle's Unique Garage Door Challenges
                 </h2>
 
                 <p className="text-charcoal leading-relaxed text-lg">
-                  Bellevue's residential landscape has transformed dramatically over the past decade. The proliferation of tech-sector professionals, the wave of new luxury high-rises and contemporary townhomes in <strong>Downtown Bellevue</strong>, the premium hillside estates in <strong>Somerset</strong>, and the expansive equestrian properties in <strong>Bridle Trails</strong> have collectively raised expectations for every home service category — including garage doors. The standard corporate garage door company optimized for a 16-foot steel panel in a tract subdivision is not the right fit for a full-view glass door on a Bellevue new-build. Zeus Garage Doors is.
+                  Seattle's garage door market is unlike any other in the Pacific Northwest. While Bellevue and Redmond are defined by new construction and modern glass systems, Seattle is defined by its history — a dense urban core with a substantial share of homes built before 1960, where original wooden garage doors have been deteriorating under decades of Pacific Northwest rain, where detached garages are tucked behind craftsman bungalows and accessed from narrow rear alleys, and where steep hillside driveways in <strong>Queen Anne</strong>, <strong>Capitol Hill</strong>, and <strong>Magnolia</strong> create unique spring-balance challenges that most out-of-state franchise companies have never encountered.
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
-                  We are based in Kirkland — a direct drive from Bellevue via I-405 or Bellevue-Redmond Road. But what sets us apart from both national dispatch companies and single-market locals is our specialist knowledge of the door systems that define modern Bellevue architecture. <strong>Tempered glass panel systems</strong>, <strong>full-view aluminum-frame doors</strong>, and <strong>contemporary frosted or clear-glass designs</strong> are now the dominant aesthetic in Bellevue's new construction. These systems require a different approach than traditional steel: precise torque calibration for lighter frame weights, neoprene seal replacement, and corrosion-resistant hardware that won't react against aluminum tracks and frames.
+                  Zeus Garage Doors is based in Kirkland — a direct cross-lake dispatch to Seattle via SR-520 or I-90, typically 20 to 30 minutes depending on traffic. We serve the full range of Seattle residential garage door needs: <a href="/services/panel-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">wooden door repair and replacement</a>, <a href="/services/spring-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">torsion spring replacement</a>, <a href="/services/opener-repair" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">smart opener installation</a>, <a href="/services/cable-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">corrosion-resistant cable replacement</a>, <a href="/services/off-track-repair" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">emergency off-track repair</a>, and full new door installations. All services available same-day. All pricing confirmed on-site — never over the phone.
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
-                  We cover the full scope of residential garage door service in Bellevue: <a href="/services/panel-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">glass and aluminum door repair</a>, <a href="/services/spring-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">torsion spring replacement</a>, <a href="/services/opener-repair" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">smart opener installation and commissioning</a>, <a href="/services/cable-replacement" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">lift cable replacement</a>, <a href="/services/off-track-repair" className="text-forest underline underline-offset-2 hover:text-forest-dark transition-colors">off-track door repair</a>, weatherstrip replacement, sensor alignment, and complete new door installations. Every service is available same-day. All pricing is confirmed on-site after a full assessment — never over the phone.
+                  What separates a company that genuinely serves Seattle from one that lists it as a service area? It's the knowledge of what makes Seattle garages different. A technician who arrives at a Ballard alley garage in a full-size van and realizes the alley is too narrow isn't prepared for Seattle. A technician who tries to install a standard ceiling-rail trolley opener in a Capitol Hill basement garage with six feet of clearance doesn't know Seattle's housing stock. Our technicians do.
                 </p>
 
-                <p className="text-charcoal leading-relaxed">
-                  Bellevue's competitive landscape is crowded with national brands running franchise models — where your call routes to a regional call center, your technician is assigned from a contractor pool, and the person arriving at your property may have no specific experience with the door system you have. Zeus operates differently. When you call 425-555-0199, you reach our Kirkland dispatch team directly. The technician we send is a Zeus employee, not a subcontractor. They arrive with a fully stocked truck — and for Bellevue calls, that inventory includes parts specifically suited to glass-frame systems and high-corrosion waterfront environments.
-                </p>
-
-                {/* Local Environment Box */}
+                {/* Seattle Environment Box */}
                 <div className="bg-white rounded-2xl border border-slate-200 p-6 mt-4">
                   <h3 className="text-navy font-bold text-xl font-playfair mb-3">
-                    How Bellevue's Environment Affects Your Garage Door
+                    What Makes Seattle Garage Doors Different
                   </h3>
-                  <div className="space-y-3 text-charcoal/80 leading-relaxed">
-                    <p>
-                      <strong>Meydenbauer Bay and Lake Washington</strong> place a significant portion of Bellevue's residential stock within direct marine air exposure. Waterfront and near-waterfront properties see accelerated corrosion on all metal hardware — particularly lift cables, torsion spring coils, and track bracket fasteners. Standard galvanized cables that last years in drier inland areas can develop surface rust and micro-fraying in under two years in Meydenbauer Bay homes.
-                    </p>
-                    <p>
-                      Bellevue's urban density also creates a localized heat island effect — slightly warmer and more humid than surrounding areas — which combines with marine air from the lake to degrade rubber and neoprene components faster. The <strong>bottom seal</strong> on a glass-panel door is the first casualty: neoprene degrades in UV and heat, losing its compression seal and allowing drafts, water intrusion, and eventually condensation between glass panes. Annual seal inspection is the most cost-effective preventive maintenance a Bellevue homeowner can schedule.
-                    </p>
-                    <p>
-                      For all Bellevue service calls — and especially waterfront, Somerset hillside, and Bridle Trails properties — we default to <strong>high-cycle galvanized torsion springs</strong> and <strong>stainless-core lift cables</strong>. These are not upgrades we upsell. They are the appropriate specification for the environment your hardware lives in.
-                    </p>
+                  <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                    <div>
+                      <p className="font-semibold text-navy mb-1">The Alley Garage</p>
+                      <p>
+                        In Capitol Hill, First Hill, Ballard, Fremont, and Wallingford, a large portion of residential garages are detached structures set back from the street and accessed from rear alleys. These structures present distinct service challenges: tight alley clearance, low interior ceilings, older wall construction, and often no electrical outlet near the door — requiring the opener's electrical supply to be run at time of installation. We carry the parts and know the configuration.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-navy mb-1">Pre-1960 Wooden Doors</p>
+                      <p>
+                        Seattle's older residential neighborhoods are full of original wooden garage doors — many of which have been in place for 40 to 60 years. These doors show characteristic failure patterns: rot at the base from ground moisture wicking, panel cracking at horizontal joints from decades of rain-and-dry cycling, warping that prevents the door from seating fully in the frame, and hardware that has seized or corroded beyond adjustment. We assess every wooden door carefully — some are repairable, many have reached end of life. We'll tell you honestly which is which.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-navy mb-1">Puget Sound Marine Climate</p>
+                      <p>
+                        Seattle's proximity to Puget Sound means all metal hardware lives in a marine-influenced environment. Torsion spring coils, lift cable strands, track bracket hardware, and hinge pivot points all corrode faster here than in drier inland climates. In Magnolia — which sits directly above the sound — this effect is most pronounced. Our default specification for Seattle calls includes high-cycle galvanized springs and stainless-core lift cables at no additional charge. That's simply the right hardware for this environment.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </FadeIn>
@@ -344,7 +364,7 @@ export default function BellevueLocation() {
                     Zeus Garage Doors
                   </p>
                   <h3 className="font-bold text-lg font-playfair mb-1">
-                    Serving Bellevue & All Eastside WA
+                    Serving Seattle & All of King County
                   </h3>
                   <p className="text-white/60 text-sm mb-4">
                     Same-day service · Sun–Fri
@@ -365,17 +385,18 @@ export default function BellevueLocation() {
 
                 <div className="bg-white rounded-2xl border border-slate-200 p-6">
                   <h3 className="text-navy font-bold text-base mb-4">
-                    Why Bellevue Homeowners Trust Zeus
+                    Why Seattle Homeowners Choose Zeus
                   </h3>
                   <ul className="space-y-2">
                     {[
-                      "Specialists in glass & aluminum door systems",
-                      "Smart opener install & full app commissioning",
-                      "Based in Kirkland — direct dispatch to Bellevue",
+                      "Specialists in pre-1960 homes & alley garages",
+                      "Jackshaft openers for low-ceiling Seattle garages",
+                      "Hillside balance testing — not just opener disconnect",
+                      "Stainless-core cables standard for Seattle's climate",
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
-                      "Over 85% of calls resolved in one visit",
+                      "85%+ of calls resolved in one visit",
                       "Satisfaction guaranteed — we make it right",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
@@ -404,7 +425,6 @@ export default function BellevueLocation() {
                   </ul>
                 </div>
 
-                {/* Special Offers */}
                 <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-300/60 rounded-2xl p-5">
                   <p className="text-navy font-bold text-sm mb-3 flex items-center gap-2">
                     <span aria-hidden="true">🏷️</span> Special Offers
@@ -435,17 +455,17 @@ export default function BellevueLocation() {
         </section>
 
         {/* ── SERVICES ────────────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-white" aria-labelledby="services-bellevue">
+        <section className="py-16 lg:py-20 bg-white" aria-labelledby="services-seattle">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="text-center mb-12">
               <h2
-                id="services-bellevue"
+                id="services-seattle"
                 className="text-3xl lg:text-4xl font-bold text-navy font-playfair"
               >
-                Garage Door Services in Bellevue, WA
+                Garage Door Services in Seattle, WA
               </h2>
               <p className="text-charcoal/60 mt-4 text-lg max-w-xl mx-auto">
-                Modern glass systems, smart opener tech, and traditional repairs — every service available same-day for Bellevue homes.
+                From wooden door replacement in Ballard to smart opener installs in Capitol Hill — every service available same-day across Seattle.
               </p>
             </FadeIn>
 
@@ -455,7 +475,7 @@ export default function BellevueLocation() {
                   <Link
                     to={service.href}
                     className="group block bg-offwhite rounded-2xl p-7 border border-transparent hover:border-forest hover:shadow-lg transition-all h-full"
-                    aria-label={`${service.name} in Bellevue, WA`}
+                    aria-label={`${service.name} in Seattle, WA`}
                   >
                     <service.icon
                       size={22}
@@ -478,70 +498,62 @@ export default function BellevueLocation() {
           </div>
         </section>
 
-        {/* ── SMART TECH POSITIONING ──────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="tech-bellevue">
+        {/* ── ALLEY GARAGE + HILLSIDE DEEP DIVE ──────────────────────────── */}
+        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="seattle-specifics">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
 
               <FadeIn>
                 <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
-                  Built for Bellevue's Standard
+                  Seattle-Specific Expertise
                 </p>
                 <h2
-                  id="tech-bellevue"
+                  id="seattle-specifics"
                   className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-5"
                 >
-                  The Bellevue Homeowner's Expectation Has Changed
+                  The Two Problems Most Seattle Companies Get Wrong
                 </h2>
-                <div className="space-y-4 text-charcoal leading-relaxed">
-                  <p>
-                    Bellevue is one of the most technology-integrated residential markets in the country. Amazon, Microsoft, and the broader tech ecosystem have shaped a homeowner culture where smart home integration is a baseline expectation — not a novelty. A garage door opener that doesn't connect to a smartphone app, integrate with Alexa, or trigger a Ring notification when it opens feels out of place in a neighborhood where every other system in the home is remotely monitored.
-                  </p>
-                  <p>
-                    Zeus Garage Doors installs and fully commissions the <strong>LiftMaster myQ ecosystem</strong> — the most broadly integrated smart opener platform on the market. Our install includes Wi-Fi setup, smartphone app pairing on your device, auto-close scheduling, and integration walkthrough with your existing smart home system. We also carry the <strong>LiftMaster 8500W jackshaft</strong> for homes where a ceiling-rail trolley system isn't the right fit: high ceilings, storage lofts, exposed-beam structures, and modern builds where a clean garage ceiling is part of the architectural intent.
-                  </p>
-                  <p>
-                    Our commitment to Bellevue homeowners:
-                  </p>
-                  <ul className="space-y-3">
-                    {[
-                      "Full smart opener commissioning — not just hardware install, but complete app and ecosystem setup",
-                      "Glass and aluminum door expertise — correct torque specs, seal replacement, corrosion-resistant hardware",
-                      "Jackshaft and wall-mount options for modern high-ceiling and loft-style garages",
-                      "A licensed Zeus technician dispatched directly — not a subcontractor from a regional pool",
-                      "Flat-rate pricing confirmed on-site after a full door and opener assessment",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <CheckCircle
-                          size={18}
-                          className="text-forest flex-shrink-0 mt-0.5"
-                          aria-hidden="true"
-                        />
-                        <span className="text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="space-y-5 text-charcoal leading-relaxed">
+                  <div className="bg-white rounded-2xl border border-slate-200 p-5">
+                    <h3 className="text-navy font-bold text-lg font-playfair mb-2">
+                      1. Alley Garage Access
+                    </h3>
+                    <p className="text-sm">
+                      A significant number of Seattle's residential garages sit at the end of narrow rear alleys — often eight to twelve feet wide with fences, utility boxes, and parked vehicles on both sides. Many national dispatch companies send full-size service trucks that physically cannot access these alleys. We've built our Seattle operation around alley access: smaller-profile vehicles for tight alleys, experienced technicians who carry tools by hand when needed, and a complete inventory of parts for the low-headroom installations that alley garages require.
+                    </p>
+                    <p className="text-sm mt-3">
+                      Alley garages also often have <strong>non-standard door widths</strong> — 8-foot, 9-foot, and even 7-foot-wide openings are common in Seattle's older housing stock. We stock hardware and springs to match these widths without special-ordering parts that would delay your repair.
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-2xl border border-slate-200 p-5">
+                    <h3 className="text-navy font-bold text-lg font-playfair mb-2">
+                      2. Hillside Spring Calibration
+                    </h3>
+                    <p className="text-sm">
+                      Queen Anne, Capitol Hill, Magnolia, and Beacon Hill are among the steepest residential hillsides in any major U.S. city. Garage doors on steep driveways require precise torsion spring calibration for both opening <em>and</em> closing loads — not just the upward lift. A spring set to the standard formula for a flat-driveway installation will be undertensioned on an inclined approach and will resist closing under gravity load. We calculate spring tension for the actual incline angle at your property, not a generic door-weight formula.
+                    </p>
+                  </div>
                 </div>
               </FadeIn>
 
               <FadeIn delay={0.1}>
                 <div className="bg-navy rounded-2xl p-8 text-white">
                   <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
-                    Bellevue Coverage
+                    Seattle Coverage
                   </p>
                   <h3 className="font-playfair font-bold text-2xl mb-5">
-                    Kirkland → Bellevue<br />
-                    <span className="text-gold">Direct via I-405</span>
+                    Kirkland → Seattle<br />
+                    <span className="text-gold">Via SR-520 or I-90</span>
                   </h3>
                   <p className="text-white/70 text-sm leading-relaxed mb-6">
-                    We've served homes in Somerset, Bridle Trails, Meydenbauer Bay, Downtown Bellevue, Factoria, and Crossroads. Bellevue is one of our highest-volume service areas — we maintain dedicated parts inventory for glass-frame systems and high-corrosion waterfront environments.
+                    We dispatch from Kirkland directly to Queen Anne, Capitol Hill, Ballard, Fremont, Magnolia, Green Lake, Wallingford, Beacon Hill, and South Lake Union. Most Seattle calls receive same-day service — typically within two to four hours of dispatch.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     {[
-                      { label: "Response", value: "Same Day" },
+                      { label: "Dispatch Time", value: "20–30 min" },
                       { label: "One-Visit Fix Rate", value: "85%+" },
-                      { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
+                      { label: "Night Emergency", value: "Sun–Thur" },
                     ].map((stat) => (
                       <div
                         key={stat.label}
@@ -562,74 +574,74 @@ export default function BellevueLocation() {
         </section>
 
         {/* ── PRO TIPS ────────────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-white" aria-labelledby="pro-tips-bellevue">
+        <section className="py-16 lg:py-20 bg-white" aria-labelledby="pro-tips-seattle">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn>
               <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
                 Expert Advice
               </p>
               <h2
-                id="pro-tips-bellevue"
+                id="pro-tips-seattle"
                 className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-10"
               >
-                Pro Tips for Bellevue Homeowners
+                Pro Tips for Seattle Homeowners
               </h2>
 
               <div className="space-y-6">
 
-                {/* Featured Snippet Block — "glass garage door repair Bellevue" target */}
+                {/* Featured Snippet Block */}
                 <div className="bg-gold/8 border-l-4 border-gold rounded-r-2xl p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <Cpu size={18} className="text-gold flex-shrink-0" />
+                    <Wrench size={18} className="text-gold flex-shrink-0" />
                     <h3 className="text-navy font-bold text-lg font-playfair">
-                      How to Identify Seal Failure on a Glass Garage Door
+                      How to Know If Your Old Wooden Garage Door Can Be Repaired
                     </h3>
                   </div>
                   <p className="text-charcoal leading-relaxed">
-                    A failing bottom seal on a glass garage door shows as visible daylight under the closed door, drafts felt at floor level, water intrusion after rain, or — in double-pane glass panels — condensation or fogging between the panes. Do not attempt to force a glass-panel door with a broken spring or compromised frame. Tempered glass can fracture under uneven load distribution. Call a technician to assess the system before operating it further.
+                    A wooden garage door is repairable if: rot is confined to the bottom rail only (can be cut out and rebuilt), panels show surface checking or minor cracking (seal and repaint), and the frame is still square with no major warping. Replacement is the better value when: rot extends into the stiles or multiple panels, the door no longer seats fully in the frame, or warping causes the bottom seal to fail across more than half the door width. Our technicians assess every wooden door on-site and give you an honest recommendation — not a default push toward a new door sale.
                   </p>
                   <a
                     href="tel:+14255550199"
                     className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline"
                   >
-                    📞 Call 425-555-0199 for glass door service →
+                    📞 Call 425-555-0199 for a wooden door assessment →
                   </a>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
                     <h3 className="text-navy font-bold font-playfair mb-2">
-                      Annual Seal Inspection for Glass Doors
+                      The Hillside Balance Test
                     </h3>
                     <p className="text-charcoal/80 text-sm leading-relaxed">
-                      Bellevue's marine air and urban heat island degrade neoprene bottom seals faster than inland climates. Schedule an annual inspection — particularly before the rainy season — to catch seal compression loss before it allows water into your garage. A failed seal on a glass-panel door can also cause condensation to form between panes, which is a more complex and costly repair.
+                      On any sloped driveway — Queen Anne, Capitol Hill, Magnolia, Beacon Hill — test your door's spring balance twice a year. Disconnect the opener, lift the door manually to waist height, and release. A well-balanced door stays in place. If it drifts upward (gravity-assist overpowering springs) or drops back down (undertension), call for a spring adjustment before the spring fails entirely under the closing load.
                     </p>
                   </div>
 
                   <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
                     <h3 className="text-navy font-bold font-playfair mb-2">
-                      Somerset Balance Test on Hillside Driveways
+                      Choosing an Opener for a Low-Ceiling Alley Garage
                     </h3>
                     <p className="text-charcoal/80 text-sm leading-relaxed">
-                      On an inclined driveway, gravity-assist during opening can mask spring tension loss. Test balance by disconnecting the opener and lifting the door manually to waist height — then release. A correctly tensioned door holds in place. If it drifts open (gravity assist) or drops (undertension), spring adjustment is needed. Somerset homeowners should run this test seasonally, not just when the door feels wrong.
+                      Standard trolley-rail openers need at least 10–12 inches of clearance above the door in the raised position. Many Seattle alley garages have only 6–8 inches. The solution is a <strong>jackshaft wall-mount opener</strong> like the LiftMaster 8500W — it mounts beside the door on the wall, drives through the torsion bar, and requires zero ceiling clearance. It's also significantly quieter than chain-drive models.
                     </p>
                   </div>
 
                   <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
                     <h3 className="text-navy font-bold font-playfair mb-2">
-                      myQ Smart Diagnostics Before You Call
+                      Seattle Rain & Your Bottom Seal
                     </h3>
                     <p className="text-charcoal/80 text-sm leading-relaxed">
-                      LiftMaster myQ-connected openers display error codes in the app when a fault occurs. Before calling for service, open your myQ app and check the Activity log and any active alerts. Common codes — obstruction, sensor misalignment, motor overload — can help our dispatcher understand the problem before the technician arrives and ensure the right parts are on the truck.
+                      Seattle averages nearly 40 inches of rain per year. The garage door bottom seal is your first line of defense — and the first component to fail. Inspect it each fall before the rainy season: a good seal compresses evenly and leaves no daylight visible under the closed door. A cracked, torn, or hardened seal needs replacement before the rains arrive. A failed seal on a wooden door can accelerate rot at the base significantly.
                     </p>
                   </div>
 
                   <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
                     <h3 className="text-navy font-bold font-playfair mb-2">
-                      Lubrication Cycle for Bellevue's Damp Corridor
+                      Lubrication for Seattle's Damp Climate
                     </h3>
                     <p className="text-charcoal/80 text-sm leading-relaxed">
-                      Apply white lithium grease — not WD-40 — to torsion springs, rollers, hinges, and track curves every four months in Bellevue. The marine air from Lake Washington and Meydenbauer Bay accelerates friction wear faster than drier inland areas. For aluminum-frame and glass-panel doors, use a silicone-based lubricant on the bottom seal channel to maintain compression and prevent tearing.
+                      Lubricate torsion springs, rollers, hinges, and track curves with white lithium grease every three to four months in Seattle — more frequently than drier climates require. Do not use WD-40 (it strips existing lubrication). For bottom seal channels and any contact with rubber components, use a silicone-based spray. The goal is a dry-film lubricant layer that repels moisture rather than absorbing it.
                     </p>
                   </div>
                 </div>
@@ -639,17 +651,17 @@ export default function BellevueLocation() {
         </section>
 
         {/* ── NEIGHBORHOODS ───────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="neighborhoods-bellevue">
+        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="neighborhoods-seattle">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="mb-10">
               <h2
-                id="neighborhoods-bellevue"
+                id="neighborhoods-seattle"
                 className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-4"
               >
-                Garage Door Repair in Every Bellevue Neighborhood
+                Garage Door Repair Across Every Seattle Neighborhood
               </h2>
               <p className="text-charcoal/70 text-lg max-w-2xl">
-                From Somerset's hillside estates to Meydenbauer Bay's waterfront homes — same licensed technicians, same same-day standard, same fully stocked truck.
+                From Queen Anne's hilltop driveways to Ballard's craftsman alleys — same licensed technicians, same same-day standard, same fully stocked truck.
               </p>
             </FadeIn>
 
@@ -665,7 +677,7 @@ export default function BellevueLocation() {
                       itemProp="name"
                       className="text-navy font-bold text-base mb-2"
                     >
-                      Garage Door Repair — {hood.name}, Bellevue
+                      Garage Door Repair — {hood.name}, Seattle
                     </h3>
                     <p className="text-charcoal/70 text-sm leading-relaxed">
                       {hood.blurb}
@@ -678,7 +690,7 @@ export default function BellevueLocation() {
         </section>
 
         {/* ── ABOUT / TRUST ───────────────────────────────────────────────── */}
-        <section className="py-12 bg-navy" aria-label="About Zeus serving Bellevue">
+        <section className="py-12 bg-navy" aria-label="About Zeus serving Seattle">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <FadeIn>
@@ -686,13 +698,13 @@ export default function BellevueLocation() {
                   Who We Are
                 </p>
                 <h2 className="text-2xl lg:text-3xl font-bold text-white font-playfair mb-4">
-                  Kirkland-Based. Bellevue-Ready.
+                  Kirkland-Based. Seattle-Ready.
                 </h2>
                 <p className="text-white/70 leading-relaxed text-base mb-4">
-                  Zeus Garage Doors is a locally owned and operated business based in Kirkland, WA. We are not a franchise — there is no national call center routing your job to whoever is available. When you call us, you reach our dispatch team. When we arrive at your Bellevue property, it is a Zeus employee, not a subcontractor, who rings your doorbell.
+                  Zeus Garage Doors is a locally owned and operated business based in Kirkland, WA. We are not a national franchise — there is no regional call center routing your job to whoever is available. When you call us, you reach our dispatch team directly. When we arrive at your Seattle property, it is a Zeus employee, not a subcontractor, who shows up at your door.
                 </p>
                 <p className="text-white/70 leading-relaxed text-base">
-                  Bellevue's premium residential market — from Downtown's contemporary glass condos to Somerset's estate homes to Bridle Trails' expansive properties — sets a high bar for professional service. We've built our Bellevue operation around meeting that bar: specialized knowledge of modern door systems, smart opener technology, and the environmental conditions that affect hardware in this specific geography. That's what it means to be Bellevue-ready.
+                  Seattle's housing stock presents real technical challenges that generic garage door companies aren't prepared for. We've invested in the knowledge, the right vehicles, and the right inventory to serve Seattle's alley garages, pre-1960 wooden doors, and steep hillside homes correctly — on the first visit. That investment is why we can promise same-day service in Seattle with confidence: we know what we'll find when we get there.
                 </p>
               </FadeIn>
             </div>
@@ -701,16 +713,16 @@ export default function BellevueLocation() {
 
         {/* ── FAQ ─────────────────────────────────────────────────────────── */}
         <FAQAccordion
-          items={BELLEVUE_FAQS}
-          title="Garage Door Repair in Bellevue — Frequently Asked Questions"
-          subtitle="Straight answers for Bellevue homeowners about modern door systems, smart openers, and what to expect."
+          items={SEATTLE_FAQS}
+          title="Garage Door Repair in Seattle — Frequently Asked Questions"
+          subtitle="Straight answers for Seattle homeowners about wooden doors, alley garages, hillside spring calibration, and what to expect."
           injectSchema={false}
         />
 
-        {/* ── BOTTOM QUOTE FORM (Placement #2) ────────────────────────────── */}
+        {/* ── BOTTOM QUOTE FORM ───────────────────────────────────────────── */}
         <section
           className="py-16 lg:py-20 bg-offwhite"
-          aria-labelledby="bottom-quote-bellevue"
+          aria-labelledby="bottom-quote-seattle"
         >
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -720,21 +732,22 @@ export default function BellevueLocation() {
                   Ready to Get Started?
                 </p>
                 <h2
-                  id="bottom-quote-bellevue"
+                  id="bottom-quote-seattle"
                   className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-4"
                 >
-                  Request Your Free Bellevue Estimate
+                  Request Your Free Seattle Estimate
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
-                  Fill out the form and our dispatch team will call you back promptly during business hours. For urgent service, call us directly at{" "}
+                  Fill out the form and our dispatch team will call you back promptly during business hours. For urgent service, call directly at{" "}
                   <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
                     425-555-0199
                   </a>.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Glass & aluminum door specialists",
-                    "Smart opener install & full commissioning",
+                    "Specialists in pre-1960 homes & alley garages",
+                    "Jackshaft openers for low-ceiling Seattle garages",
+                    "Corrosion-resistant hardware standard for Seattle's climate",
                     "Licensed & insured WA contractor",
                     "Flat-rate pricing — confirmed on-site",
                     "Same-day availability, Sunday–Friday",
@@ -760,18 +773,18 @@ export default function BellevueLocation() {
         {/* ── FINAL CTA ───────────────────────────────────────────────────── */}
         <section
           className="bg-gold py-16 lg:py-20"
-          aria-labelledby="cta-bellevue"
+          aria-labelledby="cta-seattle"
         >
           <div className="max-w-3xl mx-auto px-4 text-center">
             <FadeIn>
               <h2
-                id="cta-bellevue"
+                id="cta-seattle"
                 className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-4"
               >
-                Need Garage Door Repair in Bellevue?
+                Need Garage Door Repair in Seattle?
               </h2>
               <p className="text-navy text-lg mb-8">
-                Zeus Garage Doors is your Eastside specialist — Kirkland-based, Bellevue-ready. Modern glass doors, smart opener tech, and same-day professional service for every neighborhood.
+                Zeus Garage Doors is Seattle's specialist for older homes, alley garages, and hillside spring calibration. Kirkland-based, same-day dispatch across every Seattle neighborhood.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

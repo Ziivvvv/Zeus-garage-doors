@@ -13,8 +13,8 @@ import hero1 from "@/assets/hero-1.webp";
 import hero2 from "@/assets/hero-2.webp";
 
 const slides = [
-  { img: hero1, headline: "The Eastside's #1 Choice for Garage Door Repair", sub: "Same-day emergency service across Kirkland, Bellevue & Mercer Island." },
-  { img: hero2, headline: "Premium Garage Door Installation & Repair", sub: "Factory-certified technicians. LiftMaster, Amarr, Clopay authorized dealer." },
+  { img: hero1, headline: "Kirkland & Eastside's Trusted Garage Door Repair", sub: "Same-day emergency service across Kirkland, Bellevue & Mercer Island." },
+  { img: hero2, headline: "Premium Garage Door Installation & Repair", sub: "Certified technicians. LiftMaster, Amarr & Clopay specialist." },
 ];
 
 export default function HeroCarousel() {

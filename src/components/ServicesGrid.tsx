@@ -67,7 +67,7 @@ export default function ServicesGrid() {
             Garage Door Services for Every Need
           </h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Broken spring at midnight? Door off-track? Opener grinding? Zeus Garage Doors dispatches a certified technician to your Eastside home the same day.
+            Broken spring at midnight Sunday through Thursday? Door off-track? Opener grinding? Zeus Garage Doors dispatches a certified technician to your Eastside home the same day — with night emergency service available Sun–Thur.
           </p>
         </motion.div>
 
@@ -107,7 +107,7 @@ export default function ServicesGrid() {
         >
           {[
             { value: "85%",      label: "One-Visit Fix Rate",       sub: "Fully stocked truck every call" },
-            { value: "100%",     label: "Customer Satisfaction",    sub: "Guaranteed on every job" },
+            { value: "100%",     label: "Satisfaction Guarantee",   sub: "We'll make it right, every time" },
             { value: "Same Day", label: "Emergency Response",       sub: "Sunday – Friday availability" },
             { value: "8 Cities", label: "Eastside Coverage",        sub: "Kirkland, Bellevue & more" },
           ].map((stat) => (

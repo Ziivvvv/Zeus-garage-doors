@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Tag, Wrench, Zap, BookOpen } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const posts = [
@@ -61,6 +61,29 @@ export default function BlogIndex() {
           </div>
         </section>
 
+        {/* Intro */}
+        <section className="py-14 bg-white border-b border-slate-100">
+          <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+            <div className="grid lg:grid-cols-3 gap-8">
+              {[
+                { icon: Wrench, title: "Repair Guides", body: "Step-by-step explanations of how garage door springs, cables, rollers, and openers fail — and what a professional repair involves. Understand your options before you call." },
+                { icon: Zap, title: "Opener Comparisons", body: "LiftMaster vs. Genie, belt-drive vs. chain-drive, battery backup vs. standard — we break down the specs that matter for Pacific Northwest homeowners." },
+                { icon: BookOpen, title: "Pricing Transparency", body: "No hidden fee games. Our guides explain exactly what drives repair costs in Washington state so you can recognize a fair quote from an inflated one." },
+              ].map(({ icon: Icon, title, body }) => (
+                <div key={title} className="flex gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-forest/10 flex items-center justify-center shrink-0">
+                    <Icon className="w-5 h-5 text-forest" strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-navy mb-2">{title}</h3>
+                    <p className="text-charcoal/70 text-sm leading-relaxed">{body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Posts Grid */}
         <section className="py-16 bg-offwhite">
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
@@ -107,6 +130,70 @@ export default function BlogIndex() {
                   </Link>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+        {/* About Zeus + Common Problems */}
+        <section className="py-16 bg-white border-t border-slate-100">
+          <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
+            <div className="grid lg:grid-cols-2 gap-14">
+              <div>
+                <p className="text-forest font-semibold text-xs uppercase tracking-widest mb-2">About Zeus Garage Doors</p>
+                <h2 className="font-playfair text-3xl font-bold text-navy mb-4">
+                  Seattle & Eastside's Trusted Garage Door Repair Resource
+                </h2>
+                <p className="text-charcoal/70 mb-4 leading-relaxed">
+                  Zeus Garage Doors is a locally owned and operated garage door repair company based in Kirkland, WA. We serve Seattle, Bellevue, Redmond, Bothell, Woodinville, Kenmore, Lynnwood, Mercer Island, and the entire Eastside of Washington state. Our technicians are background-checked, licensed, and insured — and every repair carries a professional service warranty on parts.
+                </p>
+                <p className="text-charcoal/70 mb-4 leading-relaxed">
+                  This blog exists because we believe an informed homeowner makes better decisions. Garage door repair is not complicated when you understand the basics: how springs counterbalance door weight, why cable failure is a safety emergency, and what separates a belt-drive opener from a chain-drive unit in the Pacific Northwest's damp climate.
+                </p>
+                <p className="text-charcoal/70 mb-6 leading-relaxed">
+                  Our guides are written by the technicians who perform these repairs every day across King and Snohomish Counties. When we describe a broken spring scenario, we're drawing from hundreds of real service calls — not marketing copy.
+                </p>
+                <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-forest hover:underline">
+                  Contact Zeus Garage Doors <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div>
+                <p className="text-forest font-semibold text-xs uppercase tracking-widest mb-2">Quick Help</p>
+                <h2 className="font-playfair text-2xl font-bold text-navy mb-4">
+                  Common Garage Door Problems — Fast Answers
+                </h2>
+                <div className="space-y-4">
+                  {[
+                    {
+                      q: "My garage door won't open — what's wrong?",
+                      a: "The most common cause is a broken torsion spring. If the door feels extremely heavy when lifted manually, stop immediately — the spring is likely snapped. Other causes include a tripped opener circuit breaker or disconnected trolley. Call a technician before forcing the door.",
+                      link: "/services/spring-replacement",
+                    },
+                    {
+                      q: "Why is my garage door so noisy?",
+                      a: "Grinding or squeaking usually points to worn rollers, dry hinges, or a chain-drive opener that needs tensioning. Most noise issues can be fixed with lubrication and a roller replacement. A belt-drive opener upgrade eliminates virtually all operational sound.",
+                      link: "/services/opener-repair",
+                    },
+                    {
+                      q: "My garage door reverses before closing — why?",
+                      a: "Safety sensors at the base of the door track are either misaligned or have an obstruction in front of them. The solid LED should be green on both sensors when aligned. A dirty lens or a spider web can trigger a false obstruction signal.",
+                      link: "/services/opener-repair",
+                    },
+                    {
+                      q: "One side of my garage door is higher than the other — is that dangerous?",
+                      a: "Yes. An uneven garage door almost always means a broken cable or a broken spring on one side. Do not operate the door. The weight imbalance can cause the door to fall, damage the opener, or injure someone. Call for emergency off-track or cable repair.",
+                      link: "/services/off-track-repair",
+                    },
+                  ].map(({ q, a, link }) => (
+                    <div key={q} className="border-b border-slate-100 pb-4 last:border-0">
+                      <h3 className="font-semibold text-navy text-sm mb-1">{q}</h3>
+                      <p className="text-charcoal/65 text-sm leading-relaxed mb-2">{a}</p>
+                      <Link to={link} className="text-xs font-semibold text-forest hover:underline inline-flex items-center gap-1">
+                        Learn more <ArrowRight size={11} />
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>

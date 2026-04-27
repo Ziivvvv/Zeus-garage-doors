@@ -24,7 +24,7 @@ export default function AnimatedRating() {
       <div className="text-white font-medium text-lg flex items-center gap-1">
         <motion.span>{display}</motion.span>
         <span className="text-white/80"> / 5.0 </span>
-        <span className="text-sm text-white/60 ml-1">(80 reviews)</span>
+        <span className="text-sm text-white/60 ml-1">Eastside WA</span>
       </div>
     </div>
   );

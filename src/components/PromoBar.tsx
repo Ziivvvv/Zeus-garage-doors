@@ -30,7 +30,7 @@ export default function PromoBar() {
         {/* Emergency — desktop */}
         <span className="hidden md:flex items-center gap-1.5 whitespace-nowrap">
           <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
-          <span className="text-red-300 font-bold text-xs uppercase tracking-wide">24/7 Emergency</span>
+          <span className="text-red-300 font-bold text-xs uppercase tracking-wide">Night Emergency Sun–Thur</span>
         </span>
 
         <Link

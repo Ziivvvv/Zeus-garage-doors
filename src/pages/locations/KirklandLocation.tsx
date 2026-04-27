@@ -51,7 +51,7 @@ const KIRKLAND_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours in Kirkland?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM and Friday 6:00 AM–6:00 PM (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kirkland. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kirkland. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -165,8 +165,8 @@ export default function KirklandLocation() {
   return (
     <>
       <SEOHead
-        title="Garage Door Repair Kirkland WA | Same-Day Local Service | Zeus Garage Doors"
-        description="Zeus Garage Doors — Kirkland's home-base garage door repair company. Same-day spring replacement, opener repair, cable service & off-track repair. Serving Juanita, Totem Lake, Finn Hill & all Kirkland neighborhoods. Call 425-555-0199."
+        title="Garage Door Repair Kirkland WA | Zeus Garage Doors"
+        description="Same-day garage door repair in Kirkland, WA. Spring replacement, opener repair & off-track service. Licensed techs, flat-rate pricing. Call 425-555-0199."
         canonical="/locations/kirkland-wa"
         pageType="location"
         cityName="Kirkland"
@@ -252,7 +252,7 @@ export default function KirklandLocation() {
                   <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
-                      Local 24/7 Emergency Garage Door Repair
+                      Night Emergency Service — Sun–Thur
                     </span>
                   </div>
                 </div>
@@ -382,7 +382,7 @@ export default function KirklandLocation() {
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
                       "85%+ of calls resolved in a single visit",
-                      "100% Customer Satisfaction — guaranteed",
+                      "Satisfaction guaranteed — we make it right",
                       "LiftMaster, Genie & Chamberlain stocked",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
@@ -402,11 +402,11 @@ export default function KirklandLocation() {
                     <p className="text-navy font-bold text-sm">Business Hours</p>
                   </div>
                   <ul className="text-charcoal/70 text-sm space-y-1">
-                    <li>Sunday – Thursday: 6:00 AM – 10:00 PM</li>
-                    <li>Friday: 6:00 AM – 6:00 PM</li>
+                    <li>Sunday – Thursday: 6:00 AM – 10:00 PM (PT)</li>
+                    <li>Friday: 6:00 AM – 6:00 PM (PT)</li>
                     <li className="text-charcoal/50">Saturday: Closed</li>
                   <li className="text-red-500/70 text-xs font-medium pt-1">
-                    * 24/7 emergency dispatch available for urgent repairs.
+                    * Night emergency dispatch available Sun–Thur after hours. Not available Fri night or Sat.
                   </li>
                   </ul>
                 </div>
@@ -549,7 +549,7 @@ export default function KirklandLocation() {
                     {[
                       { label: "Response", value: "Same Day" },
                       { label: "One-Visit Fix Rate", value: "85%+" },
-                      { label: "Customer Satisfaction", value: "100%" },
+                      { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
                       <div

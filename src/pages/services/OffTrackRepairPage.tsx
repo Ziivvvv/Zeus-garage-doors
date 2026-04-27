@@ -10,13 +10,13 @@ export default function OffTrackRepairPage() {
   return (
     <ServicePage
       metaTitle="Off-Track Garage Door Repair | Emergency Service | Zeus"
-      metaDescription="Is your garage door hanging crooked or off its tracks? DO NOT operate it. Zeus Garage Doors offers emergency off-track repair in Kirkland and the Eastside. Call 425-555-0199."
+      metaDescription="Door off its tracks? Zeus provides emergency off-track garage door repair in Seattle, Kirkland & the Eastside WA. Licensed techs. Call 425-555-0199."
       canonical="/services/off-track-repair"
       serviceName="Off-Track Door Repair"
       serviceTagline="A door off its tracks is extremely dangerous and can damage your panels. We realign tracks, replace rollers, and restore balance immediately."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides emergency off-track garage door repair in Kirkland, Bellevue, and Redmond. If your door is crooked or rollers have popped out, stop using it immediately. We safely realign the tracks, reset the cables, and replace damaged rollers. Call 425-555-0199 for fast service."
+      directAnswer="Zeus Garage Doors provides emergency off-track garage door repair in Seattle, Kirkland, Bellevue, and the Eastside. If your door is crooked or rollers have popped out, stop using it immediately. We safely realign the tracks, reset the cables, and replace damaged rollers. Call 425-555-0199 for fast service."
       heroImage={{
         src: "/images/off-track-garage-door-repair.webp",
         alt: "Crooked garage door off its tracks needing emergency repair",

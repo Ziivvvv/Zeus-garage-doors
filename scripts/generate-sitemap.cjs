@@ -26,6 +26,7 @@ const PAGES = [
   { url: "/terms",                      changefreq: "yearly",  priority: "0.3" },
   { url: "/blog",                       changefreq: "weekly",  priority: "0.7" },
   { url: "/safety-checklist",            changefreq: "monthly", priority: "0.8" },
+  { url: "/local-faq",                   changefreq: "monthly", priority: "0.7" },
 
   // ── Service pages
   { url: "/services/spring-replacement",  changefreq: "monthly", priority: "0.9" },
@@ -34,7 +35,6 @@ const PAGES = [
   { url: "/services/cable-replacement",   changefreq: "monthly", priority: "0.8" },
   { url: "/services/panel-replacement",   changefreq: "monthly", priority: "0.8" },
   { url: "/services/new-installation",    changefreq: "monthly", priority: "0.8" },
-  { url: "/services/gate-repair",         changefreq: "monthly", priority: "0.7" },
 
   // ── Location pages
   { url: "/locations/kirkland-wa",      changefreq: "monthly", priority: "0.9" },
@@ -44,13 +44,10 @@ const PAGES = [
   { url: "/locations/lynnwood-wa",      changefreq: "monthly", priority: "0.8" },
   { url: "/locations/bothell-wa",       changefreq: "monthly", priority: "0.8" },
   { url: "/locations/woodinville-wa",   changefreq: "monthly", priority: "0.8" },
+  { url: "/locations/kenmore-wa",       changefreq: "monthly", priority: "0.8" },
+  { url: "/locations/seattle-wa",       changefreq: "monthly", priority: "0.9" },
 
   // ── Blog posts (add new posts here)
-  { url: "/blog/seattle-rain-garage-door-springs",     changefreq: "yearly", priority: "0.7", lastmod: "2025-01-15" },
-  { url: "/blog/choose-garage-door-company-kirkland",  changefreq: "yearly", priority: "0.7", lastmod: "2025-01-22" },
-  { url: "/blog/liftmaster-vs-genie-pnw",              changefreq: "yearly", priority: "0.7", lastmod: "2025-01-29" },
-  { url: "/blog/garage-door-wont-open-what-to-do",     changefreq: "yearly", priority: "0.7", lastmod: "2025-02-05" },
-  { url: "/blog/garage-door-repair-cost-kirkland-wa",  changefreq: "yearly", priority: "0.7", lastmod: "2025-02-12" },
   { url: "/blog/garage-door-opens-by-itself",          changefreq: "yearly", priority: "0.7", lastmod: "2026-03-23" },
   { url: "/blog/spring-replacement-cost-factors",      changefreq: "yearly", priority: "0.7", lastmod: "2026-03-24" },
   { url: "/blog/best-garage-door-opener-pnw",          changefreq: "yearly", priority: "0.7", lastmod: "2026-03-25" },

@@ -17,11 +17,11 @@ export default function CTASection() {
               Request Your Free Estimate Today
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Whether it's a broken spring at midnight or a new door installation, our certified technicians respond fast. Most repairs completed same-day with upfront pricing—no surprises.
+              Searching for garage door repair near me in Seattle or the Eastside? Our certified technicians respond fast — most repairs are completed same-day with upfront, flat-rate pricing and no surprises.
             </p>
             <ul className="space-y-3 text-sm text-slate-600">
               {[
-                "24/7 emergency dispatch — urgent repairs, any hour",
+                "Night emergency dispatch Sun–Thur — urgent after-hours repairs",
                 "26-point safety inspection on every visit",
                 "Professional service warranty on spring replacements",
                 "Licensed, bonded & insured in Washington state",

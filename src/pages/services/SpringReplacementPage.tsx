@@ -11,13 +11,13 @@
  */
 
 import ServicePage from "../../components/ServicePage";
-import { SPRING_FAQS } from "../../components/FAQAccordion";
+import { SPRING_FAQS, UNIVERSAL_FAQS } from "../../components/FAQAccordion";
 
 export default function SpringReplacementPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Spring Repair Kirkland WA | Same-Day | Zeus Garage Doors"
-      metaDescription="Broken garage door spring in Kirkland WA? Zeus Garage Doors provides same-day torsion and extension spring repair and replacement in Kirkland, Bellevue, Redmond, and all Eastside WA communities. Licensed, locally owned, honest flat-rate pricing. Call 425-555-0199."
+      metaTitle="Garage Door Spring Repair | Same-Day WA | Zeus Garage Doors"
+      metaDescription="Broken garage door spring? Zeus provides same-day torsion & extension spring repair in Kirkland, Bellevue & the Eastside WA. Flat-rate pricing. Call 425-555-0199."
       canonical="/services/spring-replacement"
 
       // serviceName stays clean — used in FAQ title, cities list, CTA, schema
@@ -148,7 +148,16 @@ Zeus Garage Doors offers 21-point garage door maintenance tune-ups for Kirkland,
         "Door weight / IPPT",
       ]}
 
-      faqs={SPRING_FAQS}
+      faqs={[
+        ...SPRING_FAQS,
+        // Universal: maintenance, lifespan, cold-weather — all topically relevant to springs
+        ...UNIVERSAL_FAQS.filter(f =>
+          f.question.includes("maintenance") ||
+          f.question.includes("How long does a garage door last") ||
+          f.question.includes("cold weather") ||
+          f.question.includes("cables to break")
+        ),
+      ]}
       breadcrumbs={[
         { name: "Home", url: "/" },
         { name: "Services", url: "/services" },

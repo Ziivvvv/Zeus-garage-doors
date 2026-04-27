@@ -59,6 +59,7 @@ const LOCATIONS_NAV = [
   { label: "Bothell, WA", href: "/locations/bothell-wa" },
   { label: "Woodinville, WA", href: "/locations/woodinville-wa" },
   { label: "Kenmore, WA", href: "/locations/kenmore-wa" },
+  { label: "Seattle, WA", href: "/locations/seattle-wa" },
 ];
 
 const PRIMARY_NAV = [
@@ -377,7 +378,7 @@ export default function Navbar() {
               <div className="ml-4 flex flex-col items-center gap-0.5">
                 <span className="flex items-center gap-1.5 text-red-400 text-[9px] font-bold uppercase tracking-widest leading-none">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" aria-hidden="true" />
-                  24/7 Emergency Service
+                  Night Emergency (Sun–Thur)
                 </span>
                 <a
                   href="tel:+14255550199"

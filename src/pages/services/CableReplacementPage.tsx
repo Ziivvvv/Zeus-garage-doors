@@ -4,7 +4,7 @@
  */
 
 import ServicePage from "../../components/ServicePage";
-import { GENERAL_FAQS } from "../../components/FAQAccordion";
+import { GENERAL_FAQS, UNIVERSAL_FAQS } from "../../components/FAQAccordion";
 
 export default function CableReplacementPage() {
   return (
@@ -16,7 +16,7 @@ export default function CableReplacementPage() {
       serviceTagline="Your cables hold the entire weight of the door. When they fray or snap, you need heavy-duty replacements immediately to prevent property damage."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides same-day garage door cable replacement in Kirkland, Bellevue, and Redmond. If your cable is snapped or frayed, the door is unsafe to operate. We use aircraft-grade galvanized steel cables to withstand PNW humidity. Call 425-555-0199 for fast service."
+      directAnswer="Zeus Garage Doors provides same-day garage door cable replacement in Seattle, Kirkland, Bellevue, and the Eastside. If your cable is snapped or frayed, the door is unsafe to operate. We use aircraft-grade galvanized steel cables to withstand PNW humidity. Call 425-555-0199 for fast service."
       heroImage={{
         src: "/images/garage-door-cable-replacement.webp",
         alt: "Technician replacing a snapped garage door lift cable",
@@ -71,7 +71,12 @@ export default function CableReplacementPage() {
           question: "Should I replace both cables if only one is broken?",
           answer: "Yes. Cables experience the exact same amount of tension and wear over time. If one has snapped, the other is likely severely fatigued and will snap soon. We always replace cables in pairs to ensure proper door balance.",
           schemaAnswer: "Yes. We highly recommend replacing garage door cables in pairs to maintain even tension and ensure the door balances perfectly."
-        }
+        },
+        // Universal: cable causes + maintenance — topically matched
+        ...UNIVERSAL_FAQS.filter(f =>
+          f.question.includes("cables to break") ||
+          f.question.includes("maintenance")
+        ),
       ]}
       breadcrumbs={[
         { name: "Home", url: "/" },

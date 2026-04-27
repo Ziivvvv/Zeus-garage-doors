@@ -9,6 +9,12 @@ const communities = [
     href: "/locations/kirkland-wa",
   },
   {
+    name: "Seattle",
+    tag: "New",
+    desc: "Serving Queen Anne, Capitol Hill, Ballard, Fremont & Magnolia — specialists in alley garages and pre-1960 housing stock.",
+    href: "/locations/seattle-wa",
+  },
+  {
     name: "Bellevue",
     tag: "",
     desc: "Serving Bellevue's premier neighborhoods with top-rated garage door repair and installation.",
@@ -38,10 +44,16 @@ const communities = [
     desc: "Island residents receive priority scheduling and white-glove service on every visit.",
     href: "/locations/mercer-island-wa",
   },
+  {
+    name: "Kenmore",
+    tag: "",
+    desc: "Same-day garage door repair and installation for Kenmore homeowners along the Lake Washington shoreline.",
+    href: "/locations/kenmore-wa",
+  },
 ];
 
 const secondaryCities = [
-  { label: "Kenmore, WA",    href: "/areas/kenmore-wa" },
+  { label: "Lynnwood, WA",   href: "/locations/lynnwood-wa" },
   { label: "Sammamish, WA",  href: "/areas/sammamish-wa" },
   { label: "Issaquah, WA",   href: "/areas/issaquah-wa" },
   { label: "Renton, WA",     href: "/areas/renton-wa" },
@@ -61,7 +73,7 @@ export default function CommunitiesGrid() {
             Proudly Serving the Eastside
           </h2>
           <p className="mt-3 text-slate-600 max-w-xl mx-auto">
-            Zeus Garage Doors provides expert repair and installation across six Eastside communities.
+            Zeus Garage Doors provides expert repair and installation across Seattle and the entire Eastside.
           </p>
         </div>
 

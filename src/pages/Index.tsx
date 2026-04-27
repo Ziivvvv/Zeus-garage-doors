@@ -7,7 +7,7 @@ import CommunitiesGrid from "@/components/CommunitiesGrid";
 import TrustMarquee from "@/components/TrustMarquee";
 import ServicesGrid from "@/components/ServicesGrid";
 import SpecialtyServices from "@/components/SpecialtyServices";
-import FAQAccordion, { GENERAL_FAQS } from "@/components/FAQAccordion";
+import FAQAccordion, { GENERAL_FAQS, UNIVERSAL_FAQS } from "@/components/FAQAccordion";
 import VoiceSnippets from "@/components/VoiceSnippets";
 import BlogPreview from "@/components/BlogPreview";
 import CTASection from "@/components/CTASection";
@@ -20,12 +20,12 @@ const HOME_SCHEMA_FAQS: FAQItem[] = [
   {
     question: "Is there emergency garage door repair service in Kirkland WA?",
     answer:
-      "Yes. Zeus Garage Doors provides same-day emergency garage door repair in Kirkland, WA. We dispatch a certified technician for broken springs, off-track doors, stuck doors, and snapped cables. We are available Sunday–Thursday 6 AM–10 PM and Friday 6 AM–6 PM. Call 425-555-0199.",
+      "Yes. Zeus Garage Doors provides same-day emergency garage door repair in Kirkland, WA. We dispatch a certified technician for broken springs, off-track doors, stuck doors, and snapped cables. We are available Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT). Call 425-555-0199.",
   },
   {
     question: "Who do I call for emergency garage door repair near me in Washington?",
     answer:
-      "Call Zeus Garage Doors at 425-555-0199 for emergency garage door repair anywhere on the Eastside of Washington state — Kirkland, Bellevue, Redmond, Bothell, Woodinville, and Mercer Island. Same-day dispatch, Sunday through Friday.",
+      "Call Zeus Garage Doors at 425-555-0199 for emergency garage door repair across Seattle and the Eastside of Washington state — Kirkland, Bellevue, Redmond, Bothell, Woodinville, Kenmore, and Mercer Island. Same-day dispatch, Sunday through Friday.",
   },
   {
     question: "Can a garage door be fixed the same day in Kirkland WA?",
@@ -71,11 +71,11 @@ export default function Index() {
     <main className="pt-16">
       <QuotePopup />
       <SEOHead
-        title="Garage Door Repair Kirkland WA | Zeus Garage Doors — Eastside's #1 Choice"
-        description="Expert garage door repair & installation in Kirkland, Bellevue, Redmond & the Eastside. Same-day emergency service, licensed & insured technicians, transparent pricing. Call 425-555-0199."
+        title="Zeus Garage Doors | Washington State's Trusted Experts"
+        description="Expert garage door repair and installation across Washington State. Fast, reliable service from the pros at Zeus Garage Doors. Get a free quote today!"
         canonical="/"
         pageType="home"
-        faqs={[...HOME_SCHEMA_FAQS, ...GENERAL_FAQS]}
+        faqs={[...HOME_SCHEMA_FAQS, ...GENERAL_FAQS, ...UNIVERSAL_FAQS]}
       />
       <HeroCarousel />
 
@@ -93,11 +93,11 @@ export default function Index() {
                 Get a Free Quote Today
               </h2>
               <p className="text-white/70 text-base mb-8 max-w-md">
-                Fill in your details and our dispatch team will call you back fast — same-day service available across the entire Eastside. For urgent emergencies outside regular hours, we offer 24/7 emergency dispatch.
+                Looking for garage door repair near me in Seattle or the Eastside? Fill in your details and our dispatch team will call you back fast — same-day service across the entire Eastside. Night emergency dispatch available Sunday through Thursday.
               </p>
               <ul className="space-y-3">
                 {[
-                  "24/7 emergency dispatch — urgent repairs, any hour",
+                  "Night emergency dispatch (Sun–Thur) — urgent after-hours repairs",
                   "Licensed, insured & background-checked techs",
                   "Transparent flat-rate pricing — no surprise fees",
                   "Parts stocked on every truck for one-visit fixes",
@@ -138,7 +138,7 @@ export default function Index() {
       <SpecialtyServices />
       <VoiceSnippets />
       <FAQAccordion
-        items={GENERAL_FAQS}
+        items={[...GENERAL_FAQS, ...UNIVERSAL_FAQS]}
         title="Garage Door Repair — Frequently Asked Questions"
         subtitle="Real answers for Eastside homeowners about repair costs, timelines, and when to call us."
         injectSchema={false}

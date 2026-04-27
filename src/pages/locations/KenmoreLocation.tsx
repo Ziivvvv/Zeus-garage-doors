@@ -26,7 +26,7 @@ const KENMORE_FAQS = [
   {
     question: "Do you offer same-day garage door repair in Kenmore?",
     answer:
-      "Yes. Same-day garage door repair in Kenmore is our standard, not an upgrade. When you call before noon on most days, we can typically reach you within the same business day. For emergencies — broken springs, doors stuck open, cables snapped — we prioritize Kenmore dispatch and send a technician directly during business hours (Monday–Saturday).",
+      "Yes. Same-day garage door repair in Kenmore is our standard, not an upgrade. When you call before noon on most days, we can typically reach you within the same business day. For emergencies — broken springs, doors stuck open, cables snapped — we prioritize Kenmore dispatch and send a technician directly during business hours (Sunday–Friday).",
   },
   {
     question: "What is your emergency response time for garage door repairs in Kenmore?",
@@ -51,7 +51,7 @@ const KENMORE_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours in Kenmore?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM and Friday 6:00 AM–6:00 PM (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kenmore. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kenmore. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -157,8 +157,8 @@ export default function KenmoreLocation() {
   return (
     <>
       <SEOHead
-        title="Garage Door Repair Kenmore WA | Same-Day Service | Zeus Garage Doors"
-        description="Expert garage door repair in Kenmore, WA. Broken springs, openers, off-track doors & cables. Based in nearby Kirkland — fast Extended Area Emergency Response. Call 425-555-0199."
+        title="Garage Door Repair Kenmore WA | Zeus Garage Doors"
+        description="Expert garage door repair in Kenmore, WA. Broken springs, opener repair & off-track service near Lake Washington. Same-day service. Call 425-555-0199."
         canonical="/locations/kenmore-wa"
         pageType="location"
         cityName="Kenmore"
@@ -248,7 +248,7 @@ export default function KenmoreLocation() {
                   <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
-                      Local 24/7 Emergency Garage Door Repair
+                      Night Emergency Service — Sun–Thur
                     </span>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function KenmoreLocation() {
                   Get Your Kenmore Quote
                 </h2>
                 <p className="text-charcoal/60 text-sm mb-5">
-                  We'll call you back promptly during business hours (Mon–Sat).
+                  We'll call you back promptly during business hours (Sun–Fri).
                 </p>
                 <QuoteForm />
               </motion.div>
@@ -350,7 +350,7 @@ export default function KenmoreLocation() {
                     Serving Kenmore & All Eastside WA
                   </h3>
                   <p className="text-white/60 text-sm mb-4">
-                    Same-day service · Mon–Sat
+                    Same-day service · Sun–Fri
                   </p>
                   <a
                     href="tel:+14255550199"
@@ -379,7 +379,7 @@ export default function KenmoreLocation() {
                       "In-person assessment — never phone quotes",
                       "High-cycle springs & stainless cables stocked",
                       "Over 85% of calls resolved in one visit",
-                      "100% Customer Satisfaction — guaranteed on every job",
+                      "Satisfaction guaranteed — we make it right",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
                       "🎖️ 12.5% off — veterans & seniors",
@@ -402,7 +402,7 @@ export default function KenmoreLocation() {
                     Kenmore is part of our dedicated extended service area — a short drive from our Kirkland shop via SR 522. We cover Kenmore, Woodinville, Sammamish, and Issaquah with the same service standards as our home market.
                   </p>
                   <p className="text-red-500/70 text-xs font-medium mt-3">
-                    * 24/7 emergency dispatch available for urgent repairs.
+                    * Night emergency dispatch available Sun–Thur after hours. Not available Fri night or Sat.
                   </p>
                 </div>
 
@@ -542,8 +542,8 @@ export default function KenmoreLocation() {
                     {[
                       { label: "Response Time", value: "Same Day" },
                       { label: "One-Visit Fix Rate", value: "85%+" },
-                      { label: "Customer Satisfaction", value: "100%" },
-                      { label: "Days Available", value: "Mon–Sat" },
+                      { label: "Satisfaction Guarantee", value: "✓" },
+                      { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
                       <div
                         key={stat.label}
@@ -728,7 +728,7 @@ export default function KenmoreLocation() {
                   Request Your Free Kenmore Estimate
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
-                  Fill out the form and our dispatch team will call you back promptly during business hours (Mon–Sat). For emergency service, call us directly at{" "}
+                  Fill out the form and our dispatch team will call you back promptly during business hours (Sun–Fri). For emergency service, call us directly at{" "}
                   <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
                     425-555-0199
                   </a>.
@@ -738,7 +738,7 @@ export default function KenmoreLocation() {
                     "Fast emergency response in Kenmore",
                     "Licensed & insured WA contractor",
                     "Flat-rate pricing — confirmed on-site",
-                    "Same-day availability, Monday–Saturday",
+                    "Same-day availability, Sunday–Friday",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-charcoal text-sm">
                       <CheckCircle size={16} className="text-forest flex-shrink-0" aria-hidden="true" />

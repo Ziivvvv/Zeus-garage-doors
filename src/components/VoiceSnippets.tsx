@@ -25,7 +25,7 @@ const SNIPPETS: SnippetBlock[] = [
     icon: Clock,
     query: "Is there same-day garage door repair near me in Kirkland?",
     answer:
-      "Zeus Garage Doors provides same-day emergency garage door repair in Kirkland, Bellevue, and Redmond, WA, Sunday through Friday (Saturday closed). We dispatch a certified technician for broken springs, off-track doors, and stuck openers. Most emergency repairs are completed on the first visit. Call 425-555-0199.",
+      "Zeus Garage Doors provides same-day emergency garage door repair across Seattle, Kirkland, Bellevue, Redmond, and the entire Eastside, WA — Sunday through Friday (Saturday closed). We dispatch a certified technician for broken springs, off-track doors, and stuck openers. Most emergency repairs are completed on the first visit. Call 425-555-0199.",
   },
   {
     icon: Wrench,
@@ -43,7 +43,7 @@ const SNIPPETS: SnippetBlock[] = [
     icon: DollarSign,
     query: "Who is the best garage door repair company in Kirkland WA?",
     answer:
-      "Zeus Garage Doors is rated the Eastside's top-reviewed garage door repair company in Kirkland, WA. We offer same-day service, licensed and insured technicians, transparent flat-rate pricing, and a professional service warranty on parts. We serve Kirkland, Bellevue, Redmond, Bothell, Woodinville, and Mercer Island.",
+      "Zeus Garage Doors is a top-rated garage door repair company serving Kirkland, Seattle, and the entire Eastside, WA. We offer same-day service, licensed and insured technicians, transparent flat-rate pricing, and a professional service warranty on parts. We serve Kirkland, Seattle, Bellevue, Redmond, Bothell, Woodinville, Lynnwood, Kenmore, and Mercer Island.",
   },
 ];
 

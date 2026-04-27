@@ -68,6 +68,8 @@ const CITIES = [
   { name: "Lynnwood", href: "/locations/lynnwood-wa" },
   { name: "Bothell", href: "/locations/bothell-wa" },
   { name: "Woodinville", href: "/locations/woodinville-wa" },
+  { name: "Kenmore", href: "/locations/kenmore-wa" },
+  { name: "Seattle", href: "/locations/seattle-wa" },
 ];
 
 // ─────────────────────────────────────────────
@@ -293,7 +295,7 @@ export default function ServicePage({
                   <p className="text-slate-500 text-xs font-medium uppercase tracking-wide mb-3">
                     Related Components & Standards
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {relatedEntities.map((entity) => (
                       <span
                         key={entity}
@@ -303,6 +305,26 @@ export default function ServicePage({
                       </span>
                     ))}
                   </div>
+                  <p className="text-slate-400 text-xs">
+                    Industry standards set by{" "}
+                    <a
+                      href="https://www.dasma.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-500 underline hover:text-forest transition-colors"
+                    >
+                      DASMA
+                    </a>
+                    {" "}(Door & Access Systems Manufacturers Association). Zeus technicians are licensed with{" "}
+                    <a
+                      href="https://lni.wa.gov/licensing-permits/contractors/check-a-contractors-license"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-500 underline hover:text-forest transition-colors"
+                    >
+                      Washington State L&I
+                    </a>.
+                  </p>
                 </div>
               </FadeIn>
 
@@ -312,7 +334,7 @@ export default function ServicePage({
                     {warningSignsHeading ?? "Signs You Need This Service"}
                   </h2>
                   <p className="text-slate-500 text-sm mb-6">
-                    If you're experiencing any of these in Kirkland, Bellevue, or the Eastside area — call us today.
+                    If you're experiencing any of these in Seattle, Kirkland, Bellevue, or the Eastside area — call us today.
                   </p>
                   <ul className="space-y-3" role="list">
                     {warningSignsItems.map((sign, i) => (
@@ -444,7 +466,7 @@ export default function ServicePage({
                 Need {serviceName} Today?
               </h2>
               <p className="text-navy text-lg mb-8">
-                Zeus Garage Doors serves Kirkland, Bellevue, Redmond, and all Eastside WA communities. Same-day service available. No phone quotes — we come to you.
+                Searching for garage door repair near me? Zeus Garage Doors serves Seattle, Kirkland, Bellevue, Redmond, Bothell, Woodinville, Kenmore, Lynnwood, and Mercer Island. Same-day service available — we come to you with flat-rate pricing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

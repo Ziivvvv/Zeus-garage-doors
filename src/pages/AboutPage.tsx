@@ -52,7 +52,7 @@ export default function AboutPage() {
     <>
       <SEOHead
         title="About Zeus Garage Doors | Eastside WA Experts"
-        description="Learn about Zeus Garage Doors — a locally owned garage door repair company serving Kirkland, Bellevue, Redmond, and the greater Eastside. Licensed, bonded & insured."
+        description="Learn about Zeus Garage Doors — a locally owned garage door repair company serving Seattle, Kirkland, Bellevue, Redmond, and the greater Eastside. Licensed, bonded & insured."
         canonical="/about"
         pageType="about"
         breadcrumbs={[
@@ -130,8 +130,8 @@ export default function AboutPage() {
             </p>
             <p>
               Today, Zeus Garage Doors serves homeowners across King and
-              Snohomish Counties, from Kirkland and Bellevue to Bothell and
-              Woodinville. Every repair comes with honest pricing, quality parts,
+              Snohomish Counties — from Seattle and Kirkland to Bellevue, Bothell,
+              and Woodinville. Every repair comes with honest pricing, quality parts,
               and a warranty you can count on.
             </p>
           </motion.div>
@@ -201,6 +201,8 @@ export default function AboutPage() {
               { name: "Lynnwood", href: "/locations/lynnwood-wa" },
               { name: "Bothell", href: "/locations/bothell-wa" },
               { name: "Woodinville", href: "/locations/woodinville-wa" },
+              { name: "Kenmore", href: "/locations/kenmore-wa" },
+              { name: "Seattle", href: "/locations/seattle-wa" },
             ].map((city) => (
               <Link
                 key={city.href}

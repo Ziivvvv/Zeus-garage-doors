@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 const NotFound = () => {
   return (
+    <>
+    <SEOHead
+      title="Page Not Found | Zeus Garage Doors"
+      description="The page you requested could not be found."
+      pageType="about"
+      noIndex={true}
+    />
     <div className="flex min-h-screen items-center justify-center bg-slate-50">
       <div className="text-center px-4">
         <p className="text-blue-900 font-semibold text-sm uppercase tracking-widest mb-3">404 — Page Not Found</p>
@@ -17,6 +25,7 @@ const NotFound = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

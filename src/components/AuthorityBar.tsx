@@ -49,9 +49,9 @@ export default function AuthorityBar() {
             </div>
             <div>
               <p className="text-white font-semibold text-sm leading-tight">
-                100% Satisfaction
+                Satisfaction Guaranteed
               </p>
-              <p className="text-white text-xs mt-0.5">Guaranteed on every job</p>
+              <p className="text-white text-xs mt-0.5">We'll make it right, every time</p>
             </div>
           </div>
 
