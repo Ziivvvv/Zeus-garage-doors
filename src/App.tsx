@@ -1,12 +1,5 @@
-/**
- * App.tsx — Zeus Garage Doors
- * React Router v6 configuration
- * All pages wired, layout wrapper applied
- */
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -61,8 +54,6 @@ const BestOpenerPNWPage = lazy(() => import("./pages/blog/BestOpenerPNWPage"));
 const ServicePage = lazy(() => import("./pages/ServicePage"));
 const AreaPage = lazy(() => import("./pages/AreaPage"));
 
-const queryClient = new QueryClient();
-
 // ─────────────────────────────────────────────
 // LAYOUT — Navbar + main + Footer
 // ─────────────────────────────────────────────
@@ -104,15 +95,14 @@ function PageLoader() {
 // ─────────────────────────────────────────────
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Layout>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
+  <TooltipProvider>
+    <Toaster />
+    <Sonner />
+    <BrowserRouter>
+      <ScrollToTop />
+      <Layout>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
               {/* ── Core */}
               <Route path="/" element={<Index />} />
               <Route path="/quote" element={<QuotePage />} />
@@ -152,12 +142,11 @@ const App = () => (
 
               {/* ── 404 */}
               <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+          </Routes>
+        </Suspense>
+      </Layout>
+    </BrowserRouter>
+  </TooltipProvider>
 );
 
 export default App;
