@@ -10,13 +10,13 @@ export default function OffTrackRepairPage() {
   return (
     <ServicePage
       metaTitle="Off-Track Garage Door Repair | Emergency Service | Zeus"
-      metaDescription="Door off its tracks? Zeus provides emergency off-track garage door repair in Seattle, Kirkland & the Eastside WA. Licensed techs. Call 425-555-0199."
+      metaDescription="Door off its tracks? Zeus provides emergency off-track garage door repair in Seattle, Kirkland & the Eastside WA. Licensed techs. Call 425-448-6443."
       canonical="/services/off-track-repair"
       serviceName="Off-Track Door Repair"
       serviceTagline="A door off its tracks is extremely dangerous and can damage your panels. We realign tracks, replace rollers, and restore balance immediately."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides emergency off-track garage door repair in Seattle, Kirkland, Bellevue, and the Eastside. If your door is crooked or rollers have popped out, stop using it immediately. We safely realign the tracks, reset the cables, and replace damaged rollers. Call 425-555-0199 for fast service."
+      directAnswer="Zeus Garage Doors provides emergency off-track garage door repair in Seattle, Kirkland, Bellevue, and the Eastside. If your door is crooked or rollers have popped out, stop using it immediately. We safely realign the tracks, reset the cables, and replace damaged rollers. Call 425-448-6443 for fast service."
       heroImage={{
         src: "/images/off-track-garage-door-repair.webp",
         alt: "Crooked garage door off its tracks needing emergency repair",
@@ -52,6 +52,11 @@ export default function OffTrackRepairPage() {
           icon: "🔧",
           heading: "Root Cause Fix",
           body: "We don't just pop the roller back in. We find out WHY it happened (frayed cable, bent track) and fix the root cause."
+        },
+        {
+          icon: "🛡️",
+          heading: "5-Year Warranty",
+          body: "Every off-track repair is backed by our 5-year parts and labor warranty — the strongest in the Eastside. If the door goes off-track again due to our repair, we return at no charge."
         }
       ]}
       relatedEntities={[

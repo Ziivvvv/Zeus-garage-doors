@@ -69,10 +69,10 @@ export default function TermsPage() {
               <h2 className="text-foreground font-semibold text-xl mb-3">4. Warranty</h2>
               <p>
                 Zeus Garage Doors provides a limited warranty on parts and labor for all repair and installation services. Warranty terms vary by service type and will be communicated to you at the time of service. Warranty claims must be reported to us within the warranty period by contacting{" "}
-                <a href="mailto:zeusgaragedoorepair@gmail.com" className="text-primary hover:underline">
-                  zeusgaragedoorepair@gmail.com
+                <a href="mailto:info@zeusgaragedoorswa.com" className="text-primary hover:underline">
+                  info@zeusgaragedoorswa.com
                 </a>{" "}
-                or calling 425-555-0199.
+                or calling 425-448-6443.
               </p>
             </div>
 
@@ -129,11 +129,11 @@ export default function TermsPage() {
               </p>
               <ul className="list-none mt-2 space-y-1">
                 <li><strong className="text-foreground">Email:</strong>{" "}
-                  <a href="mailto:zeusgaragedoorepair@gmail.com" className="text-primary hover:underline">
-                    zeusgaragedoorepair@gmail.com
+                  <a href="mailto:info@zeusgaragedoorswa.com" className="text-primary hover:underline">
+                    info@zeusgaragedoorswa.com
                   </a>
                 </li>
-                <li><strong className="text-foreground">Phone:</strong> 425-555-0199</li>
+                <li><strong className="text-foreground">Phone:</strong> 425-448-6443</li>
                 <li><strong className="text-foreground">Service Area:</strong> King & Snohomish Counties, Washington</li>
               </ul>
             </div>

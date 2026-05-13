@@ -83,8 +83,8 @@ export default function HeroCarousel() {
                       <Link to="/quote" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gold hover:bg-gold-dark text-navy font-semibold shadow-lg transition-all active:scale-[0.97]">
                         <FileText size={18} /> Book Your Repair Now
                       </Link>
-                      <a href="tel:+14255550199" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gold hover:bg-gold-dark text-navy font-semibold shadow-lg transition-all active:scale-[0.97]">
-                        <Phone size={18} /> Call 425-555-0199 (Emergency Service Available)
+                      <a href="tel:+14254486443" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg bg-gold hover:bg-gold-dark text-navy font-semibold shadow-lg transition-all active:scale-[0.97]">
+                        <Phone size={18} /> Call 425-448-6443 (Emergency Service Available)
                       </a>
                     </div>
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/20 border border-gold/40 self-start">

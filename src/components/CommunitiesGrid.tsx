@@ -17,7 +17,7 @@ const communities = [
   {
     name: "Bellevue",
     tag: "",
-    desc: "Serving Bellevue's premier neighborhoods with top-rated garage door repair and installation.",
+    desc: "Serving Bellevue's premier neighborhoods with professional garage door repair and installation.",
     href: "/locations/bellevue-wa",
   },
   {

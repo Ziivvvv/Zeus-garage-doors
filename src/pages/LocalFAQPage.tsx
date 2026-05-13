@@ -157,7 +157,7 @@ export default function LocalFAQPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="inline-flex items-center justify-center gap-2 bg-navy text-white px-8 py-4 rounded-full font-bold hover:bg-navy/90 active:scale-[0.97] transition-all text-lg"
                 >
                   <Phone className="w-5 h-5" />

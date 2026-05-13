@@ -10,13 +10,13 @@ export default function OpenerRepairPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Opener Repair & Install | Zeus Garage Doors"
-      metaDescription="Opener not working? Zeus repairs LiftMaster, Genie & Chamberlain same-day in Seattle, Kirkland & the Eastside WA. Smart MyQ setup available. Call 425-555-0199."
+      metaDescription="Opener not working? Zeus repairs LiftMaster, Genie & Chamberlain same-day in Seattle, Kirkland & the Eastside WA. Smart MyQ setup available. Call 425-448-6443."
       canonical="/services/opener-repair"
       serviceName="Garage Door Opener Repair"
       serviceTagline="From stripped gears to sensor alignment and smart MyQ upgrades—we get your motor running smoothly and quietly today."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides expert garage door opener repair and installation in Seattle, Kirkland, Bellevue, and the Eastside. We service LiftMaster, Genie, and Chamberlain. Whether it's a broken gear, safety sensor alignment, or a new smart MyQ belt-drive installation, we offer same-day service. Call 425-555-0199 for an expert assessment."
+      directAnswer="Zeus Garage Doors provides expert garage door opener repair and installation in Seattle, Kirkland, Bellevue, and the Eastside. We service LiftMaster, Genie, and Chamberlain. Whether it's a broken gear, safety sensor alignment, or a new smart MyQ belt-drive installation, we offer same-day service. Call 425-448-6443 for an expert assessment."
       heroImage={{
         src: "/images/garage-door-opener-repair.webp",
         alt: "Technician repairing a LiftMaster garage door opener",
@@ -51,7 +51,7 @@ export default function OpenerRepairPage() {
         {
           icon: "🛡️",
           heading: "Certified Parts",
-          body: "We only use OEM parts from LiftMaster and Genie to ensure your warranty remains valid."
+          body: "We only use OEM parts from LiftMaster and Genie. Every repair is covered by our 5-year parts and labor warranty — the strongest guarantee on the Eastside."
         }
       ]}
       relatedEntities={[

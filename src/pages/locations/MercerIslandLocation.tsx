@@ -15,7 +15,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides premium, same-day garage door repair on Mercer Island, WA — specializing in custom wood doors, luxury glass and aluminum systems, heavy-duty spring replacement, and ultra-quiet jackshaft opener installation. Accessible via I-90 from Kirkland, serving both the North End and South End with hardware specified for Lake Washington's high-corrosion lakefront environment. Call 425-555-0199.";
+  "Zeus Garage Doors provides premium, same-day garage door repair on Mercer Island, WA — specializing in custom wood doors, luxury glass and aluminum systems, heavy-duty spring replacement, and ultra-quiet jackshaft opener installation. Accessible via I-90 from Kirkland, serving both the North End and South End with hardware specified for Lake Washington's high-corrosion lakefront environment. Call 425-448-6443.";
 
 const MERCER_ISLAND_FAQS = [
   {
@@ -51,7 +51,7 @@ const MERCER_ISLAND_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours on Mercer Island?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs on Mercer Island. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs on Mercer Island. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-448-6443 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function MercerIslandLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Mercer Island WA | Zeus Garage Doors"
-        description="Premium garage door repair on Mercer Island, WA. Custom doors, jackshaft openers & corrosion-resistant hardware. Same-day service. Call 425-555-0199."
+        description="Premium garage door repair on Mercer Island, WA. Custom doors, jackshaft openers & corrosion-resistant hardware. Same-day service. Call 425-448-6443."
         canonical="/locations/mercer-island-wa"
         pageType="location"
         cityName="Mercer Island"
@@ -239,17 +239,17 @@ export default function MercerIslandLocation() {
                       Kirkland-Based · I-90 Bridge Access · Premium Service Standard
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors on Mercer Island"
                   >
@@ -346,13 +346,13 @@ export default function MercerIslandLocation() {
                     Same-day · I-90 bridge access · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -371,7 +371,7 @@ export default function MercerIslandLocation() {
                       "I-90 bridge access from Kirkland base",
                       "Jackshaft opener installs for premium homes",
                       "In-person assessment — never phone quotes",
-                      "85%+ of calls resolved in a single visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
                       "Discreet, professional service for every property",
                       "🎁 10% off for first-time customers",
@@ -503,7 +503,7 @@ export default function MercerIslandLocation() {
                       "Marine-grade hardware as standard for lakefront properties",
                       "Glass and aluminum door expertise — proper torque and frame care",
                       "Discreet, professional service with no unnecessary disruption",
-                      "85%+ one-visit resolution — fully stocked for Mercer Island specification",
+                      "Same-day service — fully stocked for Mercer Island specification",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle
@@ -533,7 +533,7 @@ export default function MercerIslandLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Response", value: "Same Day" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
@@ -583,10 +583,10 @@ export default function MercerIslandLocation() {
                     For Mercer Island waterfront properties, we recommend an annual hardware inspection covering: torsion spring coils (look for surface rust in the inter-coil gaps), cable attachment points at the drum and bottom bracket (look for discoloration, fraying, or strand separation), roller bearings (listen for grinding or roughness during manual operation), and track fastener tightness. Catching corrosion early prevents emergency failures. Spring and cable replacement on a maintenance schedule costs a fraction of the emergency call after a snap.
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline"
                   >
-                    📞 Call 425-555-0199 to schedule a Mercer Island inspection →
+                    📞 Call 425-448-6443 to schedule a Mercer Island inspection →
                   </a>
                 </div>
 
@@ -721,8 +721,8 @@ export default function MercerIslandLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our team will call you back promptly during business hours. For urgent service, call directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -731,7 +731,7 @@ export default function MercerIslandLocation() {
                     "Marine-grade hardware for lakefront properties",
                     "I-90 bridge access — 20–35 min from Kirkland",
                     "Licensed & insured WA contractor",
-                    "85%+ one-visit fix rate — premium inventory stocked",
+                    "Same-day service — premium inventory stocked",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-charcoal text-sm">
                       <CheckCircle size={16} className="text-forest flex-shrink-0" aria-hidden="true" />
@@ -769,10 +769,10 @@ export default function MercerIslandLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

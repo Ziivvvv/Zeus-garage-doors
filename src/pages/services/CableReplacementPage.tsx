@@ -16,7 +16,7 @@ export default function CableReplacementPage() {
       serviceTagline="Your cables hold the entire weight of the door. When they fray or snap, you need heavy-duty replacements immediately to prevent property damage."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides same-day garage door cable replacement in Seattle, Kirkland, Bellevue, and the Eastside. If your cable is snapped or frayed, the door is unsafe to operate. We use aircraft-grade galvanized steel cables to withstand PNW humidity. Call 425-555-0199 for fast service."
+      directAnswer="Zeus Garage Doors provides same-day garage door cable replacement in Seattle, Kirkland, Bellevue, and the Eastside. If your cable is snapped or frayed, the door is unsafe to operate. We use aircraft-grade galvanized steel cables to withstand PNW humidity. Call 425-448-6443 for fast service."
       heroImage={{
         src: "/images/garage-door-cable-replacement.webp",
         alt: "Technician replacing a snapped garage door lift cable",
@@ -51,6 +51,11 @@ export default function CableReplacementPage() {
           icon: "🌧️",
           heading: "PNW Weather Ready",
           body: "Standard cables rust quickly in the damp Washington climate. Our coated cables are designed to resist oxidation and last years longer."
+        },
+        {
+          icon: "🛡️",
+          heading: "5-Year Warranty",
+          body: "Every cable replacement comes backed by our 5-year parts and labor warranty — the strongest guarantee in the Eastside. If anything fails, we come back at no charge."
         }
       ]}
       relatedEntities={[

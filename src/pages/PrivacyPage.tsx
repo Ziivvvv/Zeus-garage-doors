@@ -88,8 +88,8 @@ export default function PrivacyPage() {
               <h2 className="text-foreground font-semibold text-xl mb-3">6. Your Rights</h2>
               <p>
                 Under Washington State law, you have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us at{" "}
-                <a href="mailto:zeusgaragedoorepair@gmail.com" className="text-primary hover:underline">
-                  zeusgaragedoorepair@gmail.com
+                <a href="mailto:info@zeusgaragedoorswa.com" className="text-primary hover:underline">
+                  info@zeusgaragedoorswa.com
                 </a>.
               </p>
             </div>
@@ -115,11 +115,11 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-none mt-2 space-y-1">
                 <li><strong className="text-foreground">Email:</strong>{" "}
-                  <a href="mailto:zeusgaragedoorepair@gmail.com" className="text-primary hover:underline">
-                    zeusgaragedoorepair@gmail.com
+                  <a href="mailto:info@zeusgaragedoorswa.com" className="text-primary hover:underline">
+                    info@zeusgaragedoorswa.com
                   </a>
                 </li>
-                <li><strong className="text-foreground">Phone:</strong> 425-555-0199</li>
+                <li><strong className="text-foreground">Phone:</strong> 425-448-6443</li>
                 <li><strong className="text-foreground">Service Area:</strong> King & Snohomish Counties, Washington</li>
               </ul>
             </div>

@@ -233,7 +233,7 @@ export default function ServicePage({
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                   aria-label={`Call Zeus Garage Doors for ${serviceName}`}
                 >
@@ -256,6 +256,7 @@ export default function ServicePage({
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-navy text-sm font-medium">
               <span>⚡ Same-Day Available</span>
               <span>🔧 Licensed Technicians</span>
+              <span>🛡️ 5-Year Warranty on Parts & Labor</span>
               <span>💰 Upfront Pricing</span>
               <span>📍 Local Kirkland Business</span>
               <span>🛡️ Fully Insured</span>
@@ -306,24 +307,7 @@ export default function ServicePage({
                     ))}
                   </div>
                   <p className="text-slate-400 text-xs">
-                    Industry standards set by{" "}
-                    <a
-                      href="https://www.dasma.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-500 underline hover:text-forest transition-colors"
-                    >
-                      DASMA
-                    </a>
-                    {" "}(Door & Access Systems Manufacturers Association). Zeus technicians are licensed with{" "}
-                    <a
-                      href="https://lni.wa.gov/licensing-permits/contractors/check-a-contractors-license"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-500 underline hover:text-forest transition-colors"
-                    >
-                      Washington State L&I
-                    </a>.
+                    Industry standards set by DASMA (Door &amp; Access Systems Manufacturers Association). Zeus Garage Doors is a licensed and insured Washington State contractor.
                   </p>
                 </div>
               </FadeIn>
@@ -470,11 +454,11 @@ export default function ServicePage({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                   aria-label={`Call Zeus Garage Doors for ${serviceName}`}
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

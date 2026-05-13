@@ -15,7 +15,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides same-day garage door repair in Bothell, WA — serving the Bothell-Everett Highway corridor, Canyon Park, Thrasher's Corner, and all neighborhoods across both the King County and Snohomish County sides of Bothell. Spring replacement, smart opener installation, cable repair, and full new door installs. Call 425-555-0199.";
+  "Zeus Garage Doors provides same-day garage door repair in Bothell, WA — serving the Bothell-Everett Highway corridor, Canyon Park, Thrasher's Corner, and all neighborhoods across both the King County and Snohomish County sides of Bothell. Spring replacement, smart opener installation, cable repair, and full new door installs. Call 425-448-6443.";
 
 const BOTHELL_FAQS = [
   {
@@ -51,7 +51,7 @@ const BOTHELL_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours in Bothell?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Bothell. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Bothell. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-448-6443 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function BothellLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Bothell WA | Zeus Garage Doors"
-        description="Same-day garage door repair in Bothell, WA. Canyon Park, North Creek & all neighborhoods. Spring, opener & off-track repairs. Call 425-555-0199."
+        description="Same-day garage door repair in Bothell, WA. Canyon Park, North Creek & all neighborhoods. Spring, opener & off-track repairs. Call 425-448-6443."
         canonical="/locations/bothell-wa"
         pageType="location"
         cityName="Bothell"
@@ -239,17 +239,17 @@ export default function BothellLocation() {
                       Kirkland-Based · Serving All of Bothell (King & Snohomish)
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors in Bothell"
                   >
@@ -346,13 +346,13 @@ export default function BothellLocation() {
                     Same-day service · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -371,8 +371,9 @@ export default function BothellLocation() {
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
-                      "85%+ of calls resolved in a single visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
+                      "5-year warranty on all parts & labor",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
                       "🎖️ 12.5% off — veterans & seniors",
@@ -533,7 +534,7 @@ export default function BothellLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Response", value: "Same Day" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
@@ -555,8 +556,59 @@ export default function BothellLocation() {
           </div>
         </section>
 
+        {/* ── PRO TIPS ────────────────────────────────────────────────────── */}
+        <section className="py-16 lg:py-20 bg-white" aria-labelledby="pro-tips-bothell">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FadeIn>
+              <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">Expert Advice</p>
+              <h2 id="pro-tips-bothell" className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-10">
+                Pro Tips for Bothell Homeowners
+              </h2>
+              <div className="space-y-6">
+                <div className="bg-gold/8 border-l-4 border-gold rounded-r-2xl p-6">
+                  <h3 className="text-navy font-bold text-lg font-playfair mb-3">
+                    How Valley Humidity in North Creek Accelerates Spring Corrosion
+                  </h3>
+                  <p className="text-charcoal leading-relaxed">
+                    Bothell's North Creek and Sammamish River corridor sit in a low-lying valley that traps moisture year-round. Standard galvanized torsion springs in this microclimate can develop surface rust in as little as 2–3 years — well before their rated cycle count. Inspect spring coils twice yearly: look for reddish-orange oxidation in the coil gaps. Surface rust is a warning sign — a corroded spring can snap under load without warning. Call for an inspection before it becomes an emergency.
+                  </p>
+                  <a href="tel:+14254486443" className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline">
+                    📞 Call 425-448-6443 for a Bothell spring inspection →
+                  </a>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Upgrade Your Canyon Park Builder-Grade Opener</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Most Canyon Park townhomes and newer homes came with loud chain-drive openers. A LiftMaster belt-drive or jackshaft upgrade costs a fraction of what you'd expect and delivers 50–70% noise reduction, plus myQ smart access from your phone. One-visit same-day install.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Pre-Winter Bottom Seal Inspection</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Bothell's wet winters are hard on neoprene bottom seals. A failed seal allows water and cold air into the garage, accelerating rust on all metal components. Check the seal in September — if it's cracking or flattened, replace it before the rains start. A $40 seal prevents hundreds in water damage.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Extension-to-Torsion Conversion for Older Homes</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Bothell homes built before 1990 — especially in the established neighborhoods near the Sammamish River — frequently have horizontal extension spring systems. These are functional but less safe and harder to balance than modern torsion setups. Conversion is a same-day job and meaningfully improves safety.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Manual Balance Test — Do This Twice a Year</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Disconnect your opener and lift the door manually to waist height, then release. A properly tensioned door holds position. If it drifts up or drops, spring tension needs adjustment. Run this test in October (pre-winter) and April (post-freeze) — it takes 60 seconds and can catch a failing spring before it snaps.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* ── NEIGHBORHOODS ───────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-white" aria-labelledby="neighborhoods-bothell">
+        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="neighborhoods-bothell">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="mb-10">
               <h2
@@ -644,8 +696,8 @@ export default function BothellLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our team will call you back promptly during business hours. For urgent service, call directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -654,7 +706,7 @@ export default function BothellLocation() {
                     "Smart opener specialists — full myQ commissioning",
                     "Licensed & insured WA contractor",
                     "Flat-rate pricing — confirmed on-site",
-                    "85%+ one-visit fix rate — stocked truck, every call",
+                    "Same-day service — fully stocked truck on every call",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-charcoal text-sm">
                       <CheckCircle size={16} className="text-forest flex-shrink-0" aria-hidden="true" />
@@ -692,10 +744,10 @@ export default function BothellLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

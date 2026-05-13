@@ -19,8 +19,9 @@ const TODAY = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
 
 const PAGES = [
   // ── Core (highest priority)
-  { url: "/",                           changefreq: "weekly",  priority: "1.0" },
-  { url: "/about",                      changefreq: "monthly", priority: "0.7" },
+  { url: "/",                                     changefreq: "weekly",  priority: "1.0" },
+  { url: "/emergency-garage-door-repair",         changefreq: "monthly", priority: "0.95" },
+  { url: "/about",                                changefreq: "monthly", priority: "0.7" },
   { url: "/contact",                    changefreq: "monthly", priority: "0.8" },
   { url: "/privacy",                    changefreq: "yearly",  priority: "0.3" },
   { url: "/terms",                      changefreq: "yearly",  priority: "0.3" },
@@ -47,10 +48,21 @@ const PAGES = [
   { url: "/locations/kenmore-wa",       changefreq: "monthly", priority: "0.8" },
   { url: "/locations/seattle-wa",       changefreq: "monthly", priority: "0.9" },
 
+  // ── Service Area
+  { url: "/service-area", changefreq: "monthly", priority: "0.8" },
+
   // ── Blog posts (add new posts here)
-  { url: "/blog/garage-door-opens-by-itself",          changefreq: "yearly", priority: "0.7", lastmod: "2026-03-23" },
-  { url: "/blog/spring-replacement-cost-factors",      changefreq: "yearly", priority: "0.7", lastmod: "2026-03-24" },
-  { url: "/blog/best-garage-door-opener-pnw",          changefreq: "yearly", priority: "0.7", lastmod: "2026-03-25" },
+  { url: "/blog/garage-door-opens-by-itself",                    changefreq: "yearly", priority: "0.7", lastmod: "2026-03-23" },
+  { url: "/blog/spring-replacement-cost-factors",                changefreq: "yearly", priority: "0.7", lastmod: "2026-03-24" },
+  { url: "/blog/best-garage-door-opener-pnw",                    changefreq: "yearly", priority: "0.7", lastmod: "2026-03-25" },
+  { url: "/blog/how-long-do-garage-door-springs-last",           changefreq: "yearly", priority: "0.7", lastmod: "2026-04-15" },
+  { url: "/blog/garage-door-wont-open-cold-weather",             changefreq: "yearly", priority: "0.7", lastmod: "2026-04-22" },
+  { url: "/blog/liftmaster-vs-chamberlain-garage-door-opener",   changefreq: "yearly", priority: "0.7", lastmod: "2026-05-01" },
+  { url: "/blog/is-diy-garage-door-repair-safe",                 changefreq: "yearly", priority: "0.7", lastmod: "2026-05-08" },
+  { url: "/blog/garage-door-service-call-cost",                  changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/why-wont-garage-door-close-all-the-way",         changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/average-cost-to-replace-garage-door",            changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/why-is-my-garage-door-so-noisy",                 changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
 ];
 
 // ─────────────────────────────────────────────

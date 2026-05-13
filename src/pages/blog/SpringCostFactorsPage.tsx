@@ -69,7 +69,7 @@ const CONTENT = `
   To give you an honest price, our technicians need to weigh your door, check the condition of your lift cables, and ensure the bearing plates aren't worn out. We never want to quote you a low price over the phone only to double it when we arrive.
 </p>
 <p>
-  If you have a broken spring, <a href="/contact">contact Zeus Garage Doors today</a>. We will dispatch a local technician to assess your door and provide a firm, transparent quote before any work begins. Learn more about our full <a href="/services/spring-replacement">garage door spring replacement service</a>, including what is covered under our professional service warranty. We serve Seattle, Kirkland, Bellevue, Redmond, Bothell, Woodinville, Lynnwood, Kenmore, and Mercer Island.
+  If you have a broken spring, <a href="/contact">contact Zeus Garage Doors today</a>. We will dispatch a local technician to assess your door and provide a firm, transparent quote before any work begins. Learn more about our full <a href="/services/spring-replacement">garage door spring replacement service</a>, including what is covered under our professional service warranty. If your spring broke suddenly and your car is trapped, see our <a href="/emergency-garage-door-repair">emergency garage door repair service</a> — night dispatch available Sunday through Thursday. We also recommend reviewing our <a href="/services/cable-replacement">cable replacement service</a>: worn cables and broken springs are frequently found together, and addressing both in a single visit saves a second service call. We serve Seattle, Kirkland, Bellevue, Redmond, Bothell, Woodinville, Lynnwood, Kenmore, and Mercer Island.
 </p>
 `;
 

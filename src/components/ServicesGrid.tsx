@@ -106,7 +106,7 @@ export default function ServicesGrid() {
           className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
         >
           {[
-            { value: "85%",      label: "One-Visit Fix Rate",       sub: "Fully stocked truck every call" },
+            { value: "Same-Day", label: "Parts & Labor",              sub: "Fully stocked truck every call" },
             { value: "100%",     label: "Satisfaction Guarantee",   sub: "We'll make it right, every time" },
             { value: "Same Day", label: "Emergency Response",       sub: "Sunday – Friday availability" },
             { value: "8 Cities", label: "Eastside Coverage",        sub: "Kirkland, Bellevue & more" },

@@ -8,6 +8,7 @@
 import { Link } from "react-router-dom";
 
 const SERVICES = [
+  { label: "🚨 Emergency Repair", href: "/emergency-garage-door-repair" },
   { label: "Spring Replacement", href: "/services/spring-replacement" },
   { label: "Opener Repair & Install", href: "/services/opener-repair" },
   { label: "Off-Track Door Repair", href: "/services/off-track-repair" },
@@ -52,6 +53,7 @@ const NEIGHBORHOODS = [
 
 const COMPANY = [
   { label: "About Us", href: "/about" },
+  { label: "Service Area", href: "/service-area" },
   { label: "Blog", href: "/blog" },
   { label: "Safety Checklist", href: "/safety-checklist" },
   { label: "Local FAQ", href: "/local-faq" },
@@ -119,6 +121,7 @@ export default function Footer() {
             {[
               { icon: "⚡", text: "Same-Day Service Available" },
               { icon: "🏆", text: "Licensed & Insured" },
+              { icon: "🛡️", text: "5-Year Warranty on Parts & Labor" },
               { icon: "💯", text: "Honest Upfront Pricing" },
               { icon: "🔧", text: "LiftMaster Specialist" },
               { icon: "📍", text: "Locally Owned — Kirkland, WA" },
@@ -168,21 +171,21 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="text-gold hover:text-white transition-colors font-semibold"
                   itemProp="telephone"
                   aria-label="Call Zeus Garage Doors"
                 >
-                  425-555-0199
+                  425-448-6443
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:zeusgaragedoorepair@gmail.com"
+                  href="mailto:info@zeusgaragedoorswa.com"
                   className="text-white/60 hover:text-white transition-colors text-xs"
                   itemProp="email"
                 >
-                  zeusgaragedoorepair@gmail.com
+                  info@zeusgaragedoorswa.com
                 </a>
               </p>
             </address>
@@ -226,7 +229,7 @@ export default function Footer() {
               { text: "Spring Replacement Kirkland", href: "/services/spring-replacement" },
               { text: "Smart Opener Install Bothell WA", href: "/services/opener-repair" },
               { text: "Opener Repair Bellevue WA", href: "/services/opener-repair" },
-              { text: "Emergency Garage Door Eastside WA", href: "/contact" },
+              { text: "Emergency Garage Door Eastside WA", href: "/emergency-garage-door-repair" },
               { text: "LiftMaster Repair Kirkland WA", href: "/services/opener-repair" },
               { text: "Off-Track Repair Kirkland", href: "/services/off-track-repair" },
               { text: "Cable Repair Bellevue WA", href: "/services/cable-replacement" },
@@ -234,7 +237,7 @@ export default function Footer() {
               { text: "Spring Replacement Lynnwood WA", href: "/services/spring-replacement" },
               { text: "New Garage Door Installation Kirkland", href: "/services/new-installation" },
               { text: "Garage Door Repair Seattle WA", href: "/locations/seattle-wa" },
-              { text: "Emergency Garage Door Repair Seattle", href: "/locations/seattle-wa" },
+              { text: "Emergency Garage Door Repair Seattle", href: "/emergency-garage-door-repair" },
               { text: "Garage Door Spring Replacement Seattle", href: "/services/spring-replacement" },
               { text: "Alley Garage Door Repair Seattle", href: "/locations/seattle-wa" },
               { text: "Garage Door Repair Queen Anne Seattle", href: "/locations/seattle-wa" },

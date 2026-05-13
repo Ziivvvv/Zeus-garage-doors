@@ -15,7 +15,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors is Kirkland's home-base garage door repair company — same-day spring replacement, opener repair, off-track service, and cable replacement for every neighborhood from the waterfront to Finn Hill. Kirkland-based and locally owned, we are your actual neighbors. Call 425-555-0199.";
+  "Zeus Garage Doors is Kirkland's home-base garage door repair company — same-day spring replacement, opener repair, off-track service, and cable replacement for every neighborhood from the waterfront to Finn Hill. Kirkland-based and locally owned, we are your actual neighbors. Call 425-448-6443.";
 
 const KIRKLAND_FAQS = [
   {
@@ -41,7 +41,7 @@ const KIRKLAND_FAQS = [
   {
     question: "How quickly can Zeus reach me in Kirkland for an emergency repair?",
     answer:
-      "Because we are Kirkland-based, our dispatch response for true emergencies — a door stuck open, a broken spring preventing exit, a snapped cable — is typically 1–3 hours depending on current call volume. We don't offer a premium emergency tier that costs more than standard service. Same-day is our standard, and for Kirkland calls, that means same-day almost always means same-morning or same-afternoon. Call 425-555-0199 and our team will give you an honest ETA, not an optimistic one.",
+      "Because we are Kirkland-based, our dispatch response for true emergencies — a door stuck open, a broken spring preventing exit, a snapped cable — is typically 1–3 hours depending on current call volume. We don't offer a premium emergency tier that costs more than standard service. Same-day is our standard, and for Kirkland calls, that means same-day almost always means same-morning or same-afternoon. Call 425-448-6443 and our team will give you an honest ETA, not an optimistic one.",
   },
   {
     question: "Do you service older Kirkland homes from the 1970s and 1980s with original garage door systems?",
@@ -51,7 +51,7 @@ const KIRKLAND_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours in Kirkland?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kirkland. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Kirkland. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-448-6443 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -166,7 +166,7 @@ export default function KirklandLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Kirkland WA | Zeus Garage Doors"
-        description="Same-day garage door repair in Kirkland, WA. Spring replacement, opener repair & off-track service. Licensed techs, flat-rate pricing. Call 425-555-0199."
+        description="Same-day garage door repair in Kirkland, WA. Spring replacement, opener repair & off-track service. Licensed techs, flat-rate pricing. Call 425-448-6443."
         canonical="/locations/kirkland-wa"
         pageType="location"
         cityName="Kirkland"
@@ -249,17 +249,17 @@ export default function KirklandLocation() {
                       Based in Kirkland — Your Actual Neighbors
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors in Kirkland"
                   >
@@ -322,7 +322,7 @@ export default function KirklandLocation() {
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
-                  Kirkland's diverse housing stock — from the Craftsman bungalows near Norkirk to the newer townhomes in Kingsgate and the lakeside estates in Juanita — means no two service calls are exactly alike. Our trucks are stocked for the full range: standard residential torsion springs, heavy-duty hardware for oversized Bridle Trails doors, replacement opener boards for vintage Craftsman units, and LiftMaster smart openers for homeowners ready to upgrade. Over 85% of our Kirkland calls are resolved in a single visit because we arrive prepared for what the address actually needs.
+                  Kirkland's diverse housing stock — from the Craftsman bungalows near Norkirk to the newer townhomes in Kingsgate and the lakeside estates in Juanita — means no two service calls are exactly alike. Our trucks are stocked for the full range: standard residential torsion springs, heavy-duty hardware for oversized Bridle Trails doors, replacement opener boards for vintage Craftsman units, and LiftMaster smart openers for homeowners ready to upgrade. We arrive prepared for what the address actually needs — same-day resolution is our standard.
                 </p>
 
                 {/* Local Environment Box */}
@@ -357,13 +357,13 @@ export default function KirklandLocation() {
                     Same-day service · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -381,7 +381,7 @@ export default function KirklandLocation() {
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
-                      "85%+ of calls resolved in a single visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
                       "LiftMaster, Genie & Chamberlain stocked",
                       "No upselling, no manufactured urgency",
@@ -518,7 +518,7 @@ export default function KirklandLocation() {
                       "High-cycle hardware specified for lake-moisture environments",
                       "Smart opener installation with complete app commissioning",
                       "No upselling — we recommend what your door actually needs",
-                      "85%+ one-visit fix rate — our truck arrives stocked for your call",
+                      "Same-day service — our truck arrives stocked for your call",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <CheckCircle
@@ -548,7 +548,7 @@ export default function KirklandLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Response", value: "Same Day" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
@@ -598,10 +598,10 @@ export default function KirklandLocation() {
                     On a dry morning, look at your torsion spring coils and lift cables. If you see reddish-orange surface rust on the spring coils, or dark discoloration and stiffness at the cable drum attachment point, corrosion is already underway. Do not ignore these signs — a corroded torsion spring can snap under normal load without warning. Call for a spring inspection before it becomes an emergency.
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline"
                   >
-                    📞 Call 425-555-0199 for a Kirkland spring inspection →
+                    📞 Call 425-448-6443 for a Kirkland spring inspection →
                   </a>
                 </div>
 
@@ -698,7 +698,7 @@ export default function KirklandLocation() {
                   Kirkland-Based. Kirkland-Proud.
                 </h2>
                 <p className="text-white/70 leading-relaxed text-base mb-4">
-                  Zeus Garage Doors is a locally owned business based in Kirkland, WA. We are not a franchise. There is no national call center routing your job to whoever is available. When you call 425-555-0199, you reach our Kirkland dispatch team. When a technician arrives at your door, it's a Zeus employee — not a subcontractor — who is accountable to the same community they live in.
+                  Zeus Garage Doors is a locally owned business based in Kirkland, WA. We are not a franchise. There is no national call center routing your job to whoever is available. When you call 425-448-6443, you reach our Kirkland dispatch team. When a technician arrives at your door, it's a Zeus employee — not a subcontractor — who is accountable to the same community they live in.
                 </p>
                 <p className="text-white/70 leading-relaxed text-base">
                   Kirkland homeowners — whether they're in a waterfront estate off Lake Street, a craftsman bungalow in Norkirk, or a new townhome in Kingsgate — deserve a garage door company that treats their home with the same care they bring to it. That's why Zeus exists, and why Kirkland is where we're based. Not just a service area. Home.
@@ -736,8 +736,8 @@ export default function KirklandLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our Kirkland dispatch team will call you back promptly during business hours. For urgent service, call directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -746,7 +746,7 @@ export default function KirklandLocation() {
                     "Same-day availability across all Kirkland zip codes",
                     "Licensed & insured WA contractor",
                     "Flat-rate pricing — confirmed on-site after assessment",
-                    "85%+ one-visit fix rate — stocked truck, every call",
+                    "Same-day service — fully stocked truck on every call",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-charcoal text-sm">
                       <CheckCircle size={16} className="text-forest flex-shrink-0" aria-hidden="true" />
@@ -784,10 +784,10 @@ export default function KirklandLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

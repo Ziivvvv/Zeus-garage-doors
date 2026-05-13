@@ -13,8 +13,8 @@ const CONTACT_INFO = [
   {
     icon: Phone,
     label: "Phone",
-    value: "425-555-0199",
-    href: "tel:+14255550199",
+    value: "425-448-6443",
+    href: "tel:+14254486443",
   },
   {
     icon: MapPin,
@@ -47,7 +47,7 @@ export default function ContactPage() {
     <>
       <SEOHead
         title="Contact Zeus Garage Doors | Kirkland & Eastside WA"
-        description="Get in touch with Zeus Garage Doors for same-day garage door repair in Kirkland, Bellevue, Redmond, and the Eastside. Call 425-555-0199."
+        description="Get in touch with Zeus Garage Doors for same-day garage door repair in Kirkland, Bellevue, Redmond, and the Eastside. Call 425-448-6443."
         canonical="/contact"
         pageType="contact"
         breadcrumbs={[
@@ -167,7 +167,7 @@ export default function ContactPage() {
                   and Snohomish Counties.
                 </p>
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="inline-flex items-center gap-2 font-bold px-6 py-3 rounded-xl text-white transition-all active:scale-[0.97]"
                   style={{
                     background: "linear-gradient(135deg, hsl(43 90% 50%), hsl(36 95% 44%))",
@@ -175,7 +175,7 @@ export default function ContactPage() {
                   }}
                 >
                   <Phone className="w-4 h-4" />
-                  425-555-0199
+                  425-448-6443
                 </a>
               </motion.div>
             </motion.div>
@@ -232,7 +232,7 @@ export default function ContactPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: "01", heading: "You Call or Submit the Form", body: "Call 425-555-0199 or fill out the contact form. Our dispatch team is available Sunday through Friday. We confirm your address and describe the problem over the phone — no commitment yet." },
+              { step: "01", heading: "You Call or Submit the Form", body: "Call 425-448-6443 or fill out the contact form. Our dispatch team is available Sunday through Friday. We confirm your address and describe the problem over the phone — no commitment yet." },
               { step: "02", heading: "Same-Day Dispatch", body: "We schedule a certified technician for the earliest available same-day window. You'll receive a courtesy call when the technician is 30 minutes out." },
               { step: "03", heading: "On-Site Inspection & Quote", body: "The technician inspects the door, weighs the springs, and checks cables and hardware. You receive a firm, flat-rate price before any work starts — no surprise fees." },
               { step: "04", heading: "Repair & Safety Test", body: "Most repairs are completed in one visit. We test the door through multiple open/close cycles and adjust the opener force settings before leaving your property." },
@@ -279,8 +279,27 @@ export default function ContactPage() {
               ))}
             </div>
             <p className="text-muted-foreground text-sm">
-              Not sure if we serve your neighborhood? Call <a href="tel:+14255550199" className="text-primary font-medium hover:underline">425-555-0199</a> — if you're in King or Snohomish County, we almost certainly do.
+              Not sure if we serve your neighborhood? Call <a href="tel:+14254486443" className="text-primary font-medium hover:underline">425-448-6443</a> — if you're in King or Snohomish County, we almost certainly do.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── MAP ─────────────────────────────────────────────────────────────── */}
+      <section className="bg-slate-50 py-10 border-t border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-primary text-xs font-semibold uppercase tracking-widest mb-4">Service Area</p>
+          <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42978.58688!2d-122.20150!3d47.71289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="360"
+              style={{ border: 0, display: "block" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Zeus Garage Doors service area — Kirkland, WA"
+            />
           </div>
         </div>
       </section>
@@ -296,7 +315,7 @@ export default function ContactPage() {
             {[
               {
                 q: "How quickly can you get to me for emergency garage door repair?",
-                a: "For same-day emergency garage door repair near me requests received before 12:00 PM (PT) on business days, we aim to dispatch a technician the same afternoon. In Kirkland, Bellevue, Redmond, and most of the Eastside, we typically arrive within 2–4 hours. Seattle and Lynnwood may have slightly longer windows depending on routing. For overnight emergencies Sunday through Thursday, our after-hours emergency line is available at 425-555-0199."
+                a: "For same-day emergency garage door repair near me requests received before 12:00 PM (PT) on business days, we aim to dispatch a technician the same afternoon. In Kirkland, Bellevue, Redmond, and most of the Eastside, we typically arrive within 2–4 hours. Seattle and Lynnwood may have slightly longer windows depending on routing. For overnight emergencies Sunday through Thursday, our after-hours emergency line is available at 425-448-6443."
               },
               {
                 q: "Do you give free quotes over the phone?",
@@ -308,7 +327,7 @@ export default function ContactPage() {
               },
               {
                 q: "Are your technicians licensed and insured?",
-                a: "Yes. All Zeus Garage Doors technicians are background-checked, fully licensed for Washington State, and covered by liability insurance. We are a locally owned and operated business based in Kirkland, WA — not a national franchise. Every repair carries a professional service warranty on parts."
+                a: "Yes. Zeus Garage Doors technicians are licensed for Washington State and covered by liability insurance on every job. We are a locally owned and operated business based in Kirkland, WA — not a national franchise. Every repair carries a professional service warranty on parts."
               },
             ].map(({ q, a }, i) => (
               <div key={i} className="border-b border-slate-100 pb-6 last:border-0">

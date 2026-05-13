@@ -5,6 +5,62 @@ import SEOHead from "@/components/SEOHead";
 
 const posts = [
   {
+    slug: "why-is-my-garage-door-so-noisy",
+    title: "Why Is My Garage Door So Noisy? 6 Causes & Fixes",
+    excerpt: "Grinding, banging, rattling, or squeaking? Learn the 6 most common causes of a noisy garage door — and what you can safely fix yourself tonight.",
+    category: "Troubleshooting",
+    date: "2026-05-11",
+  },
+  {
+    slug: "average-cost-to-replace-garage-door",
+    title: "What's the Average Cost to Replace a Garage Door? (2026)",
+    excerpt: "New garage door costs vary widely. Here's what drives the price — door type, insulation, opener, and labor — for WA homeowners.",
+    category: "Pricing & Guides",
+    date: "2026-05-11",
+  },
+  {
+    slug: "why-wont-garage-door-close-all-the-way",
+    title: "Why Won't My Garage Door Close All the Way? 8 Common Causes",
+    excerpt: "Garage door won't close completely? Learn 8 causes — from misaligned sensors to limit switch issues — and which ones you can fix yourself.",
+    category: "Troubleshooting",
+    date: "2026-05-11",
+  },
+  {
+    slug: "garage-door-service-call-cost",
+    title: "How Much Does a Garage Door Service Call Cost?",
+    excerpt: "Service call costs vary by repair type. Here's what affects the price — and why accurate quotes require an in-person assessment.",
+    category: "Pricing & Guides",
+    date: "2026-05-11",
+  },
+  {
+    slug: "is-diy-garage-door-repair-safe",
+    title: "Is DIY Garage Door Repair Safe? The Honest Answer",
+    excerpt: "Some repairs are safe DIY. Others — especially spring replacement — are genuinely dangerous. Here's the honest breakdown for WA homeowners.",
+    category: "Safety",
+    date: "2026-05-08",
+  },
+  {
+    slug: "liftmaster-vs-chamberlain-garage-door-opener",
+    title: "LiftMaster vs Chamberlain — Which Opener Is Better? (2026)",
+    excerpt: "Same parent company, very different products. Here's what actually separates them and which one Zeus recommends for Eastside WA homes.",
+    category: "Equipment Guides",
+    date: "2026-05-01",
+  },
+  {
+    slug: "garage-door-wont-open-cold-weather",
+    title: "Garage Door Won't Open in Cold Weather — 7 Causes & Fixes",
+    excerpt: "Cold weather causes garage door failures in WA. Learn 7 common causes — from frozen springs to contracted metal — and which you can fix yourself.",
+    category: "Troubleshooting",
+    date: "2026-04-22",
+  },
+  {
+    slug: "how-long-do-garage-door-springs-last",
+    title: "How Long Do Garage Door Springs Last? (WA Climate Guide)",
+    excerpt: "Torsion springs last 10,000–20,000 cycles. In Washington's wet climate, that's often shorter. Learn the signs of failing springs before they snap.",
+    category: "Maintenance",
+    date: "2026-04-15",
+  },
+  {
     slug: "best-garage-door-opener-pnw",
     title: "LiftMaster vs. Genie: Best Opener for PNW Weather",
     excerpt: "A comparison of the top opener brands and which one handles Washington humidity the best.",
@@ -143,7 +199,7 @@ export default function BlogIndex() {
                   Seattle & Eastside's Trusted Garage Door Repair Resource
                 </h2>
                 <p className="text-charcoal/70 mb-4 leading-relaxed">
-                  Zeus Garage Doors is a locally owned and operated garage door repair company based in Kirkland, WA. We serve Seattle, Bellevue, Redmond, Bothell, Woodinville, Kenmore, Lynnwood, Mercer Island, and the entire Eastside of Washington state. Our technicians are background-checked, licensed, and insured — and every repair carries a professional service warranty on parts.
+                  Zeus Garage Doors is a locally owned and operated garage door repair company based in Kirkland, WA. We serve Seattle, Bellevue, Redmond, Bothell, Woodinville, Kenmore, Lynnwood, Mercer Island, and the entire Eastside of Washington state. Our technicians are licensed and insured — and every repair carries a professional service warranty on parts.
                 </p>
                 <p className="text-charcoal/70 mb-4 leading-relaxed">
                   This blog exists because we believe an informed homeowner makes better decisions. Garage door repair is not complicated when you understand the basics: how springs counterbalance door weight, why cable failure is a safety emergency, and what separates a belt-drive opener from a chain-drive unit in the Pacific Northwest's damp climate.

@@ -44,6 +44,11 @@ const SERVICES_NAV = [
     description: "Full door & opener packages",
   },
   {
+    label: "🚨 Emergency Repair",
+    href: "/emergency-garage-door-repair",
+    description: "Same-night dispatch Sun–Thu",
+  },
+  {
     label: "Other / Need an Estimate?",
     href: "/quote",
     description: "Not sure? Get a free assessment",
@@ -166,11 +171,11 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           {/* CTA */}
           <div className="px-6 py-4 bg-gold">
             <a
-              href="tel:+14255550199"
+              href="tel:+14254486443"
               className="block text-center text-navy font-bold text-lg py-3"
               aria-label="Call Zeus Garage Doors now"
             >
-              📞 Call Now: 425-555-0199
+              📞 Call Now: 425-448-6443
             </a>
           </div>
 
@@ -381,9 +386,9 @@ export default function Navbar() {
                   Night Emergency (Sun–Thur)
                 </span>
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-gold hover:bg-gold-dark text-navy font-bold px-5 py-2.5 rounded-xl text-sm transition-colors shadow-md"
-                  aria-label="Call Zeus Garage Doors now at 425-555-0199"
+                  aria-label="Call Zeus Garage Doors now at 425-448-6443"
                 >
                   📞 Call Now
                 </a>
@@ -392,7 +397,7 @@ export default function Navbar() {
 
             <div className="flex lg:hidden items-center gap-3">
               <a
-                href="tel:+14255550199"
+                href="tel:+14254486443"
                 className="bg-gold text-navy text-sm font-bold px-4 py-2 rounded-lg"
                 aria-label="Call now"
               >
@@ -424,14 +429,14 @@ export default function Navbar() {
         aria-label="Quick contact"
       >
         <a
-          href="tel:+14255550199"
+          href="tel:+14254486443"
           className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl text-sm"
           aria-label="Call Zeus Garage Doors"
         >
           📞 Call Now
         </a>
         <a
-          href="sms:+14255550199"
+          href="sms:+14254486443"
           className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl text-sm"
           aria-label="Text Zeus Garage Doors"
         >

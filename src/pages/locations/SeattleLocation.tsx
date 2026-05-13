@@ -24,7 +24,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides same-day garage door repair in Seattle, WA — specializing in older wooden door replacement, alley-garage access, hillside spring calibration, and full smart opener installation. Kirkland-based with a short cross-lake dispatch time, we serve Queen Anne, Capitol Hill, Ballard, Fremont, Magnolia, Green Lake, and every Seattle neighborhood. Call 425-555-0199.";
+  "Zeus Garage Doors provides same-day garage door repair in Seattle, WA — specializing in older wooden door replacement, alley-garage access, hillside spring calibration, and full smart opener installation. Kirkland-based with a short cross-lake dispatch time, we serve Queen Anne, Capitol Hill, Ballard, Fremont, Magnolia, Green Lake, and every Seattle neighborhood. Call 425-448-6443.";
 
 const SEATTLE_FAQS = [
   {
@@ -60,7 +60,7 @@ const SEATTLE_FAQS = [
   {
     question: "Do you offer after-hours emergency garage door repair in Seattle?",
     answer:
-      "Yes. Zeus Garage Doors provides night emergency dispatch for urgent garage door repairs in Seattle outside of regular business hours. A broken spring, a door stuck open overnight, or a cable snapped and blocking your car are not situations that can wait until morning. Call 425-555-0199 for emergency service. Night emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. Zeus Garage Doors provides night emergency dispatch for urgent garage door repairs in Seattle outside of regular business hours. A broken spring, a door stuck open overnight, or a cable snapped and blocking your car are not situations that can wait until morning. Call 425-448-6443 for emergency service. Night emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -173,7 +173,7 @@ export default function SeattleLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Seattle WA | Zeus Garage Doors"
-        description="Expert garage door repair in Seattle, WA. Old homes, alley garages, hillside springs & smart opener installs. Same-day service. Call 425-555-0199."
+        description="Expert garage door repair in Seattle, WA. Old homes, alley garages, hillside springs & smart opener installs. Same-day service. Call 425-448-6443."
         canonical="/locations/seattle-wa"
         pageType="location"
         cityName="Seattle"
@@ -257,17 +257,17 @@ export default function SeattleLocation() {
                       Kirkland-Based · 20–30 Min to Seattle
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors in Seattle"
                   >
@@ -370,13 +370,13 @@ export default function SeattleLocation() {
                     Same-day service · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -396,7 +396,7 @@ export default function SeattleLocation() {
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
-                      "85%+ of calls resolved in one visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
@@ -551,7 +551,7 @@ export default function SeattleLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Dispatch Time", value: "20–30 min" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Days Available", value: "Sun–Fri" },
                       { label: "Night Emergency", value: "Sun–Thur" },
                     ].map((stat) => (
@@ -601,10 +601,10 @@ export default function SeattleLocation() {
                     A wooden garage door is repairable if: rot is confined to the bottom rail only (can be cut out and rebuilt), panels show surface checking or minor cracking (seal and repaint), and the frame is still square with no major warping. Replacement is the better value when: rot extends into the stiles or multiple panels, the door no longer seats fully in the frame, or warping causes the bottom seal to fail across more than half the door width. Our technicians assess every wooden door on-site and give you an honest recommendation — not a default push toward a new door sale.
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline"
                   >
-                    📞 Call 425-555-0199 for a wooden door assessment →
+                    📞 Call 425-448-6443 for a wooden door assessment →
                   </a>
                 </div>
 
@@ -739,8 +739,8 @@ export default function SeattleLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our dispatch team will call you back promptly during business hours. For urgent service, call directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -788,10 +788,10 @@ export default function SeattleLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

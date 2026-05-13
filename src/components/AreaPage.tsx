@@ -174,7 +174,7 @@ export default function AreaPage({
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                   aria-label={`Call Zeus Garage Doors in ${cityName}`}
                 >
@@ -196,7 +196,7 @@ export default function AreaPage({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {[
-                { value: "85%",      label: "One-Visit Fix Rate",      sub: "Fully stocked truck every call" },
+                { value: "Same-Day",      label: "Same-Day Service",      sub: "Fully stocked truck every call" },
                 { value: "100%",     label: "Customer Satisfaction",   sub: "Guaranteed on every job" },
                 { value: "Same Day", label: "Emergency Response",      sub: "Sunday – Friday" },
                 { value: "Licensed", label: "& Fully Insured",         sub: "Washington State Contractor" },
@@ -259,13 +259,13 @@ export default function AreaPage({
                       Same-day service, Sunday–Friday
                     </p>
                     <a
-                      href="tel:+14255550199"
+                      href="tel:+14254486443"
                       className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                     >
-                      📞 425-555-0199
+                      📞 425-448-6443
                     </a>
                     <a
-                      href="sms:+14255550199"
+                      href="sms:+14254486443"
                       className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                     >
                       💬 Text Us
@@ -428,10 +428,10 @@ export default function AreaPage({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

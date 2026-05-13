@@ -39,19 +39,12 @@ export interface QuoteFormProps {
 
 // ─── Dispatch stub ────────────────────────────────────────────────────────────
 
-/**
- * Simulates posting to your dispatch webhook.
- * Replace the body with a real fetch() when the endpoint is ready:
- *
- *   await fetch("https://hooks.zapier.com/hooks/catch/…", {
- *     method: "POST",
- *     headers: { "Content-Type": "application/json" },
- *     body: JSON.stringify(payload),
- *   });
- */
 async function sendToDispatch(payload: Record<string, string>): Promise<void> {
-  void payload;
-  return new Promise((resolve) => setTimeout(resolve, 1500));
+  await fetch("https://hook.us2.make.com/9a2qgfao1orrdhd4e5h8nty15990acz9", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -124,7 +117,7 @@ export default function QuoteForm({ onSuccess }: QuoteFormProps) {
       service:     form.service,
       message:     form.message.trim(),
       location,                         // "Kirkland, 98033" format for dispatchers
-      submittedAt: new Date().toISOString(),
+      submittedAt: new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", month: "2-digit", day: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: true }) + " PT",
     };
 
     try {

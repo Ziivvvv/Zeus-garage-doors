@@ -2,9 +2,14 @@
  * SEOHead.tsx — Zeus Garage Doors
  * Full schema injection engine: LocalBusiness, Service, FAQPage, BreadcrumbList
  * Inject on every page. No page ships without this.
+ *
+ * SSR path: during renderToString (prerender), useEffect doesn't run.
+ * We detect typeof window === "undefined" and push data into SeoCollectorContext
+ * so prerender.tsx can inject correct per-page <head> tags into the static HTML.
  */
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { SeoCollectorContext } from "../lib/seo-collector";
 
 // ─────────────────────────────────────────────
 // TYPES
@@ -45,6 +50,9 @@ export interface SEOHeadProps {
 
   // Crawl control
   noIndex?: boolean;
+
+  // Extra schemas to inject alongside the standard ones
+  additionalSchemas?: object[];
 }
 
 // ─────────────────────────────────────────────
@@ -55,22 +63,22 @@ const BUSINESS = {
   name: "Zeus Garage Doors",
   legalName: "Zeus Garage Doors and Gate Repair LLC",
   url: "https://zeusgaragedoorswa.com",
-  telephone: "425-555-0199",
-  email: "zeusgaragedoorepair@gmail.com",
+  telephone: "425-448-6443",
+  email: "info@zeusgaragedoorswa.com",
   logo: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
   image: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
   description:
     "Professional garage door repair, spring replacement, and opener installation services in Kirkland, Bellevue, Redmond, and the greater Eastside area.",
   addressRegion: "WA",
   addressCountry: "US",
-  postalCode: "98033",
+  postalCode: "98034",
   addressLocality: "Kirkland",
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Cash, Credit Card, Check",
   geo: {
-    latitude: 47.6785,
-    longitude: -122.2015,
+    latitude: 47.71289,
+    longitude: -122.17948,
     radius: "50000",
   },
   areaServed: [
@@ -102,8 +110,10 @@ function buildLocalBusinessSchema(cityName?: string) {
     telephone: BUSINESS.telephone,
     address: {
       "@type": "PostalAddress",
+      streetAddress: "12550 120th Ave NE, Unit 732",
       addressLocality: cityName || BUSINESS.addressLocality,
       addressRegion: BUSINESS.addressRegion,
+      postalCode: BUSINESS.postalCode,
       addressCountry: BUSINESS.addressCountry,
     },
     areaServed: [
@@ -171,6 +181,18 @@ function buildServiceSchema(
         availableLanguage: "English",
       },
     },
+    offers: {
+      "@type": "Offer",
+      warranty: {
+        "@type": "WarrantyPromise",
+        durationOfWarranty: {
+          "@type": "QuantitativeValue",
+          value: 5,
+          unitCode: "ANN",
+        },
+        warrantyScope: "https://schema.org/LaborsAndParts",
+      },
+    },
   };
 }
 
@@ -202,14 +224,6 @@ function buildWebSiteSchema() {
       "@id": `${BUSINESS.url}/#organization`,
       name: BUSINESS.name,
       legalName: BUSINESS.legalName,
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${BUSINESS.url}/?s={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
     },
   };
 }
@@ -257,8 +271,42 @@ function buildArticleSchema(props: SEOHeadProps) {
   };
 }
 
+// Collects all schemas for a given page — used by both SSR and browser paths
+function buildSchemas(props: SEOHeadProps): object[] {
+  const {
+    pageType,
+    serviceName,
+    serviceDescription,
+    cityName,
+    faqs,
+    breadcrumbs,
+    datePublished,
+    additionalSchemas,
+  } = props;
+
+  const schemas: object[] = [];
+
+  if (pageType === "home") schemas.push(buildWebSiteSchema());
+  schemas.push(buildLocalBusinessSchema(cityName));
+
+  if (
+    (pageType === "service" || pageType === "location") &&
+    serviceName &&
+    serviceDescription
+  ) {
+    schemas.push(buildServiceSchema(serviceName, serviceDescription, cityName));
+  }
+
+  if (faqs && faqs.length > 0) schemas.push(buildFAQSchema(faqs));
+  if (breadcrumbs && breadcrumbs.length > 0) schemas.push(buildBreadcrumbSchema(breadcrumbs));
+  if (pageType === "blog" && datePublished) schemas.push(buildArticleSchema(props));
+  if (additionalSchemas && additionalSchemas.length > 0) schemas.push(...additionalSchemas);
+
+  return schemas;
+}
+
 // ─────────────────────────────────────────────
-// INJECT SCHEMA INTO DOM
+// INJECT SCHEMA INTO DOM (browser only)
 // ─────────────────────────────────────────────
 
 function injectSchema(id: string, schema: object) {
@@ -276,23 +324,28 @@ function injectSchema(id: string, schema: object) {
 // COMPONENT
 // ─────────────────────────────────────────────
 
-export default function SEOHead({
-  title,
-  description,
-  canonical,
-  pageType,
-  serviceName,
-  serviceDescription,
-  cityName,
-  faqs,
-  breadcrumbs,
-  datePublished,
-  dateModified,
-  authorName,
-  ogImage,
-  ogType = "website",
-  noIndex = false,
-}: SEOHeadProps) {
+export default function SEOHead(props: SEOHeadProps) {
+  const {
+    title,
+    description,
+    canonical,
+    pageType,
+    serviceName,
+    serviceDescription,
+    cityName,
+    faqs,
+    breadcrumbs,
+    datePublished,
+    dateModified,
+    authorName,
+    ogImage,
+    ogType = "website",
+    noIndex = false,
+    additionalSchemas,
+  } = props;
+
+  const collector = useContext(SeoCollectorContext);
+
   const canonicalUrl = canonical?.startsWith("https")
     ? canonical
     : canonical
@@ -302,6 +355,21 @@ export default function SEOHead({
   const finalOgImage =
     ogImage ||
     "https://zeusgaragedoorswa.com/zeus-logo-navbar.png";
+
+  // ── SSR path: collect data for prerender head injection
+  // useEffect doesn't run during renderToString — we push data synchronously instead
+  if (typeof window === "undefined" && collector) {
+    collector.collect({
+      title,
+      description,
+      canonicalUrl,
+      ogType,
+      ogImage: finalOgImage,
+      noIndex,
+      cityName,
+      schemas: buildSchemas(props),
+    });
+  }
 
   // Stable keys prevent re-runs when callers pass inline array literals
   const faqsKey = faqs ? faqs.map((f) => f.question).join("|") : "";
@@ -375,8 +443,8 @@ export default function SEOHead({
         : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "geo.region": "US-WA",
       "geo.placename": cityName || "Kirkland",
-      "geo.position": "47.6785;-122.2015",
-      ICBM: "47.6785, -122.2015",
+      "geo.position": "47.71289;-122.17948",
+      ICBM: "47.71289, -122.17948",
     };
 
     Object.entries(additionalMeta).forEach(([name, content]) => {
@@ -432,7 +500,14 @@ export default function SEOHead({
         ogImage,
       }));
     }
-  }, [title, description, canonicalUrl, pageType, cityName, faqsKey, breadcrumbsKey, noIndex]);
+
+    // ── Schema: Additional (page-specific, e.g. HowTo)
+    if (additionalSchemas && additionalSchemas.length > 0) {
+      additionalSchemas.forEach((schema, i) => {
+        injectSchema(`schema-additional-${i}`, schema);
+      });
+    }
+  }, [title, description, canonicalUrl, pageType, cityName, faqsKey, breadcrumbsKey, noIndex, additionalSchemas]);
 
   return null; // All injection is done via useEffect into document.head
 }

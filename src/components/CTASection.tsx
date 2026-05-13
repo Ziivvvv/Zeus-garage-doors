@@ -24,7 +24,7 @@ export default function CTASection() {
                 "Night emergency dispatch Sun–Thur — urgent after-hours repairs",
                 "26-point safety inspection on every visit",
                 "Professional service warranty on spring replacements",
-                "Licensed, bonded & insured in Washington state",
+                "Licensed & insured in Washington state",
                 "Honest upfront pricing — confirmed on-site",
                 "🎁 10% off for first-time customers",
                 "🎖️ 12.5% off for veterans & seniors",

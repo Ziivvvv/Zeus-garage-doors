@@ -14,14 +14,14 @@ export default function AuthorityBar() {
             <AnimatedRating />
           </div>
 
-          {/* 85% one-visit fix rate — mandatory business rule, always prominent */}
+          {/* Parts stocked for same-day repairs */}
           <div className="lg:px-10 flex items-center gap-4">
             <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold/20 border border-gold/40 flex items-center justify-center shadow-md">
               <Wrench size={20} className="text-gold" aria-hidden="true" />
             </div>
             <div>
               <p className="text-gold font-bold text-sm leading-tight">
-                85% one-visit fix rate
+                Same-Day Parts &amp; Labor
               </p>
               <p className="text-white text-xs mt-0.5">
                 fully stocked truck on every call

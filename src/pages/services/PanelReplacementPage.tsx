@@ -10,13 +10,13 @@ export default function PanelReplacementPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Panel Replacement | Fix Dented Doors | Zeus"
-      metaDescription="Dented garage door? Zeus replaces damaged panels & sections for Amarr, Clopay & Wayne Dalton in Seattle, Kirkland & Eastside WA. Call 425-555-0199."
+      metaDescription="Dented garage door? Zeus replaces damaged panels & sections for Amarr, Clopay & Wayne Dalton in Seattle, Kirkland & Eastside WA. Call 425-448-6443."
       canonical="/services/panel-replacement"
       serviceName="Panel Replacement"
       serviceTagline="Don't replace the whole door if you don't have to. We source and install matching replacement sections for dented, cracked, or rotted garage doors."
       
       /* FEATURED SNIPPET TARGET */
-      directAnswer="Zeus Garage Doors provides individual garage door panel replacement in Seattle, Kirkland, Bellevue, and the Eastside. If you dented the bottom or middle section, we can match and install a replacement panel without replacing the entire door. Call 425-555-0199 for a free on-site assessment."
+      directAnswer="Zeus Garage Doors provides individual garage door panel replacement in Seattle, Kirkland, Bellevue, and the Eastside. If you dented the bottom or middle section, we can match and install a replacement panel without replacing the entire door. Call 425-448-6443 for a free on-site assessment."
       heroImage={{
         src: "/images/garage-door-panel-replacement.webp",
         alt: "Technician replacing a dented garage door panel section",
@@ -52,6 +52,11 @@ export default function PanelReplacementPage() {
           icon: "🛠️",
           heading: "Structural Integrity",
           body: "We add reinforcement struts if needed to ensure the new panel holds up perfectly against wind and daily use."
+        },
+        {
+          icon: "🛡️",
+          heading: "5-Year Warranty",
+          body: "Panel replacements are backed by our 5-year parts and labor warranty — the longest guarantee on the Eastside. Materials defects or fitting issues are covered, no questions asked."
         }
       ]}
       relatedEntities={[

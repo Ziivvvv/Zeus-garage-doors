@@ -17,7 +17,7 @@ export default function SpringReplacementPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Spring Repair | Same-Day WA | Zeus Garage Doors"
-      metaDescription="Broken garage door spring? Zeus provides same-day torsion & extension spring repair in Kirkland, Bellevue & the Eastside WA. Flat-rate pricing. Call 425-555-0199."
+      metaDescription="Broken garage door spring? Zeus provides same-day torsion & extension spring repair in Kirkland, Bellevue & the Eastside WA. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/spring-replacement"
 
       // serviceName stays clean — used in FAQ title, cities list, CTA, schema
@@ -29,7 +29,7 @@ export default function SpringReplacementPage() {
       serviceTagline="Broken springs are the #1 cause of garage door failure in the Pacific Northwest. Zeus Garage Doors provides same-day torsion and extension spring repair across Kirkland, Bellevue, Redmond, and all Eastside WA communities."
 
       // Featured snippet block: 40-60 words, direct answer, voice-search optimized
-      directAnswer="Zeus Garage Doors provides same-day garage door spring repair in Kirkland, WA and across the Eastside. We replace torsion and extension springs, always replace both at once, and back every job with a parts and labor warranty. Call 425-555-0199 for a free on-site assessment."
+      directAnswer="Zeus Garage Doors provides same-day garage door spring repair in Kirkland, WA and across the Eastside. We replace torsion and extension springs, always replace both at once, and back every job with a 5-year parts and labor warranty. Call 425-448-6443 for a free on-site assessment."
 
       heroImage={{
         src: "/images/garage-door-spring-replacement-kirkland-wa.webp",
@@ -98,8 +98,8 @@ export default function SpringReplacementPage() {
         },
         {
           icon: "🛡️",
-          heading: "Warranty-Backed Spring Repair",
-          body: "Every garage door spring repair is backed by a parts and labor warranty. If a spring fails due to a defect or installation error, we return at no charge — that's our commitment to Eastside homeowners.",
+          heading: "5-Year Warranty on Springs",
+          body: "Every spring repair is backed by our 5-year parts and labor warranty — the strongest on the Eastside. If a spring fails due to a defect or installation error, we return at no charge.",
         },
       ]}
 

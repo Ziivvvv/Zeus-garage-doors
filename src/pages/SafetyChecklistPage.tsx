@@ -192,11 +192,11 @@ export default function SafetyChecklistPage() {
                     Book a Professional Inspection
                   </Link>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="inline-flex items-center justify-center gap-2 border border-white/20 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-colors active:scale-[0.97]"
                   >
                     <Phone size={16} />
-                    Call 425-555-0199
+                    Call 425-448-6443
                   </a>
                 </div>
               </div>

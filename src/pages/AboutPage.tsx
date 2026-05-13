@@ -13,7 +13,7 @@ const VALUES = [
     icon: Shield,
     title: "Licensed & Insured",
     description:
-      "We're a fully licensed, bonded, and insured Washington State contractor. Your home and property are protected on every job.",
+      "We're a licensed and insured Washington State contractor. Your home and property are protected on every job.",
   },
   {
     icon: Clock,
@@ -52,7 +52,7 @@ export default function AboutPage() {
     <>
       <SEOHead
         title="About Zeus Garage Doors | Eastside WA Experts"
-        description="Learn about Zeus Garage Doors — a locally owned garage door repair company serving Seattle, Kirkland, Bellevue, Redmond, and the greater Eastside. Licensed, bonded & insured."
+        description="Learn about Zeus Garage Doors — a locally owned garage door repair company serving Seattle, Kirkland, Bellevue, Redmond, and the greater Eastside. Licensed and insured in Washington state."
         canonical="/about"
         pageType="about"
         breadcrumbs={[
@@ -237,11 +237,11 @@ export default function AboutPage() {
           </motion.p>
           <motion.div variants={fadeUp} custom={2} className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+14255550199"
+              href="tel:+14254486443"
               className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary font-semibold px-8 py-3.5 rounded-lg hover:opacity-90 transition-opacity active:scale-[0.97]"
             >
               <Phone className="w-4 h-4" />
-              425-555-0199
+              425-448-6443
             </a>
             <Link
               to="/contact"

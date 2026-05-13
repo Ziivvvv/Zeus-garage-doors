@@ -15,7 +15,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides same-day garage door repair in Bellevue, WA — specializing in modern glass and aluminum door systems, smart opener installation and commissioning, spring replacement, and off-track repair. Kirkland-based, we serve Somerset, Bridle Trails, Meydenbauer Bay, and every Bellevue neighborhood with the same professional standard we bring to our home market. Call 425-555-0199.";
+  "Zeus Garage Doors provides same-day garage door repair in Bellevue, WA — specializing in modern glass and aluminum door systems, smart opener installation and commissioning, spring replacement, and off-track repair. Kirkland-based, we serve Somerset, Bridle Trails, Meydenbauer Bay, and every Bellevue neighborhood with the same professional standard we bring to our home market. Call 425-448-6443.";
 
 const BELLEVUE_FAQS = [
   {
@@ -51,7 +51,7 @@ const BELLEVUE_FAQS = [
   {
     question: "Do you offer emergency garage door service after hours in Bellevue?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Bellevue. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Bellevue. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-448-6443 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function BellevueLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Bellevue WA | Zeus Garage Doors"
-        description="Same-day garage door repair in Bellevue, WA. Modern doors, smart openers & spring service. Licensed & insured. Flat-rate pricing. Call 425-555-0199."
+        description="Same-day garage door repair in Bellevue, WA. Modern doors, smart openers & spring service. Licensed & insured. Flat-rate pricing. Call 425-448-6443."
         canonical="/locations/bellevue-wa"
         pageType="location"
         cityName="Bellevue"
@@ -242,17 +242,17 @@ export default function BellevueLocation() {
                       Kirkland-Based · Bellevue's Modern Door Specialist
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors in Bellevue"
                   >
@@ -315,7 +315,7 @@ export default function BellevueLocation() {
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
-                  Bellevue's competitive landscape is crowded with national brands running franchise models — where your call routes to a regional call center, your technician is assigned from a contractor pool, and the person arriving at your property may have no specific experience with the door system you have. Zeus operates differently. When you call 425-555-0199, you reach our Kirkland dispatch team directly. The technician we send is a Zeus employee, not a subcontractor. They arrive with a fully stocked truck — and for Bellevue calls, that inventory includes parts specifically suited to glass-frame systems and high-corrosion waterfront environments.
+                  Bellevue's competitive landscape is crowded with national brands running franchise models — where your call routes to a regional call center, your technician is assigned from a contractor pool, and the person arriving at your property may have no specific experience with the door system you have. Zeus operates differently. When you call 425-448-6443, you reach our Kirkland dispatch team directly. The technician we send is a Zeus employee, not a subcontractor. They arrive with a fully stocked truck — and for Bellevue calls, that inventory includes parts specifically suited to glass-frame systems and high-corrosion waterfront environments.
                 </p>
 
                 {/* Local Environment Box */}
@@ -350,13 +350,13 @@ export default function BellevueLocation() {
                     Same-day service · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -375,7 +375,7 @@ export default function BellevueLocation() {
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
                       "In-person assessment — never phone quotes",
-                      "Over 85% of calls resolved in one visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
@@ -539,7 +539,7 @@ export default function BellevueLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Response", value: "Same Day" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
@@ -589,10 +589,10 @@ export default function BellevueLocation() {
                     A failing bottom seal on a glass garage door shows as visible daylight under the closed door, drafts felt at floor level, water intrusion after rain, or — in double-pane glass panels — condensation or fogging between the panes. Do not attempt to force a glass-panel door with a broken spring or compromised frame. Tempered glass can fracture under uneven load distribution. Call a technician to assess the system before operating it further.
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline"
                   >
-                    📞 Call 425-555-0199 for glass door service →
+                    📞 Call 425-448-6443 for glass door service →
                   </a>
                 </div>
 
@@ -727,8 +727,8 @@ export default function BellevueLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our dispatch team will call you back promptly during business hours. For urgent service, call us directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -775,10 +775,10 @@ export default function BellevueLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

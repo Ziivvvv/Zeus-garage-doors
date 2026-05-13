@@ -49,6 +49,18 @@ const BlogPost = lazy(() => import("./pages/BlogPost"));
 const GarageDoorOpensItselfPage = lazy(() => import("./pages/blog/GarageDoorOpensItselfPage"));
 const SpringCostFactorsPage = lazy(() => import("./pages/blog/SpringCostFactorsPage"));
 const BestOpenerPNWPage = lazy(() => import("./pages/blog/BestOpenerPNWPage"));
+const HowLongDoSpringsLastPage = lazy(() => import("./pages/blog/HowLongDoSpringslast"));
+const GarageDoorWontOpenColdPage = lazy(() => import("./pages/blog/GarageDoorWontOpenColdWeather"));
+const LiftMasterVsChamberlainPage = lazy(() => import("./pages/blog/LiftMasterVsChamberlain"));
+const DIYGarageDoorRepairPage = lazy(() => import("./pages/blog/DIYGarageDoorRepairSafe"));
+const GarageDoorServiceCallCostPage = lazy(() => import("./pages/blog/GarageDoorServiceCallCost"));
+const WhyWontGarageDoorClosePage = lazy(() => import("./pages/blog/WhyWontGarageDoorCloseAllTheWay"));
+const AverageCostReplaceGarageDoorPage = lazy(() => import("./pages/blog/AverageCostReplaceGarageDoor"));
+const WhyIsGarageDoorNoisyPage = lazy(() => import("./pages/blog/WhyIsGarageDoorSoNoisy"));
+const EmergencyRepairPage = lazy(() => import("./pages/EmergencyRepairPage"));
+
+// Service Area
+const ServiceAreaPage = lazy(() => import("./pages/ServiceAreaPage"));
 
 // Legacy dynamic routes
 const ServicePage = lazy(() => import("./pages/ServicePage"));
@@ -116,7 +128,21 @@ const App = () => (
               <Route path="/blog/garage-door-opens-by-itself" element={<GarageDoorOpensItselfPage />} />
               <Route path="/blog/spring-replacement-cost-factors" element={<SpringCostFactorsPage />} />
               <Route path="/blog/best-garage-door-opener-pnw" element={<BestOpenerPNWPage />} />
+              <Route path="/blog/how-long-do-garage-door-springs-last" element={<HowLongDoSpringsLastPage />} />
+              <Route path="/blog/garage-door-wont-open-cold-weather" element={<GarageDoorWontOpenColdPage />} />
+              <Route path="/blog/liftmaster-vs-chamberlain-garage-door-opener" element={<LiftMasterVsChamberlainPage />} />
+              <Route path="/blog/is-diy-garage-door-repair-safe" element={<DIYGarageDoorRepairPage />} />
+              <Route path="/blog/garage-door-service-call-cost" element={<GarageDoorServiceCallCostPage />} />
+              <Route path="/blog/why-wont-garage-door-close-all-the-way" element={<WhyWontGarageDoorClosePage />} />
+              <Route path="/blog/average-cost-to-replace-garage-door" element={<AverageCostReplaceGarageDoorPage />} />
+              <Route path="/blog/why-is-my-garage-door-so-noisy" element={<WhyIsGarageDoorNoisyPage />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+
+              {/* ── Emergency */}
+              <Route path="/emergency-garage-door-repair" element={<EmergencyRepairPage />} />
+
+              {/* ── Service Area */}
+              <Route path="/service-area" element={<ServiceAreaPage />} />
 
               {/* ── Service pages */}
               <Route path="/services/spring-replacement" element={<SpringReplacementPage />} />

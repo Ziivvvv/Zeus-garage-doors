@@ -44,7 +44,7 @@ export default function SpecialtyServices() {
 
         <p className="mt-10 text-center text-slate-500 text-sm max-w-lg mx-auto">
           Not sure which service you need? Our Eastside technicians diagnose every issue on the first visit —{" "}
-          <a href="tel:+14255550199" className="text-blue-900 font-semibold hover:underline">
+          <a href="tel:+14254486443" className="text-blue-900 font-semibold hover:underline">
             call for a free same-day estimate
           </a>
           .

@@ -8,14 +8,14 @@ export default function StickyMobileFooter() {
     >
       <div className="flex rounded-t-2xl overflow-hidden">
         <a
-          href="tel:+14255550199"
+          href="tel:+14254486443"
           className="w-1/2 flex items-center justify-center gap-2 py-3.5 bg-gold text-navy font-semibold text-sm active:scale-[0.97] transition-transform"
           aria-label="Call Zeus Garage Doors"
         >
           <Phone size={18} /> Call Now
         </a>
         <a
-          href="sms:+14255550199"
+          href="sms:+14254486443"
           className="w-1/2 flex items-center justify-center gap-2 py-3.5 bg-gold-dark text-navy font-semibold text-sm active:scale-[0.97] transition-transform"
           aria-label="Text Zeus Garage Doors"
         >

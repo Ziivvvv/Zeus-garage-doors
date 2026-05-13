@@ -20,12 +20,12 @@ const HOME_SCHEMA_FAQS: FAQItem[] = [
   {
     question: "Is there emergency garage door repair service in Kirkland WA?",
     answer:
-      "Yes. Zeus Garage Doors provides same-day emergency garage door repair in Kirkland, WA. We dispatch a certified technician for broken springs, off-track doors, stuck doors, and snapped cables. We are available Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT). Call 425-555-0199.",
+      "Yes. Zeus Garage Doors provides same-day emergency garage door repair in Kirkland, WA. We dispatch a certified technician for broken springs, off-track doors, stuck doors, and snapped cables. We are available Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT). Call 425-448-6443.",
   },
   {
     question: "Who do I call for emergency garage door repair near me in Washington?",
     answer:
-      "Call Zeus Garage Doors at 425-555-0199 for emergency garage door repair across Seattle and the Eastside of Washington state — Kirkland, Bellevue, Redmond, Bothell, Woodinville, Kenmore, and Mercer Island. Same-day dispatch, Sunday through Friday.",
+      "Call Zeus Garage Doors at 425-448-6443 for emergency garage door repair across Seattle and the Eastside of Washington state — Kirkland, Bellevue, Redmond, Bothell, Woodinville, Kenmore, and Mercer Island. Same-day dispatch, Sunday through Friday.",
   },
   {
     question: "Can a garage door be fixed the same day in Kirkland WA?",
@@ -51,7 +51,7 @@ const HOME_SCHEMA_FAQS: FAQItem[] = [
   {
     question: "What happens if a garage door spring breaks?",
     answer:
-      "When a garage door spring breaks, the door becomes extremely heavy and unsafe to operate manually. The opener may also be damaged if you continue using it. Stop using the door immediately and call Zeus Garage Doors at 425-555-0199 for same-day spring replacement in Kirkland and the Eastside.",
+      "When a garage door spring breaks, the door becomes extremely heavy and unsafe to operate manually. The opener may also be damaged if you continue using it. Stop using the door immediately and call Zeus Garage Doors at 425-448-6443 for same-day spring replacement in Kirkland and the Eastside.",
   },
   // ── General PAA
   {
@@ -98,7 +98,8 @@ export default function Index() {
               <ul className="space-y-3">
                 {[
                   "Night emergency dispatch (Sun–Thur) — urgent after-hours repairs",
-                  "Licensed, insured & background-checked techs",
+                  "Licensed & insured technicians on every job",
+                  "5-year warranty on all parts & labor — strongest in the area",
                   "Transparent flat-rate pricing — no surprise fees",
                   "Parts stocked on every truck for one-visit fixes",
                   "🎁 10% off — first-time customers (mention at booking)",

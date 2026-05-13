@@ -15,7 +15,7 @@ import QuoteForm from "@/components/QuoteForm";
 // ─── Content ──────────────────────────────────────────────────────────────────
 
 const DIRECT_ANSWER =
-  "Zeus Garage Doors provides same-day garage door repair in Lynnwood, WA — the I-5/I-405 hub of South Snohomish County. Spring replacement, opener repair, cable service, and new door installation for Alderwood, Meadowdale, Martha Lake, and all Lynnwood neighborhoods. Fast response for busy commuters. Call 425-555-0199.";
+  "Zeus Garage Doors provides same-day garage door repair in Lynnwood, WA — the I-5/I-405 hub of South Snohomish County. Spring replacement, opener repair, cable service, and new door installation for Alderwood, Meadowdale, Martha Lake, and all Lynnwood neighborhoods. Fast response for busy commuters. Call 425-448-6443.";
 
 const LYNNWOOD_FAQS = [
   {
@@ -46,12 +46,12 @@ const LYNNWOOD_FAQS = [
   {
     question: "Do you work on commercial properties and mixed-use buildings along the I-5 corridor in Lynnwood?",
     answer:
-      "Our primary focus is residential garage doors, but we do service small commercial overhead doors in the Lynnwood area — particularly for mixed-use buildings, small offices with attached bays, and light commercial properties. If you have a commercial overhead door that needs spring, cable, or opener service, call us at 425-555-0199 and describe the application. We'll let you know upfront if it's within our scope or if we need to refer you to a commercial specialist.",
+      "Our primary focus is residential garage doors, but we do service small commercial overhead doors in the Lynnwood area — particularly for mixed-use buildings, small offices with attached bays, and light commercial properties. If you have a commercial overhead door that needs spring, cable, or opener service, call us at 425-448-6443 and describe the application. We'll let you know upfront if it's within our scope or if we need to refer you to a commercial specialist.",
   },
   {
     question: "Do you offer emergency garage door service after hours in Lynnwood?",
     answer:
-      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Lynnwood. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-555-0199 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
+      "Yes. While our standard business hours are Sunday–Thursday 6:00 AM–10:00 PM (PT) and Friday 6:00 AM–6:00 PM (PT) (Saturday closed), Zeus Garage Doors provides specialized emergency dispatch outside of regular business hours for urgent repairs in Lynnwood. If a spring snaps overnight, your door is stuck open, or you have a security concern that cannot wait — call 425-448-6443 and our team will arrange emergency service. After-hours emergency dispatch is available Sunday through Thursday nights only — not Friday nights or Saturday.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function LynnwoodLocation() {
     <>
       <SEOHead
         title="Garage Door Repair Lynnwood WA | Zeus Garage Doors"
-        description="Same-day garage door repair in Lynnwood, WA. Spring replacement, opener upgrades & cable service. Fast I-5/I-405 corridor response. Call 425-555-0199."
+        description="Same-day garage door repair in Lynnwood, WA. Spring replacement, opener upgrades & cable service. Fast I-5/I-405 corridor response. Call 425-448-6443."
         canonical="/locations/lynnwood-wa"
         pageType="location"
         cityName="Lynnwood"
@@ -239,17 +239,17 @@ export default function LynnwoodLocation() {
                       Kirkland-Based · Multi-Route Access via I-5 & I-405
                     </span>
                   </div>
-                  <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2">
+                  <Link to="/emergency-garage-door-repair" className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/30 rounded-full px-4 py-2 hover:bg-red-500/25 transition-colors">
                     <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" aria-hidden="true" />
                     <span className="text-red-300 text-xs font-bold uppercase tracking-wide">
                       Night Emergency Service — Sun–Thur
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="bg-gold hover:bg-gold-dark text-navy font-bold px-7 py-4 rounded-xl text-lg transition-colors shadow-lg"
                     aria-label="Call Zeus Garage Doors in Lynnwood"
                   >
@@ -303,7 +303,7 @@ export default function LynnwoodLocation() {
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
-                  Lynnwood is a working city. Its residents are commuters, families, and professionals who depend on their garage doors every morning and every evening. When a torsion spring snaps at 7 AM in <strong>Alderwood Manor</strong>, or a door goes off track at 6 PM in <strong>Meadowdale</strong>, it's not a minor inconvenience — it disrupts the day for everyone in the household. Zeus is built to respond to that reality: same-day service is our standard, not a premium, and our 85% one-visit fix rate means the issue is resolved on the first call, not scheduled for a return visit with parts.
+                  Lynnwood is a working city. Its residents are commuters, families, and professionals who depend on their garage doors every morning and every evening. When a torsion spring snaps at 7 AM in <strong>Alderwood Manor</strong>, or a door goes off track at 6 PM in <strong>Meadowdale</strong>, it's not a minor inconvenience — it disrupts the day for everyone in the household. Zeus is built to respond to that reality: same-day service is our standard, not a premium, and we stock our trucks to resolve issues on the first call, not scheduled for a return visit with parts.
                 </p>
 
                 <p className="text-charcoal leading-relaxed">
@@ -346,13 +346,13 @@ export default function LynnwoodLocation() {
                     Same-day service · Sun–Fri
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-gold hover:bg-gold-dark text-navy font-bold py-3 rounded-xl transition-colors mb-3"
                   >
-                    📞 425-555-0199
+                    📞 425-448-6443
                   </a>
                   <a
-                    href="sms:+14255550199"
+                    href="sms:+14254486443"
                     className="block w-full text-center bg-gold text-navy hover:bg-gold-dark font-bold py-3 rounded-xl transition-colors"
                   >
                     💬 Text Us
@@ -371,8 +371,9 @@ export default function LynnwoodLocation() {
                       "Quiet belt-drive & jackshaft opener upgrades",
                       "Licensed Washington state contractor",
                       "Full liability insurance on every job",
-                      "85%+ of calls resolved in a single visit",
+                      "Parts stocked for same-day service",
                       "Satisfaction guaranteed — we make it right",
+                      "5-year warranty on all parts & labor",
                       "No upselling, no manufactured urgency",
                       "🎁 10% off for first-time customers",
                       "🎖️ 12.5% off — veterans & seniors",
@@ -494,13 +495,13 @@ export default function LynnwoodLocation() {
                     Lynnwood homeowners run on tight schedules. The I-5 corridor means many residents commute to Seattle, Bellevue, or Everett daily — and a garage door failure in the morning is a genuine disruption to the entire day. Zeus is available Sunday through Thursday until 10:00 PM (PT), and Friday until 6:00 PM (PT). If your door fails in the evening after a long commute, we're still available to address it.
                   </p>
                   <p>
-                    Our 85% one-visit fix rate isn't just a marketing number — it's the direct result of how we stock our trucks. Before a Lynnwood dispatch, we review what's most likely needed based on the described problem and the address profile, and ensure our technician has the right springs, cables, opener parts, and hardware on the vehicle. Calling us back for a second visit because we didn't have the parts is a failure we take seriously.
+                    Stocking our trucks correctly is how we resolve the majority of Lynnwood calls in a single visit. Before dispatch, we review what's most likely needed based on the described problem and the address profile, and ensure our technician has the right springs, cables, opener parts, and hardware on the vehicle. Calling us back for a second visit because we didn't have the parts is a failure we take seriously.
                   </p>
                   <ul className="space-y-3">
                     {[
                       "Available 6:00 AM – 10:00 PM (PT) Sunday through Thursday",
                       "Available 6:00 AM – 6:00 PM (PT) Friday",
-                      "85%+ one-visit fix rate — stocked for your specific call",
+                      "Same-day service — stocked for your specific call",
                       "Multiple I-5 and I-405 access routes for fast dispatch",
                       "Quiet belt-drive and jackshaft upgrades for noise-sensitive homes",
                       "Extension spring conversions for older Lynnwood housing stock",
@@ -533,7 +534,7 @@ export default function LynnwoodLocation() {
                   <div className="grid grid-cols-2 gap-4">
                     {[
                       { label: "Response", value: "Same Day" },
-                      { label: "One-Visit Fix Rate", value: "85%+" },
+                      { label: "Same-Day Service", value: "Same-Day" },
                       { label: "Satisfaction Guarantee", value: "✓" },
                       { label: "Days Available", value: "Sun–Fri" },
                     ].map((stat) => (
@@ -555,8 +556,59 @@ export default function LynnwoodLocation() {
           </div>
         </section>
 
+        {/* ── PRO TIPS ────────────────────────────────────────────────────── */}
+        <section className="py-16 lg:py-20 bg-white" aria-labelledby="pro-tips-lynnwood">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <FadeIn>
+              <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">Expert Advice</p>
+              <h2 id="pro-tips-lynnwood" className="text-3xl lg:text-4xl font-bold text-navy font-playfair mb-10">
+                Pro Tips for Lynnwood Homeowners
+              </h2>
+              <div className="space-y-6">
+                <div className="bg-gold/8 border-l-4 border-gold rounded-r-2xl p-6">
+                  <h3 className="text-navy font-bold text-lg font-playfair mb-3">
+                    Why Lynnwood's 40+ Inches of Annual Rain Matters for Your Garage Door
+                  </h3>
+                  <p className="text-charcoal leading-relaxed">
+                    Lynnwood averages over 40 inches of rainfall per year — more than Seattle proper. This consistent moisture accelerates corrosion on standard garage door hardware significantly faster than manufacturer ratings (which are based on drier test environments). Torsion spring coils are the first casualty: rust develops in the coil gaps and reduces spring flexibility years before the rated cycle count is reached. Inspect your springs for orange or reddish-brown oxidation every spring and fall. If you see it, call before the spring snaps under load.
+                  </p>
+                  <a href="tel:+14254486443" className="inline-flex items-center gap-2 mt-4 text-forest font-semibold text-sm hover:underline">
+                    📞 Call 425-448-6443 for a Lynnwood spring inspection →
+                  </a>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Quiet Opener Upgrades for Attached Garages</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Lynnwood's townhomes and two-story homes often have bedrooms directly above the garage. A chain-drive opener transmits vibration through the ceiling into the room above. A LiftMaster belt-drive or wall-mount jackshaft opener reduces operational noise by 50–70%. One-visit same-day install — we commission the myQ app before we leave.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Bottom Seal: Replace Before October</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Lynnwood's rainy season starts hard in October. A cracked or flattened bottom seal allows water under the door every rain event, pooling on the garage floor and accelerating rust on all metal hardware. Inspect in September. If it's degraded — replace it. Cost is minimal; the water damage it prevents is not.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Lubrication: Every 4 Months in PNW Climate</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      In Lynnwood's damp climate, friction wear on springs, rollers, and hinges progresses faster than dry-climate manuals suggest. Use white lithium grease on springs and hinges, and silicone spray on nylon roller stems — every 4 months, not once a year. It's the single highest-return DIY maintenance task you can do.
+                    </p>
+                  </div>
+                  <div className="bg-offwhite rounded-2xl p-6 border border-slate-200">
+                    <h3 className="text-navy font-bold font-playfair mb-2">Picnic Point & Meadowdale: Coastal Hardware Spec</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">
+                      Homes near Puget Sound in Picnic Point and coastal Meadowdale face additional marine air exposure on top of Lynnwood's standard rainfall. For these properties, standard galvanized cables and springs are the wrong spec. We install stainless-core cables and heavily galvanized springs as standard — not an upsell — for all coastal-proximity calls.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* ── NEIGHBORHOODS ───────────────────────────────────────────────── */}
-        <section className="py-16 lg:py-20 bg-white" aria-labelledby="neighborhoods-lynnwood">
+        <section className="py-16 lg:py-20 bg-offwhite" aria-labelledby="neighborhoods-lynnwood">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn className="mb-10">
               <h2
@@ -644,8 +696,8 @@ export default function LynnwoodLocation() {
                 </h2>
                 <p className="text-charcoal/70 text-lg mb-6">
                   Fill out the form and our team will call you back promptly during business hours. For urgent service, call directly at{" "}
-                  <a href="tel:+14255550199" className="text-forest font-semibold hover:underline">
-                    425-555-0199
+                  <a href="tel:+14254486443" className="text-forest font-semibold hover:underline">
+                    425-448-6443
                   </a>.
                 </p>
                 <ul className="space-y-3">
@@ -654,7 +706,7 @@ export default function LynnwoodLocation() {
                     "Serving all Lynnwood neighborhoods same-day",
                     "Licensed & insured WA contractor",
                     "Flat-rate pricing — confirmed on-site",
-                    "85%+ one-visit fix rate — stocked for your call",
+                    "Same-day service — stocked for your call",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-charcoal text-sm">
                       <CheckCircle size={16} className="text-forest flex-shrink-0" aria-hidden="true" />
@@ -692,10 +744,10 @@ export default function LynnwoodLocation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="tel:+14255550199"
+                  href="tel:+14254486443"
                   className="bg-navy text-white hover:bg-navy/90 font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
                 >
-                  📞 425-555-0199
+                  📞 425-448-6443
                 </a>
                 <Link
                   to="/contact#estimate"

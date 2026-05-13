@@ -42,6 +42,7 @@ export interface BlogPostProps {
   faqs?: FAQItem[];
   relatedPosts?: RelatedPost[];
   breadcrumbs: { name: string; url: string }[];
+  additionalSchemas?: object[];
 }
 
 // ─────────────────────────────────────────────
@@ -99,6 +100,7 @@ export default function BlogPost({
   faqs,
   relatedPosts,
   breadcrumbs,
+  additionalSchemas,
 }: BlogPostProps) {
   return (
     <>
@@ -114,6 +116,7 @@ export default function BlogPost({
         ogType="article"
         breadcrumbs={breadcrumbs}
         faqs={faqs}
+        additionalSchemas={additionalSchemas}
       />
 
       <main id="main-content">
@@ -286,10 +289,10 @@ export default function BlogPost({
                     Same-day service in Kirkland, Bellevue, Redmond, and the Eastside.
                   </p>
                   <a
-                    href="tel:+14255550199"
+                    href="tel:+14254486443"
                     className="block w-full text-center bg-white text-forest font-bold py-3 rounded-xl text-sm hover:bg-offwhite transition-colors mb-3"
                   >
-                    📞 Call Now: 425-555-0199
+                    📞 Call Now: 425-448-6443
                   </a>
                   <Link
                     to="/contact#estimate"

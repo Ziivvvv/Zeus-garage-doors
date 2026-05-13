@@ -20,7 +20,7 @@ const CONTENT = `
 
 <h2>LiftMaster: The Professional's Choice</h2>
 <p>
-  <a href="https://www.liftmaster.com" target="_blank" rel="noopener noreferrer">LiftMaster</a> (powered by Chamberlain) is the gold standard for professional installers. Their motors are incredibly durable, and they lead the market in Smart Home integration with their <strong>MyQ technology</strong>.
+  <a href="https://www.liftmaster.com" target="_blank" rel="noopener noreferrer">LiftMaster</a> is the professional-grade brand from The Chamberlain Group and the gold standard for professional installers. Their motors are incredibly durable, and they lead the market in Smart Home integration with their <strong>MyQ technology</strong>.
 </p>
 <p>
   <strong>Pros:</strong> Superior security features, extremely reliable logic boards, and excellent battery backup options (essential for power outages during our winter storms).
@@ -55,7 +55,7 @@ const CONTENT = `
   While both brands are excellent, at Zeus Garage Doors, we find that <strong>LiftMaster Belt Drive systems</strong> tend to hold up the best against the specific oxidation and moisture issues we see in Woodinville and Mercer Island estates.
 </p>
 <p>
-  Ready for a quiet, smart, and reliable upgrade? <a href="/contact">Contact Zeus Garage Doors</a> today. We will help you select the perfect model for your door's weight and your family's needs, and provide a transparent, on-site quote for the installation. Explore our full <a href="/services/opener-repair">opener repair and installation</a> services.
+  Ready for a quiet, smart, and reliable upgrade? <a href="/contact">Contact Zeus Garage Doors</a> today. We will help you select the perfect model for your door's weight and your family's needs, and provide a transparent, on-site quote for the installation. Explore our full <a href="/services/opener-repair">opener repair and installation</a> services. If your opener failure also involved a broken spring, review our <a href="/services/spring-replacement">spring replacement service</a> — most Eastside WA homes benefit from replacing both in a single visit. For a deeper comparison of the two most popular brands, see our guide on <a href="/blog/liftmaster-vs-chamberlain-garage-door-opener">LiftMaster vs Chamberlain</a>.
 </p>
 `;
 

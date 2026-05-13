@@ -21,7 +21,7 @@ const brands: { name: string; url: string; logo: string; alt: string }[] = [
     name: "Clopay",
     url: "https://www.clopaydoor.com/",
     logo: "/clopay-garage-doors-logo.png",
-    alt: "Clopay garage doors authorized brand logo - Washington",
+    alt: "Clopay garage doors logo - Zeus Garage Doors Washington",
   },
   {
     name: "Craftsman",
