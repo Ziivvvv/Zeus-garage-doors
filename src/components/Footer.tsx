@@ -15,7 +15,15 @@ const SERVICES = [
   { label: "Cable Replacement", href: "/services/cable-replacement" },
   { label: "Panel Replacement", href: "/services/panel-replacement" },
   { label: "New Door Installation", href: "/services/new-installation" },
-  
+  { label: "Roller Replacement", href: "/services/roller-replacement" },
+  { label: "Sensor Repair", href: "/services/sensor-repair" },
+  { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+  { label: "Weather Seal Replacement", href: "/services/weather-seal-replacement" },
+  { label: "Remote & Keypad Programming", href: "/services/remote-keypad-programming" },
+  { label: "Track Repair", href: "/services/track-repair" },
+  { label: "Safety Inspection", href: "/services/safety-inspection" },
+  { label: "Opener Installation", href: "/services/manual-to-automatic-conversion" },
+  { label: "Noise Reduction", href: "/services/noise-reduction" },
 ];
 
 const LOCATIONS = [
@@ -243,6 +251,19 @@ export default function Footer() {
               { text: "Garage Door Repair Queen Anne Seattle", href: "/locations/seattle-wa" },
               { text: "Garage Door Repair Capitol Hill Seattle", href: "/locations/seattle-wa" },
               { text: "Garage Door Repair Ballard Seattle", href: "/locations/seattle-wa" },
+              { text: "Garage Door Roller Replacement Kirkland", href: "/services/roller-replacement" },
+              { text: "Garage Door Sensor Repair Bellevue WA", href: "/services/sensor-repair" },
+              { text: "Garage Door Tune-Up Kirkland WA", href: "/services/garage-door-tune-up" },
+              { text: "Garage Door Maintenance Redmond WA", href: "/services/garage-door-tune-up" },
+              { text: "Weather Seal Replacement Kirkland", href: "/services/weather-seal-replacement" },
+              { text: "Garage Door Remote Programming Bellevue", href: "/services/remote-keypad-programming" },
+              { text: "Garage Door Track Repair Kirkland WA", href: "/services/track-repair" },
+              { text: "Garage Door Safety Inspection Kirkland", href: "/services/safety-inspection" },
+              { text: "Garage Door Opener Installation Bellevue", href: "/services/manual-to-automatic-conversion" },
+              { text: "Noisy Garage Door Repair Kirkland WA", href: "/services/noise-reduction" },
+              { text: "Quiet Garage Door Upgrade Redmond WA", href: "/services/noise-reduction" },
+              { text: "Garage Door Roller Replacement Seattle", href: "/services/roller-replacement" },
+              { text: "Garage Door Track Repair Bellevue WA", href: "/services/track-repair" },
             ].map((link) => (
               <Link
                 key={link.href + link.text}

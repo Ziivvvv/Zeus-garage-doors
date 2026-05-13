@@ -31,7 +31,7 @@ const services = [
     icon: ShieldCheck,
     title: "Garage Door Maintenance & Tune-Up",
     desc: "A professional garage door tune-up extends the life of your springs, cables, and opener while preventing costly emergency repairs. Zeus Garage Doors performs a comprehensive 21-point safety inspection, lubrication of all moving parts, and precision balance adjustment. Flat-rate maintenance pricing for Eastside homeowners in Kirkland, Bellevue, Redmond, Bothell, and surrounding communities.",
-    path: "/quote",
+    path: "/services/garage-door-tune-up",
   },
   {
     icon: Cable,

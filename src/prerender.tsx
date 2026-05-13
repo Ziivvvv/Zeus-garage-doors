@@ -23,6 +23,15 @@ import OffTrackRepairPage from "./pages/services/OffTrackRepairPage";
 import CableReplacementPage from "./pages/services/CableReplacementPage";
 import PanelReplacementPage from "./pages/services/PanelReplacementPage";
 import NewInstallationPage from "./pages/services/NewInstallationPage";
+import RollerReplacementPage from "./pages/services/RollerReplacementPage";
+import SensorRepairPage from "./pages/services/SensorRepairPage";
+import TuneUpPage from "./pages/services/TuneUpPage";
+import WeatherSealPage from "./pages/services/WeatherSealPage";
+import RemoteProgrammingPage from "./pages/services/RemoteProgrammingPage";
+import TrackRepairPage from "./pages/services/TrackRepairPage";
+import SafetyInspectionPage from "./pages/services/SafetyInspectionPage";
+import ManualToAutomaticPage from "./pages/services/ManualToAutomaticPage";
+import NoiseReductionPage from "./pages/services/NoiseReductionPage";
 import KirklandLocation from "./pages/locations/KirklandLocation";
 import BellevueLocation from "./pages/locations/BellevueLocation";
 import RedmondLocation from "./pages/locations/RedmondLocation";
@@ -46,6 +55,13 @@ import GarageDoorServiceCallCostPage from "./pages/blog/GarageDoorServiceCallCos
 import WhyWontGarageDoorClosePage from "./pages/blog/WhyWontGarageDoorCloseAllTheWay";
 import AverageCostReplaceGarageDoorPage from "./pages/blog/AverageCostReplaceGarageDoor";
 import WhyIsGarageDoorNoisyPage from "./pages/blog/WhyIsGarageDoorSoNoisy";
+import GarageDoorMaintenanceChecklistPage from "./pages/blog/GarageDoorMaintenanceChecklist";
+import RepairVsReplaceGarageDoorPage from "./pages/blog/RepairVsReplaceGarageDoor";
+import ChainVsBeltVsJackshaftPage from "./pages/blog/ChainVsBeltVsJackshaft";
+import HowToProgramGarageDoorRemotePage from "./pages/blog/HowToProgramGarageDoorRemote";
+import HowLongDoGarageDoorCablesLastPage from "./pages/blog/HowLongDoGarageDoorCablesLast";
+import WhatCausesGarageDoorOffTrackPage from "./pages/blog/WhatCausesGarageDoorOffTrack";
+import NylonVsSteelGarageDoorRollersPage from "./pages/blog/NylonVsSteelGarageDoorRollers";
 
 const ALL_ROUTES = [
   "/",
@@ -63,6 +79,15 @@ const ALL_ROUTES = [
   "/services/cable-replacement",
   "/services/panel-replacement",
   "/services/new-installation",
+  "/services/roller-replacement",
+  "/services/sensor-repair",
+  "/services/garage-door-tune-up",
+  "/services/weather-seal-replacement",
+  "/services/remote-keypad-programming",
+  "/services/track-repair",
+  "/services/safety-inspection",
+  "/services/manual-to-automatic-conversion",
+  "/services/noise-reduction",
   "/locations/kirkland-wa",
   "/locations/bellevue-wa",
   "/locations/redmond-wa",
@@ -84,6 +109,13 @@ const ALL_ROUTES = [
   "/blog/why-wont-garage-door-close-all-the-way",
   "/blog/average-cost-to-replace-garage-door",
   "/blog/why-is-my-garage-door-so-noisy",
+  "/blog/garage-door-maintenance-checklist",
+  "/blog/repair-vs-replace-garage-door",
+  "/blog/chain-vs-belt-vs-jackshaft-opener",
+  "/blog/how-to-program-garage-door-remote",
+  "/blog/how-long-do-garage-door-cables-last",
+  "/blog/what-causes-garage-door-off-track",
+  "/blog/nylon-vs-steel-garage-door-rollers",
 ];
 
 function ServerApp({ url }: { url: string }) {
@@ -116,6 +148,13 @@ function ServerApp({ url }: { url: string }) {
               <Route path="/blog/why-wont-garage-door-close-all-the-way" element={<WhyWontGarageDoorClosePage />} />
               <Route path="/blog/average-cost-to-replace-garage-door" element={<AverageCostReplaceGarageDoorPage />} />
               <Route path="/blog/why-is-my-garage-door-so-noisy" element={<WhyIsGarageDoorNoisyPage />} />
+              <Route path="/blog/garage-door-maintenance-checklist" element={<GarageDoorMaintenanceChecklistPage />} />
+              <Route path="/blog/repair-vs-replace-garage-door" element={<RepairVsReplaceGarageDoorPage />} />
+              <Route path="/blog/chain-vs-belt-vs-jackshaft-opener" element={<ChainVsBeltVsJackshaftPage />} />
+              <Route path="/blog/how-to-program-garage-door-remote" element={<HowToProgramGarageDoorRemotePage />} />
+              <Route path="/blog/how-long-do-garage-door-cables-last" element={<HowLongDoGarageDoorCablesLastPage />} />
+              <Route path="/blog/what-causes-garage-door-off-track" element={<WhatCausesGarageDoorOffTrackPage />} />
+              <Route path="/blog/nylon-vs-steel-garage-door-rollers" element={<NylonVsSteelGarageDoorRollersPage />} />
               <Route path="/service-area" element={<ServiceAreaPage />} />
               <Route path="/services/spring-replacement" element={<SpringReplacementPage />} />
               <Route path="/services/opener-repair" element={<OpenerRepairPage />} />
@@ -123,6 +162,15 @@ function ServerApp({ url }: { url: string }) {
               <Route path="/services/cable-replacement" element={<CableReplacementPage />} />
               <Route path="/services/panel-replacement" element={<PanelReplacementPage />} />
               <Route path="/services/new-installation" element={<NewInstallationPage />} />
+              <Route path="/services/roller-replacement" element={<RollerReplacementPage />} />
+              <Route path="/services/sensor-repair" element={<SensorRepairPage />} />
+              <Route path="/services/garage-door-tune-up" element={<TuneUpPage />} />
+              <Route path="/services/weather-seal-replacement" element={<WeatherSealPage />} />
+              <Route path="/services/remote-keypad-programming" element={<RemoteProgrammingPage />} />
+              <Route path="/services/track-repair" element={<TrackRepairPage />} />
+              <Route path="/services/safety-inspection" element={<SafetyInspectionPage />} />
+              <Route path="/services/manual-to-automatic-conversion" element={<ManualToAutomaticPage />} />
+              <Route path="/services/noise-reduction" element={<NoiseReductionPage />} />
               <Route path="/locations/kirkland-wa" element={<KirklandLocation />} />
               <Route path="/locations/bellevue-wa" element={<BellevueLocation />} />
               <Route path="/locations/redmond-wa" element={<RedmondLocation />} />

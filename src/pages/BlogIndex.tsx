@@ -5,6 +5,55 @@ import SEOHead from "@/components/SEOHead";
 
 const posts = [
   {
+    slug: "garage-door-maintenance-checklist",
+    title: "Garage Door Maintenance Checklist for Pacific Northwest Homeowners",
+    excerpt: "Monthly balance tests, seasonal lubrication, and what to hand off to a professional. Annual maintenance prevents emergency calls in Kirkland's wet climate.",
+    category: "Maintenance",
+    date: "2026-05-12",
+  },
+  {
+    slug: "repair-vs-replace-garage-door",
+    title: "Garage Door Repair vs. Replace — When to Do Each",
+    excerpt: "Repair when one component fails on a door under 15 years old. Replace when costs exceed 50% of a new door's price. The honest decision framework.",
+    category: "Pricing & Guides",
+    date: "2026-05-12",
+  },
+  {
+    slug: "chain-vs-belt-vs-jackshaft-opener",
+    title: "Chain Drive vs. Belt Drive vs. Jackshaft Opener: Which Is Right for You?",
+    excerpt: "Chain drives are loudest and cheapest. Belt drives are quieter for attached garages. Jackshaft openers work when ceiling clearance is the problem.",
+    category: "Equipment Guides",
+    date: "2026-05-12",
+  },
+  {
+    slug: "how-to-program-garage-door-remote",
+    title: "How to Program a Garage Door Remote, HomeLink & Keypad",
+    excerpt: "Step-by-step programming for LiftMaster and Chamberlain remotes, HomeLink two-step rolling-code sync, and wireless keypad PIN setup.",
+    category: "DIY Tips",
+    date: "2026-05-12",
+  },
+  {
+    slug: "how-long-do-garage-door-cables-last",
+    title: "How Long Do Garage Door Cables Last? Warning Signs & When to Replace",
+    excerpt: "Lift cables last 7–12 years under normal use. In the PNW's wet climate, corrosion can shorten that. Learn the warning signs before a cable snaps.",
+    category: "Maintenance",
+    date: "2026-05-11",
+  },
+  {
+    slug: "what-causes-garage-door-off-track",
+    title: "What Causes a Garage Door to Go Off-Track? 6 Causes & Fixes",
+    excerpt: "Vehicle impact, snapped cables, worn rollers, and loose track hardware — the 6 causes of off-track doors and what the repair involves.",
+    category: "Troubleshooting",
+    date: "2026-05-11",
+  },
+  {
+    slug: "nylon-vs-steel-garage-door-rollers",
+    title: "Nylon vs. Steel Garage Door Rollers — Which Lasts Longer?",
+    excerpt: "Nylon rollers are quieter, last longer, and resist corrosion without lubrication. For Eastside WA homes, the choice is clear.",
+    category: "Maintenance",
+    date: "2026-05-11",
+  },
+  {
     slug: "why-is-my-garage-door-so-noisy",
     title: "Why Is My Garage Door So Noisy? 6 Causes & Fixes",
     excerpt: "Grinding, banging, rattling, or squeaking? Learn the 6 most common causes of a noisy garage door — and what you can safely fix yourself tonight.",

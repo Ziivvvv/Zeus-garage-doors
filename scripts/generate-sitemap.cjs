@@ -36,6 +36,15 @@ const PAGES = [
   { url: "/services/cable-replacement",   changefreq: "monthly", priority: "0.8" },
   { url: "/services/panel-replacement",   changefreq: "monthly", priority: "0.8" },
   { url: "/services/new-installation",    changefreq: "monthly", priority: "0.8" },
+  { url: "/services/roller-replacement",          changefreq: "monthly", priority: "0.8" },
+  { url: "/services/sensor-repair",               changefreq: "monthly", priority: "0.8" },
+  { url: "/services/garage-door-tune-up",         changefreq: "monthly", priority: "0.8" },
+  { url: "/services/weather-seal-replacement",    changefreq: "monthly", priority: "0.8" },
+  { url: "/services/remote-keypad-programming",   changefreq: "monthly", priority: "0.7" },
+  { url: "/services/track-repair",                changefreq: "monthly", priority: "0.8" },
+  { url: "/services/safety-inspection",           changefreq: "monthly", priority: "0.8" },
+  { url: "/services/manual-to-automatic-conversion", changefreq: "monthly", priority: "0.8" },
+  { url: "/services/noise-reduction",             changefreq: "monthly", priority: "0.8" },
 
   // ── Location pages
   { url: "/locations/kirkland-wa",      changefreq: "monthly", priority: "0.9" },
@@ -63,6 +72,13 @@ const PAGES = [
   { url: "/blog/why-wont-garage-door-close-all-the-way",         changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
   { url: "/blog/average-cost-to-replace-garage-door",            changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
   { url: "/blog/why-is-my-garage-door-so-noisy",                 changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/how-long-do-garage-door-cables-last",            changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/what-causes-garage-door-off-track",              changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/nylon-vs-steel-garage-door-rollers",             changefreq: "yearly", priority: "0.7", lastmod: "2026-05-11" },
+  { url: "/blog/garage-door-maintenance-checklist",              changefreq: "yearly", priority: "0.7", lastmod: "2026-05-12" },
+  { url: "/blog/repair-vs-replace-garage-door",                  changefreq: "yearly", priority: "0.7", lastmod: "2026-05-12" },
+  { url: "/blog/chain-vs-belt-vs-jackshaft-opener",              changefreq: "yearly", priority: "0.7", lastmod: "2026-05-12" },
+  { url: "/blog/how-to-program-garage-door-remote",              changefreq: "yearly", priority: "0.7", lastmod: "2026-05-12" },
 ];
 
 // ─────────────────────────────────────────────

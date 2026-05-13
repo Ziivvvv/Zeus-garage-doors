@@ -30,6 +30,15 @@ const OffTrackRepairPage = lazy(() => import("./pages/services/OffTrackRepairPag
 const CableReplacementPage = lazy(() => import("./pages/services/CableReplacementPage"));
 const PanelReplacementPage = lazy(() => import("./pages/services/PanelReplacementPage"));
 const NewInstallationPage = lazy(() => import("./pages/services/NewInstallationPage"));
+const RollerReplacementPage = lazy(() => import("./pages/services/RollerReplacementPage"));
+const SensorRepairPage = lazy(() => import("./pages/services/SensorRepairPage"));
+const TuneUpPage = lazy(() => import("./pages/services/TuneUpPage"));
+const WeatherSealPage = lazy(() => import("./pages/services/WeatherSealPage"));
+const RemoteProgrammingPage = lazy(() => import("./pages/services/RemoteProgrammingPage"));
+const TrackRepairPage = lazy(() => import("./pages/services/TrackRepairPage"));
+const SafetyInspectionPage = lazy(() => import("./pages/services/SafetyInspectionPage"));
+const ManualToAutomaticPage = lazy(() => import("./pages/services/ManualToAutomaticPage"));
+const NoiseReductionPage = lazy(() => import("./pages/services/NoiseReductionPage"));
 
 
 // Location pages
@@ -57,6 +66,13 @@ const GarageDoorServiceCallCostPage = lazy(() => import("./pages/blog/GarageDoor
 const WhyWontGarageDoorClosePage = lazy(() => import("./pages/blog/WhyWontGarageDoorCloseAllTheWay"));
 const AverageCostReplaceGarageDoorPage = lazy(() => import("./pages/blog/AverageCostReplaceGarageDoor"));
 const WhyIsGarageDoorNoisyPage = lazy(() => import("./pages/blog/WhyIsGarageDoorSoNoisy"));
+const GarageDoorMaintenanceChecklistPage = lazy(() => import("./pages/blog/GarageDoorMaintenanceChecklist"));
+const RepairVsReplaceGarageDoorPage = lazy(() => import("./pages/blog/RepairVsReplaceGarageDoor"));
+const ChainVsBeltVsJackshaftPage = lazy(() => import("./pages/blog/ChainVsBeltVsJackshaft"));
+const HowToProgramGarageDoorRemotePage = lazy(() => import("./pages/blog/HowToProgramGarageDoorRemote"));
+const HowLongDoGarageDoorCablesLastPage = lazy(() => import("./pages/blog/HowLongDoGarageDoorCablesLast"));
+const WhatCausesGarageDoorOffTrackPage = lazy(() => import("./pages/blog/WhatCausesGarageDoorOffTrack"));
+const NylonVsSteelGarageDoorRollersPage = lazy(() => import("./pages/blog/NylonVsSteelGarageDoorRollers"));
 const EmergencyRepairPage = lazy(() => import("./pages/EmergencyRepairPage"));
 
 // Service Area
@@ -136,6 +152,13 @@ const App = () => (
               <Route path="/blog/why-wont-garage-door-close-all-the-way" element={<WhyWontGarageDoorClosePage />} />
               <Route path="/blog/average-cost-to-replace-garage-door" element={<AverageCostReplaceGarageDoorPage />} />
               <Route path="/blog/why-is-my-garage-door-so-noisy" element={<WhyIsGarageDoorNoisyPage />} />
+              <Route path="/blog/garage-door-maintenance-checklist" element={<GarageDoorMaintenanceChecklistPage />} />
+              <Route path="/blog/repair-vs-replace-garage-door" element={<RepairVsReplaceGarageDoorPage />} />
+              <Route path="/blog/chain-vs-belt-vs-jackshaft-opener" element={<ChainVsBeltVsJackshaftPage />} />
+              <Route path="/blog/how-to-program-garage-door-remote" element={<HowToProgramGarageDoorRemotePage />} />
+              <Route path="/blog/how-long-do-garage-door-cables-last" element={<HowLongDoGarageDoorCablesLastPage />} />
+              <Route path="/blog/what-causes-garage-door-off-track" element={<WhatCausesGarageDoorOffTrackPage />} />
+              <Route path="/blog/nylon-vs-steel-garage-door-rollers" element={<NylonVsSteelGarageDoorRollersPage />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
 
               {/* ── Emergency */}
@@ -151,6 +174,15 @@ const App = () => (
               <Route path="/services/cable-replacement" element={<CableReplacementPage />} />
               <Route path="/services/panel-replacement" element={<PanelReplacementPage />} />
               <Route path="/services/new-installation" element={<NewInstallationPage />} />
+              <Route path="/services/roller-replacement" element={<RollerReplacementPage />} />
+              <Route path="/services/sensor-repair" element={<SensorRepairPage />} />
+              <Route path="/services/garage-door-tune-up" element={<TuneUpPage />} />
+              <Route path="/services/weather-seal-replacement" element={<WeatherSealPage />} />
+              <Route path="/services/remote-keypad-programming" element={<RemoteProgrammingPage />} />
+              <Route path="/services/track-repair" element={<TrackRepairPage />} />
+              <Route path="/services/safety-inspection" element={<SafetyInspectionPage />} />
+              <Route path="/services/manual-to-automatic-conversion" element={<ManualToAutomaticPage />} />
+              <Route path="/services/noise-reduction" element={<NoiseReductionPage />} />
               
               <Route path="/services/:slug" element={<ServicePage />} />
 
