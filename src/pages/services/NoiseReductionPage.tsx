@@ -62,7 +62,7 @@ export default function NoiseReductionPage() {
       directAnswer="Zeus Garage Doors diagnoses and repairs noisy garage doors in Kirkland WA and across the Eastside. We identify the specific noise source — worn rollers, loose hardware, chain drive vibration — and apply the right fix. Nylon roller upgrades, belt-drive opener conversions, and hardware replacement available same-day. Call 425-448-6443."
 
       heroImage={{
-        src: "/images/noisy-garage-door-repair-kirkland-wa.webp",
+        src: "/images/services/noisy-garage-door-repair-kirkland-wa.png",
         alt: "Noisy garage door repair in Kirkland WA — Zeus Garage Doors technician diagnosing rattling garage door",
         title: "Zeus Garage Doors technician diagnosing and repairing noisy garage door on residential property in Kirkland, Washington",
       }}

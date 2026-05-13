@@ -99,6 +99,12 @@ export default function GarageDoorServiceCallCostPage() {
       ]}
       relatedPosts={[
         {
+          title: "Garage Door Repair vs. Replace — When to Do Each",
+          href: "/blog/repair-vs-replace-garage-door",
+          excerpt: "The tipping point: when repair costs approach new door cost, replacement makes more sense.",
+          datePublished: "2026-05-12",
+        },
+        {
           title: "Factors That Affect Garage Door Spring Replacement Costs",
           href: "/blog/spring-replacement-cost-factors",
           excerpt: "Understanding what goes into a spring repair quote without the hidden surprises.",

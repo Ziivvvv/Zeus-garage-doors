@@ -190,10 +190,16 @@ export default function DIYGarageDoorRepairSafePage() {
           datePublished: "2026-04-15",
         },
         {
-          title: "Why Is My Garage Door Opening by Itself?",
-          href: "/blog/garage-door-opens-by-itself",
-          excerpt: "Phantom openings are usually caused by wiring shorts, misaligned sensors, or radio frequency interference — all diagnosable without touching spring tension.",
-          datePublished: "2026-03-23",
+          title: "Garage Door Maintenance Checklist for PNW Homeowners",
+          href: "/blog/garage-door-maintenance-checklist",
+          excerpt: "The safe DIY tasks you can do monthly and seasonally — and what to hand off to a pro.",
+          datePublished: "2026-05-12",
+        },
+        {
+          title: "How Long Do Garage Door Cables Last?",
+          href: "/blog/how-long-do-garage-door-cables-last",
+          excerpt: "Cable replacement is not a safe DIY repair — here's why and what the warning signs look like.",
+          datePublished: "2026-05-11",
         },
       ]}
     />

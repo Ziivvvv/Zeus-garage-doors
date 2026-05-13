@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
-// @ts-ignore
+// @ts-expect-error — swiper css module has no type declarations
 import "swiper/css";
-// @ts-ignore
+// @ts-expect-error — swiper css module has no type declarations
 import "swiper/css/effect-fade";
-// @ts-ignore
+// @ts-expect-error — swiper css module has no type declarations
 import "swiper/css/pagination";
 import { motion } from "framer-motion";
 import { Phone, FileText, Tag } from "lucide-react";

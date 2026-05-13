@@ -64,7 +64,7 @@ export default function RollerReplacementPage() {
       directAnswer="Zeus Garage Doors provides same-day garage door roller replacement in Kirkland WA and across the Eastside. We upgrade builder-grade steel rollers to sealed nylon rollers, reducing noise by up to 70% and eliminating rust-related wear. Full set replacement, flat-rate pricing. Call 425-448-6443."
 
       heroImage={{
-        src: "/images/garage-door-roller-replacement-kirkland-wa.webp",
+        src: "/images/services/garage-door-roller-replacement-kirkland-wa.png",
         alt: "Garage door roller replacement in Kirkland WA — Zeus Garage Doors technician installing nylon rollers",
         title: "Zeus Garage Doors technician replacing worn steel rollers with sealed nylon rollers on residential garage door in Kirkland, Washington",
       }}

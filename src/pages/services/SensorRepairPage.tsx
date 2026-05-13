@@ -62,7 +62,7 @@ export default function SensorRepairPage() {
       directAnswer="Zeus Garage Doors provides same-day garage door sensor repair in Kirkland WA and across the Eastside. We realign, clean, and replace safety sensors for LiftMaster, Chamberlain, Genie, and all major opener brands. If your door won't close, call 425-448-6443 for a flat-rate diagnosis."
 
       heroImage={{
-        src: "/images/garage-door-sensor-repair-kirkland-wa.webp",
+        src: "/images/services/garage-door-sensor-repair-kirkland-wa.png",
         alt: "Garage door sensor repair in Kirkland WA — Zeus Garage Doors technician aligning safety sensors",
         title: "Zeus Garage Doors technician realigning safety sensors on residential garage door in Kirkland, Washington",
       }}

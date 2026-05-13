@@ -189,7 +189,7 @@ export default function ServicePage({
           aria-label={`${serviceName} hero`}
         >
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-20"
+            className="absolute inset-0 bg-cover bg-center opacity-40"
             style={{ backgroundImage: `url(${heroImage.src})` }}
             role="presentation"
             aria-hidden="true"

@@ -18,7 +18,7 @@ export default function PanelReplacementPage() {
       /* FEATURED SNIPPET TARGET */
       directAnswer="Zeus Garage Doors provides individual garage door panel replacement in Seattle, Kirkland, Bellevue, and the Eastside. If you dented the bottom or middle section, we can match and install a replacement panel without replacing the entire door. Call 425-448-6443 for a free on-site assessment."
       heroImage={{
-        src: "/images/garage-door-panel-replacement.webp",
+        src: "/images/services/real-photos/damaged-garage-door-panel-replacement-kirkland-wa.webp",
         alt: "Technician replacing a dented garage door panel section",
         title: "Seamless Panel Replacement"
       }}

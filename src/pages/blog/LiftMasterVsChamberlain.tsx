@@ -160,16 +160,22 @@ export default function LiftMasterVsChamberlainPage() {
       ]}
       relatedPosts={[
         {
-          title: "Garage Door Won't Open in Cold Weather — 7 Common Causes",
-          href: "/blog/garage-door-wont-open-cold-weather",
-          excerpt: "Cold WA winters can expose opener weaknesses. Here's a troubleshooting guide for the 7 most common cold-weather failures.",
-          datePublished: "2026-04-22",
+          title: "Chain Drive vs. Belt Drive vs. Jackshaft Opener",
+          href: "/blog/chain-vs-belt-vs-jackshaft-opener",
+          excerpt: "Once you've picked the brand, you still need to pick the drive type. Here's how to choose.",
+          datePublished: "2026-05-12",
         },
         {
-          title: "Why Is My Garage Door Opening by Itself?",
-          href: "/blog/garage-door-opens-by-itself",
-          excerpt: "Phantom openings are usually caused by wiring shorts, misaligned sensors, or radio frequency interference. Here's how to diagnose each.",
-          datePublished: "2026-03-23",
+          title: "How to Program a Garage Door Remote, HomeLink & Keypad",
+          href: "/blog/how-to-program-garage-door-remote",
+          excerpt: "After installing a new LiftMaster, here's how to program every remote and HomeLink.",
+          datePublished: "2026-05-12",
+        },
+        {
+          title: "Garage Door Won't Open in Cold Weather — 7 Common Causes",
+          href: "/blog/garage-door-wont-open-cold-weather",
+          excerpt: "Cold WA winters can expose opener weaknesses. Here's a troubleshooting guide.",
+          datePublished: "2026-04-22",
         },
       ]}
     />

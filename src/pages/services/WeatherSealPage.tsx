@@ -62,7 +62,7 @@ export default function WeatherSealPage() {
       directAnswer="Zeus Garage Doors replaces garage door bottom seals and weatherstripping same-day in Kirkland WA and across the Eastside. We use EPDM rubber seals rated for Pacific Northwest cold and moisture — not the builder-grade vinyl that hardens and cracks in 2–3 years. Call 425-448-6443 for flat-rate pricing."
 
       heroImage={{
-        src: "/images/garage-door-weather-seal-replacement-kirkland-wa.webp",
+        src: "/images/services/garage-door-weather-seal-replacement-kirkland-wa.png",
         alt: "Garage door weather seal replacement in Kirkland WA — Zeus Garage Doors technician installing bottom seal",
         title: "Zeus Garage Doors technician installing EPDM bottom seal on residential garage door in Kirkland, Washington",
       }}

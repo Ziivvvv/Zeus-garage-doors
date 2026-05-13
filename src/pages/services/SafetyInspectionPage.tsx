@@ -62,7 +62,7 @@ export default function SafetyInspectionPage() {
       directAnswer="Zeus Garage Doors performs a comprehensive 26-point garage door safety inspection in Kirkland WA and across the Eastside. Every component is evaluated against safety and performance standards — springs, cables, rollers, sensors, opener, and more. You receive a written condition report. Call 425-448-6443 to schedule."
 
       heroImage={{
-        src: "/images/garage-door-safety-inspection-kirkland-wa.webp",
+        src: "/images/services/real-photos/zeus-garage-door-service-truck-kirkland-wa.webp",
         alt: "Garage door safety inspection in Kirkland WA — Zeus Garage Doors technician performing 26-point inspection",
         title: "Zeus Garage Doors technician performing comprehensive 26-point safety inspection on residential garage door in Kirkland, Washington",
       }}

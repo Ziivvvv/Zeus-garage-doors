@@ -18,7 +18,7 @@ export default function OffTrackRepairPage() {
       /* FEATURED SNIPPET TARGET */
       directAnswer="Zeus Garage Doors provides emergency off-track garage door repair in Seattle, Kirkland, Bellevue, and the Eastside. If your door is crooked or rollers have popped out, stop using it immediately. We safely realign the tracks, reset the cables, and replace damaged rollers. Call 425-448-6443 for fast service."
       heroImage={{
-        src: "/images/off-track-garage-door-repair.webp",
+        src: "/images/services/real-photos/garage-door-off-track-repair-kirkland-wa.webp",
         alt: "Crooked garage door off its tracks needing emergency repair",
         title: "Emergency Off-Track Realignment"
       }}

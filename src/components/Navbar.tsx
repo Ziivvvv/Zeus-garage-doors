@@ -180,7 +180,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           </div>
 
           {/* Links */}
-          <div className="flex-1 px-6 py-6 space-y-6">
+          <div className="flex-1 px-6 py-6 space-y-6 pb-24">
             {/* Services */}
             <div>
               <p className="text-gold text-xs font-bold uppercase tracking-widest mb-3">
@@ -422,27 +422,6 @@ export default function Navbar() {
 
       <MobileMenu isOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
 
-      <div
-        className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-navy border-t border-white/10 px-4 py-3 flex gap-3"
-        style={{ paddingBottom: "max(0.75rem, env(safe-area-inset-bottom))" }}
-        role="complementary"
-        aria-label="Quick contact"
-      >
-        <a
-          href="tel:+14254486443"
-          className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl text-sm"
-          aria-label="Call Zeus Garage Doors"
-        >
-          📞 Call Now
-        </a>
-        <a
-          href="sms:+14254486443"
-          className="flex-1 bg-gold text-navy font-bold text-center py-3 rounded-xl text-sm"
-          aria-label="Text Zeus Garage Doors"
-        >
-          💬 Text Us
-        </a>
-      </div>
     </>
   );
 }

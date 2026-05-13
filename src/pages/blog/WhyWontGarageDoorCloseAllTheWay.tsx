@@ -153,22 +153,22 @@ export default function WhyWontGarageDoorCloseAllTheWayPage() {
       ]}
       relatedPosts={[
         {
+          title: "What Causes a Garage Door to Go Off-Track?",
+          href: "/blog/what-causes-garage-door-off-track",
+          excerpt: "A door that won't close fully and hangs at an angle is often off-track — here's why.",
+          datePublished: "2026-05-11",
+        },
+        {
           title: "Why Is My Garage Door Opening by Itself?",
           href: "/blog/garage-door-opens-by-itself",
-          excerpt: "Learn the top reasons why your garage door might be opening on its own and how to fix it fast.",
+          excerpt: "Sensor and wiring issues cause both ghost openings and failure to close — often the same root cause.",
           datePublished: "2026-03-23",
         },
         {
-          title: "Garage Door Won't Open in Cold Weather — 7 Causes & Fixes",
-          href: "/blog/garage-door-wont-open-cold-weather",
-          excerpt: "Cold weather causes garage door failures in WA. Learn 7 common causes and which you can fix yourself.",
-          datePublished: "2026-04-22",
-        },
-        {
-          title: "Is DIY Garage Door Repair Safe? The Honest Answer",
-          href: "/blog/is-diy-garage-door-repair-safe",
-          excerpt: "Some repairs are safe DIY. Others — especially spring replacement — are genuinely dangerous.",
-          datePublished: "2026-05-08",
+          title: "Garage Door Maintenance Checklist for PNW Homeowners",
+          href: "/blog/garage-door-maintenance-checklist",
+          excerpt: "Monthly sensor tests catch alignment issues before they cause door failures.",
+          datePublished: "2026-05-12",
         },
       ]}
     />

@@ -133,22 +133,22 @@ export default function WhyIsGarageDoorSoNoisyPage() {
       ]}
       relatedPosts={[
         {
-          title: "LiftMaster vs Chamberlain — Which Opener Is Better? (2026)",
-          href: "/blog/liftmaster-vs-chamberlain-garage-door-opener",
-          excerpt: "Same parent company, very different products. Here's what actually separates them.",
-          datePublished: "2026-05-01",
+          title: "Nylon vs. Steel Garage Door Rollers — Which Lasts Longer?",
+          href: "/blog/nylon-vs-steel-garage-door-rollers",
+          excerpt: "Worn steel rollers are the #1 cause of grinding noise. Here's why nylon is the right replacement.",
+          datePublished: "2026-05-11",
         },
         {
-          title: "How Long Do Garage Door Springs Last? (WA Climate Guide)",
-          href: "/blog/how-long-do-garage-door-springs-last",
-          excerpt: "Torsion springs last 10,000–20,000 cycles. In Washington's wet climate, that's often shorter.",
-          datePublished: "2026-04-15",
+          title: "Chain Drive vs. Belt Drive vs. Jackshaft Opener",
+          href: "/blog/chain-vs-belt-vs-jackshaft-opener",
+          excerpt: "If noise is your problem, the opener type makes the biggest difference. Here's the full comparison.",
+          datePublished: "2026-05-12",
         },
         {
-          title: "Is DIY Garage Door Repair Safe? The Honest Answer",
-          href: "/blog/is-diy-garage-door-repair-safe",
-          excerpt: "Some repairs are safe DIY. Others — especially spring replacement — are genuinely dangerous.",
-          datePublished: "2026-05-08",
+          title: "Garage Door Maintenance Checklist for PNW Homeowners",
+          href: "/blog/garage-door-maintenance-checklist",
+          excerpt: "Most noise issues are caught and fixed at annual maintenance before they get worse.",
+          datePublished: "2026-05-12",
         },
       ]}
     />

@@ -62,7 +62,7 @@ export default function ManualToAutomaticPage() {
       directAnswer="Zeus Garage Doors converts manual garage doors to automatic with professional LiftMaster opener installation in Kirkland WA and across the Eastside. Belt-drive, chain-drive, and jackshaft options with myQ Wi-Fi and battery backup available. Complete installation including remotes, keypad, and sensors. Call 425-448-6443."
 
       heroImage={{
-        src: "/images/garage-door-opener-installation-kirkland-wa.webp",
+        src: "/images/services/real-photos/garage-door-installation-in-progress-kirkland-wa.webp",
         alt: "Garage door opener installation in Kirkland WA — Zeus Garage Doors technician installing LiftMaster belt-drive opener",
         title: "Zeus Garage Doors technician installing LiftMaster belt-drive garage door opener on residential door in Kirkland, Washington",
       }}

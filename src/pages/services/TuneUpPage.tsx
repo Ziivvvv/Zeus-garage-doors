@@ -62,7 +62,7 @@ export default function TuneUpPage() {
       directAnswer="Zeus Garage Doors provides comprehensive 21-point garage door tune-up service in Kirkland WA and across the Eastside. We lubricate all moving parts, adjust spring tension, inspect cables and rollers, test safety sensors, and calibrate opener settings — all in one flat-rate visit. Call 425-448-6443 to schedule."
 
       heroImage={{
-        src: "/images/garage-door-tune-up-kirkland-wa.webp",
+        src: "/images/services/garage-door-tune-up-kirkland-wa.png",
         alt: "Garage door tune-up service in Kirkland WA — Zeus Garage Doors technician performing maintenance inspection",
         title: "Zeus Garage Doors technician performing comprehensive garage door tune-up and maintenance on residential door in Kirkland, Washington",
       }}

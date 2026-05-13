@@ -60,6 +60,26 @@ export default function GarageDoorOpensItselfPage() {
         { name: "Blog", url: "/blog" },
         { name: "Why Does My Garage Door Open by Itself?", url: "/blog/garage-door-opens-by-itself" },
       ]}
+      relatedPosts={[
+        {
+          title: "How to Program a Garage Door Remote, HomeLink & Keypad",
+          href: "/blog/how-to-program-garage-door-remote",
+          excerpt: "Clearing and reprogramming remotes is often the fix for phantom openings — here's how to do it.",
+          datePublished: "2026-05-12",
+        },
+        {
+          title: "Why Won't My Garage Door Close All the Way? 8 Common Causes",
+          href: "/blog/why-wont-garage-door-close-all-the-way",
+          excerpt: "Sensor and wiring issues cause both ghost openings and failure to close — often the same root cause.",
+          datePublished: "2026-05-11",
+        },
+        {
+          title: "Is DIY Garage Door Repair Safe? The Honest Answer",
+          href: "/blog/is-diy-garage-door-repair-safe",
+          excerpt: "Some repairs are safe DIY. Others — especially spring replacement — are genuinely dangerous.",
+          datePublished: "2026-05-08",
+        },
+      ]}
     />
   );
 }

@@ -54,7 +54,6 @@ const SeattlePage = lazy(() => import("./pages/locations/SeattleLocation"));
 
 // Blog
 const BlogIndex = lazy(() => import("./pages/BlogIndex"));
-const BlogPost = lazy(() => import("./pages/BlogPost"));
 const GarageDoorOpensItselfPage = lazy(() => import("./pages/blog/GarageDoorOpensItselfPage"));
 const SpringCostFactorsPage = lazy(() => import("./pages/blog/SpringCostFactorsPage"));
 const BestOpenerPNWPage = lazy(() => import("./pages/blog/BestOpenerPNWPage"));
@@ -78,9 +77,6 @@ const EmergencyRepairPage = lazy(() => import("./pages/EmergencyRepairPage"));
 // Service Area
 const ServiceAreaPage = lazy(() => import("./pages/ServiceAreaPage"));
 
-// Legacy dynamic routes
-const ServicePage = lazy(() => import("./pages/ServicePage"));
-const AreaPage = lazy(() => import("./pages/AreaPage"));
 
 // ─────────────────────────────────────────────
 // LAYOUT — Navbar + main + Footer
@@ -159,7 +155,6 @@ const App = () => (
               <Route path="/blog/how-long-do-garage-door-cables-last" element={<HowLongDoGarageDoorCablesLastPage />} />
               <Route path="/blog/what-causes-garage-door-off-track" element={<WhatCausesGarageDoorOffTrackPage />} />
               <Route path="/blog/nylon-vs-steel-garage-door-rollers" element={<NylonVsSteelGarageDoorRollersPage />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
 
               {/* ── Emergency */}
               <Route path="/emergency-garage-door-repair" element={<EmergencyRepairPage />} />
@@ -184,7 +179,7 @@ const App = () => (
               <Route path="/services/manual-to-automatic-conversion" element={<ManualToAutomaticPage />} />
               <Route path="/services/noise-reduction" element={<NoiseReductionPage />} />
               
-              <Route path="/services/:slug" element={<ServicePage />} />
+
 
               {/* ── Location pages */}
               <Route path="/locations/kirkland-wa" element={<KirklandPage />} />
@@ -196,7 +191,6 @@ const App = () => (
               <Route path="/locations/woodinville-wa" element={<WoodinvillePage />} />
               <Route path="/locations/kenmore-wa" element={<KenmorePage />} />
               <Route path="/locations/seattle-wa" element={<SeattlePage />} />
-              <Route path="/areas/:slug" element={<AreaPage />} />
 
               {/* ── 404 */}
               <Route path="*" element={<NotFound />} />

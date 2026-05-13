@@ -32,7 +32,7 @@ export default function SpringReplacementPage() {
       directAnswer="Zeus Garage Doors provides same-day garage door spring repair in Kirkland, WA and across the Eastside. We replace torsion and extension springs, always replace both at once, and back every job with a 5-year parts and labor warranty. Call 425-448-6443 for a free on-site assessment."
 
       heroImage={{
-        src: "/images/garage-door-spring-replacement-kirkland-wa.webp",
+        src: "/images/services/real-photos/torsion-spring-cable-replacement-kirkland-wa.webp",
         alt: "Garage door spring repair in Kirkland WA — Zeus Garage Doors technician",
         title:
           "Zeus Garage Doors technician performing torsion spring repair on residential garage door in Kirkland, Washington",

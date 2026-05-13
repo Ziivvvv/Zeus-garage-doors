@@ -18,7 +18,7 @@ export default function OpenerRepairPage() {
       /* FEATURED SNIPPET TARGET */
       directAnswer="Zeus Garage Doors provides expert garage door opener repair and installation in Seattle, Kirkland, Bellevue, and the Eastside. We service LiftMaster, Genie, and Chamberlain. Whether it's a broken gear, safety sensor alignment, or a new smart MyQ belt-drive installation, we offer same-day service. Call 425-448-6443 for an expert assessment."
       heroImage={{
-        src: "/images/garage-door-opener-repair.webp",
+        src: "/images/services/real-photos/liftmaster-opener-installation-kirkland-wa.webp",
         alt: "Technician repairing a LiftMaster garage door opener",
         title: "Expert Opener Repair & Installation"
       }}

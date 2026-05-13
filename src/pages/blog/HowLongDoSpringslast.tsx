@@ -121,16 +121,22 @@ export default function HowLongDoSpringsLastPage() {
       ]}
       relatedPosts={[
         {
+          title: "Garage Door Maintenance Checklist for PNW Homeowners",
+          href: "/blog/garage-door-maintenance-checklist",
+          excerpt: "Annual spring tension checks are the most impactful maintenance step — here's the full checklist.",
+          datePublished: "2026-05-12",
+        },
+        {
           title: "Is DIY Garage Door Repair Safe? The Honest Answer",
           href: "/blog/is-diy-garage-door-repair-safe",
           excerpt: "Torsion spring replacement is one of the most dangerous DIY repairs. Here's what's actually safe to do yourself.",
           datePublished: "2026-05-08",
         },
         {
-          title: "Garage Door Won't Open in Cold Weather — 7 Common Causes",
-          href: "/blog/garage-door-wont-open-cold-weather",
-          excerpt: "Cold WA winters cause spring tension changes, frozen seals, and thickened grease. Here's how to diagnose each.",
-          datePublished: "2026-04-22",
+          title: "Garage Door Repair vs. Replace — When to Do Each",
+          href: "/blog/repair-vs-replace-garage-door",
+          excerpt: "A broken spring on a 7-year-old door is a repair. Multiple failures on a 20-year-old door may not be.",
+          datePublished: "2026-05-12",
         },
       ]}
     />

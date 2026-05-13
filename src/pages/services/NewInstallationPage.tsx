@@ -18,7 +18,7 @@ export default function NewInstallationPage() {
       /* FEATURED SNIPPET TARGET */
       directAnswer="Zeus Garage Doors provides professional new garage door installation in Seattle, Kirkland, Bellevue, and the Eastside. We install premium steel, wood, and glass doors from top brands like Amarr and Clopay. Call 425-448-6443 for a free on-site estimate."
       heroImage={{
-        src: "/images/new-garage-door-installation.webp",
+        src: "/images/services/real-photos/carriage-garage-door-kirkland-wa.webp",
         alt: "Beautiful new carriage house garage door installed on a modern home",
         title: "Premium Garage Door Installation"
       }}

@@ -62,7 +62,7 @@ export default function TrackRepairPage() {
       directAnswer="Zeus Garage Doors provides same-day garage door track repair and replacement in Kirkland WA and across the Eastside. We straighten bent tracks, realign misaligned sections, replace damaged track, and restore proper roller clearance — all at flat-rate pricing. Call 425-448-6443."
 
       heroImage={{
-        src: "/images/garage-door-track-repair-kirkland-wa.webp",
+        src: "/images/services/garage-door-track-repair-kirkland-wa.png",
         alt: "Garage door track repair in Kirkland WA — Zeus Garage Doors technician realigning door track",
         title: "Zeus Garage Doors technician repairing bent and misaligned garage door track on residential door in Kirkland, Washington",
       }}

@@ -62,7 +62,7 @@ export default function RemoteProgrammingPage() {
       directAnswer="Zeus Garage Doors programs garage door remotes, wireless keypads, and HomeLink vehicle systems same-day in Kirkland WA and across the Eastside. We service all major opener brands — LiftMaster, Chamberlain, Genie, Linear, Craftsman. Call 425-448-6443 for flat-rate programming."
 
       heroImage={{
-        src: "/images/garage-door-remote-programming-kirkland-wa.webp",
+        src: "/images/services/garage-door-remote-keypad-programming-kirkland-wa.png",
         alt: "Garage door remote and keypad programming in Kirkland WA — Zeus Garage Doors technician programming LiftMaster remote",
         title: "Zeus Garage Doors technician programming garage door remote and wireless keypad for residential homeowner in Kirkland, Washington",
       }}
