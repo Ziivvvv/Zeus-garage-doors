@@ -50,8 +50,8 @@ const TUNEUP_FAQS = [
 export default function TuneUpPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Tune-Up & Maintenance Kirkland WA | Zeus Garage Doors"
-      metaDescription="Annual garage door tune-up service in Kirkland, Bellevue & Eastside WA. 21-point inspection, lubrication, adjustment & safety test. Flat-rate pricing. Call 425-448-6443."
+      metaTitle="Garage Door Tune-Up Kirkland WA | Zeus Garage Doors"
+      metaDescription="Annual garage door tune-up in Kirkland & Eastside WA. 21-point inspection, lubrication, adjustment & safety test. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/garage-door-tune-up"
 
       serviceName="Garage Door Tune-Up & Maintenance"

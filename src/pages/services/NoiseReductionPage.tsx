@@ -51,7 +51,7 @@ export default function NoiseReductionPage() {
   return (
     <ServicePage
       metaTitle="Noisy Garage Door Repair Kirkland WA | Zeus Garage Doors"
-      metaDescription="Grinding, rattling, or squealing garage door? Zeus diagnoses and fixes garage door noise in Kirkland, Bellevue & Eastside WA. Nylon roller upgrades, belt-drive openers & more. Call 425-448-6443."
+      metaDescription="Grinding or squealing garage door? Zeus fixes noise in Kirkland & Eastside WA. Nylon roller upgrades, belt-drive openers & more. Call 425-448-6443."
       canonical="/services/noise-reduction"
 
       serviceName="Garage Door Noise Reduction"

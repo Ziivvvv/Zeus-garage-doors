@@ -130,8 +130,8 @@ const FAQS = [
 export default function ChainVsBeltVsJackshaftPage() {
   return (
     <BlogPost
-      metaTitle="Chain Drive vs Belt Drive vs Jackshaft Garage Door Opener | Zeus Garage Doors"
-      metaDescription="Chain vs belt vs jackshaft garage door opener — which is right for your home? Zeus compares all three drive types for Kirkland, Bellevue & Eastside WA homeowners."
+      metaTitle="Chain vs Belt vs Jackshaft Opener: Which Is Right?"
+      metaDescription="Chain vs belt vs jackshaft opener — which is right for your home? Zeus compares all three drive types for Kirkland, Bellevue & Eastside WA homeowners."
       canonical="/blog/chain-vs-belt-vs-jackshaft-opener"
       title="Chain Drive vs. Belt Drive vs. Jackshaft Opener: Which Is Right for You?"
       datePublished="2026-05-12"

@@ -50,8 +50,8 @@ const INSPECTION_FAQS = [
 export default function SafetyInspectionPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Safety Inspection Kirkland WA | Zeus Garage Doors"
-      metaDescription="Comprehensive 26-point garage door safety inspection in Kirkland, Bellevue & Eastside WA. Written condition report. Flat-rate pricing. Call Zeus at 425-448-6443."
+      metaTitle="Garage Door Safety Inspection Kirkland WA | Zeus"
+      metaDescription="26-point garage door safety inspection in Kirkland & Eastside WA. Written condition report. Flat-rate pricing. Call Zeus at 425-448-6443."
       canonical="/services/safety-inspection"
 
       serviceName="Garage Door Safety Inspection"

@@ -52,7 +52,7 @@ const ROLLER_FAQS = [
 export default function RollerReplacementPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Roller Replacement Kirkland WA | Zeus Garage Doors"
+      metaTitle="Garage Door Roller Replacement Kirkland WA | Zeus"
       metaDescription="Noisy or worn garage door rollers? Zeus replaces steel & nylon rollers same-day in Kirkland, Bellevue & Eastside WA. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/roller-replacement"
 

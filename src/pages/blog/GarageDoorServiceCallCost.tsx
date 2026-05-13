@@ -81,7 +81,7 @@ const FAQS = [
 export default function GarageDoorServiceCallCostPage() {
   return (
     <BlogPost
-      metaTitle="How Much Does a Garage Door Service Call Cost? (WA Homeowner Guide)"
+      metaTitle="Garage Door Service Call Cost — WA Homeowner Guide"
       metaDescription="Garage door service call cost depends on what broke, your door's weight, and whether it's emergency or scheduled. Here's what actually drives the price."
       canonical="/blog/garage-door-service-call-cost"
       title="How Much Does a Garage Door Service Call Cost?"

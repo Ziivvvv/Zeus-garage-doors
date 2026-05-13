@@ -50,8 +50,8 @@ const REMOTE_FAQS = [
 export default function RemoteProgrammingPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Remote & Keypad Programming Kirkland WA | Zeus Garage Doors"
-      metaDescription="Remote stopped working? Need a new keypad installed? Zeus programs garage remotes, keypads & HomeLink same-day in Kirkland, Bellevue & Eastside WA. Call 425-448-6443."
+      metaTitle="Garage Door Remote Programming Kirkland WA | Zeus"
+      metaDescription="Remote stopped working? Zeus programs garage remotes, keypads & HomeLink same-day in Kirkland & Eastside WA. Call 425-448-6443."
       canonical="/services/remote-keypad-programming"
 
       serviceName="Garage Door Remote & Keypad Programming"

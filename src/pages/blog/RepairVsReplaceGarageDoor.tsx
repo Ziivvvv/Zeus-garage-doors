@@ -105,8 +105,8 @@ const FAQS = [
 export default function RepairVsReplaceGarageDoorPage() {
   return (
     <BlogPost
-      metaTitle="Garage Door Repair vs. Replace — When to Do Each | Zeus Garage Doors"
-      metaDescription="Should you repair or replace your garage door? Zeus Garage Doors explains the honest decision framework — when repair makes sense and when a new door is the better value."
+      metaTitle="Repair vs Replace Garage Door — When to Do Each"
+      metaDescription="Should you repair or replace your garage door? Zeus explains the honest decision framework — when repair makes sense and when a new door is better value."
       canonical="/blog/repair-vs-replace-garage-door"
       title="Garage Door Repair vs. Replace: When to Do Each"
       datePublished="2026-05-12"

@@ -50,8 +50,8 @@ const MANUAL_TO_AUTO_FAQS = [
 export default function ManualToAutomaticPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Opener Installation Kirkland WA | Zeus Garage Doors"
-      metaDescription="Convert your manual garage door to automatic. Zeus installs LiftMaster belt-drive, chain-drive & jackshaft openers in Kirkland, Bellevue & Eastside WA. Call 425-448-6443."
+      metaTitle="Garage Door Opener Installation Kirkland WA | Zeus"
+      metaDescription="Convert to automatic. Zeus installs LiftMaster belt-drive, chain-drive & jackshaft openers in Kirkland & Eastside WA. Call 425-448-6443."
       canonical="/services/manual-to-automatic-conversion"
 
       serviceName="Garage Door Opener Installation"

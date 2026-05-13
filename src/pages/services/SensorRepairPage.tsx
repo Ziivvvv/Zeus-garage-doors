@@ -51,7 +51,7 @@ export default function SensorRepairPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Sensor Repair Kirkland WA | Zeus Garage Doors"
-      metaDescription="Garage door won't close? Sensor misaligned or faulty? Zeus fixes safety sensors same-day in Kirkland, Bellevue & Eastside WA. Flat-rate pricing. Call 425-448-6443."
+      metaDescription="Garage door won't close? Zeus fixes safety sensors same-day in Kirkland & Eastside WA. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/sensor-repair"
 
       serviceName="Garage Door Sensor Repair"

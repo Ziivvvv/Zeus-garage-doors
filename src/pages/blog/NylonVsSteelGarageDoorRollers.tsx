@@ -102,7 +102,7 @@ const FAQS = [
 export default function NylonVsSteelGarageDoorRollersPage() {
   return (
     <BlogPost
-      metaTitle="Nylon vs. Steel Garage Door Rollers — Which Is Better? | Zeus Garage Doors"
+      metaTitle="Nylon vs Steel Garage Door Rollers: Which Is Better?"
       metaDescription="Nylon vs steel garage door rollers compared for noise, lifespan, and wet-climate performance. Zeus recommends nylon for most Kirkland & Eastside WA homes."
       canonical="/blog/nylon-vs-steel-garage-door-rollers"
       title="Nylon vs. Steel Garage Door Rollers — Which Lasts Longer?"

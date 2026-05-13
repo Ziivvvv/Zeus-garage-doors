@@ -118,7 +118,7 @@ export default function ServiceAreaPage() {
   return (
     <>
       <SEOHead
-        title="Garage Door Repair Service Area | Zeus Garage Doors — Kirkland WA"
+        title="Garage Door Service Area | Zeus Garage Doors — Kirkland WA"
         description="Zeus Garage Doors serves Kirkland, Bellevue, Seattle, Redmond, Mercer Island, Lynnwood, Bothell, Woodinville, and Kenmore. Same-day service across the Eastside WA and South Snohomish County."
         canonical="/service-area"
         pageType="about"

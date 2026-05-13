@@ -50,8 +50,8 @@ const WEATHERSEAL_FAQS = [
 export default function WeatherSealPage() {
   return (
     <ServicePage
-      metaTitle="Garage Door Weather Seal Replacement Kirkland WA | Zeus Garage Doors"
-      metaDescription="Drafts, water, or pests getting under your garage door? Zeus replaces bottom seals & weatherstripping same-day in Kirkland, Bellevue & Eastside WA. Call 425-448-6443."
+      metaTitle="Garage Door Weather Seal Replacement Kirkland WA"
+      metaDescription="Drafts or water under your garage door? Zeus replaces seals & weatherstripping same-day in Kirkland & Eastside WA. Call 425-448-6443."
       canonical="/services/weather-seal-replacement"
 
       serviceName="Garage Door Weather Seal Replacement"

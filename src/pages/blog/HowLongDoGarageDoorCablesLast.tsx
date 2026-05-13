@@ -92,8 +92,8 @@ const FAQS = [
 export default function HowLongDoGarageDoorCablesLastPage() {
   return (
     <BlogPost
-      metaTitle="How Long Do Garage Door Cables Last? Signs & Replacement | Zeus Garage Doors"
-      metaDescription="Garage door lift cables last 7–12 years under normal use. Learn the warning signs of failing cables and when to call for replacement in Kirkland and Eastside WA."
+      metaTitle="How Long Do Garage Door Cables Last? | Zeus"
+      metaDescription="Garage door cables last 7–12 years. Learn the warning signs of failing cables and when to call for replacement in Kirkland and Eastside WA."
       canonical="/blog/how-long-do-garage-door-cables-last"
       title="How Long Do Garage Door Cables Last? Warning Signs & When to Replace"
       datePublished="2026-05-11"

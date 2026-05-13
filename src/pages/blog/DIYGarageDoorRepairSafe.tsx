@@ -164,7 +164,7 @@ const HOW_TO_SCHEMA = {
 export default function DIYGarageDoorRepairSafePage() {
   return (
     <BlogPost
-      metaTitle="Is DIY Garage Door Repair Safe? What You Can (and Can't) Do Yourself"
+      metaTitle="Is DIY Garage Door Repair Safe? What to Know"
       metaDescription="Some garage door repairs are safe DIY. Others — especially spring replacement — are genuinely dangerous. Here's the honest breakdown."
       canonical="/blog/is-diy-garage-door-repair-safe"
       title="Is DIY Garage Door Repair Safe? The Honest Answer"

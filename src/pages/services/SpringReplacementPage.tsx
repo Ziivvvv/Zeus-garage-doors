@@ -17,7 +17,7 @@ export default function SpringReplacementPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Spring Repair | Same-Day WA | Zeus Garage Doors"
-      metaDescription="Broken garage door spring? Zeus provides same-day torsion & extension spring repair in Kirkland, Bellevue & the Eastside WA. Flat-rate pricing. Call 425-448-6443."
+      metaDescription="Broken garage door spring? Zeus provides same-day spring repair in Kirkland & Eastside WA. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/spring-replacement"
 
       // serviceName stays clean — used in FAQ title, cities list, CTA, schema

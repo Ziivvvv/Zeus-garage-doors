@@ -92,7 +92,7 @@ const FAQS = [
 export default function AverageCostReplaceGarageDoorPage() {
   return (
     <BlogPost
-      metaTitle="What's the Average Cost to Replace a Garage Door? (2026 WA Guide)"
+      metaTitle="Average Cost to Replace a Garage Door — 2026 WA"
       metaDescription="Garage door replacement cost depends on material, insulation, size, and opener type. Here's what drives the price — and why Zeus quotes on-site only."
       canonical="/blog/average-cost-to-replace-garage-door"
       title="What's the Average Cost to Replace a Garage Door in 2026?"

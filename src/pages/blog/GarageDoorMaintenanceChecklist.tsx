@@ -109,7 +109,7 @@ const FAQS = [
 export default function GarageDoorMaintenanceChecklistPage() {
   return (
     <BlogPost
-      metaTitle="Garage Door Maintenance Checklist for PNW Homeowners | Zeus Garage Doors"
+      metaTitle="Garage Door Maintenance Checklist for PNW Homes"
       metaDescription="Annual garage door maintenance checklist for Kirkland, Bellevue & Eastside WA homeowners. DIY monthly checks + what to have a pro handle once a year."
       canonical="/blog/garage-door-maintenance-checklist"
       title="Garage Door Maintenance Checklist for Pacific Northwest Homeowners"

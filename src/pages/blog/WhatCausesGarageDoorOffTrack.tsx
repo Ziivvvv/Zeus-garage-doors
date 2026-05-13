@@ -98,7 +98,7 @@ const FAQS = [
 export default function WhatCausesGarageDoorOffTrackPage() {
   return (
     <BlogPost
-      metaTitle="What Causes a Garage Door to Go Off-Track? 6 Causes & Fixes | Zeus Garage Doors"
+      metaTitle="What Causes a Garage Door to Go Off-Track? 6 Fixes"
       metaDescription="Garage door off-track? The 6 most common causes — broken cables, worn rollers, vehicle impact, track misalignment — and what the repair actually involves."
       canonical="/blog/what-causes-garage-door-off-track"
       title="What Causes a Garage Door to Go Off-Track? 6 Causes & Fixes"

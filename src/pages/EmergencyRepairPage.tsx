@@ -79,7 +79,7 @@ export default function EmergencyRepairPage() {
   return (
     <>
       <SEOHead
-        title="Emergency Garage Door Repair Kirkland WA | Same-Night Service | Zeus"
+        title="Emergency Garage Door Repair Kirkland WA | Zeus"
         description="Garage door emergency in Kirkland, Bellevue, or the Eastside? Zeus Garage Doors dispatches same-night — broken springs, cables, off-track doors. Available Sun–Thu. Call 425-448-6443."
         canonical="/emergency-garage-door-repair"
         pageType="service"

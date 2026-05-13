@@ -51,7 +51,7 @@ export default function TrackRepairPage() {
   return (
     <ServicePage
       metaTitle="Garage Door Track Repair Kirkland WA | Zeus Garage Doors"
-      metaDescription="Bent, misaligned, or damaged garage door track? Zeus repairs and replaces tracks same-day in Kirkland, Bellevue & Eastside WA. Flat-rate pricing. Call 425-448-6443."
+      metaDescription="Bent or damaged garage door track? Zeus repairs & replaces tracks same-day in Kirkland & Eastside WA. Flat-rate pricing. Call 425-448-6443."
       canonical="/services/track-repair"
 
       serviceName="Garage Door Track Repair"

@@ -109,7 +109,7 @@ const FAQS = [
 export default function HowToProgramGarageDoorRemotePage() {
   return (
     <BlogPost
-      metaTitle="How to Program a Garage Door Remote & HomeLink | Zeus Garage Doors"
+      metaTitle="How to Program a Garage Door Remote & HomeLink"
       metaDescription="Step-by-step garage door remote programming guide for LiftMaster, Chamberlain & Genie openers. Plus HomeLink car programming and wireless keypad setup."
       canonical="/blog/how-to-program-garage-door-remote"
       title="How to Program a Garage Door Remote, HomeLink & Keypad"
