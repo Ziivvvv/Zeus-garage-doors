@@ -35,14 +35,19 @@ API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 
 
 def get_api_key():
-    """
-    Get API key.
-
-    ⚠️ SETUP REQUIRED: Replace the placeholder below with your Gemini API key.
-
-    Get your API key from: https://aistudio.google.com/apikey
-    """
-    return "AIzaSyDHrb4eK3fZnByC8Zf68Ey6fmXxZZ6X3wE"
+    from pathlib import Path
+    # Try env var first
+    key = os.environ.get("GEMINI_API_KEY", "")
+    if key:
+        return key
+    # Fallback: read from .env file in project root
+    env_file = Path(__file__).parent.parent / ".env"
+    if env_file.exists():
+        for line in env_file.read_text().splitlines():
+            if line.startswith("GEMINI_API_KEY="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    print("Error: GEMINI_API_KEY not set. Add it to .env file as GEMINI_API_KEY=your_key", file=sys.stderr)
+    sys.exit(1)
 
 
 def detect_image_format(image_bytes: bytes) -> tuple[str, str]:

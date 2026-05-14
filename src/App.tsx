@@ -15,6 +15,7 @@ import { lazy, Suspense } from "react";
 // Core pages
 const Index = lazy(() => import("./pages/Index"));
 const QuotePage = lazy(() => import("./pages/QuotePage"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
@@ -130,6 +131,7 @@ const App = () => (
               {/* ── Core */}
               <Route path="/" element={<Index />} />
               <Route path="/quote" element={<QuotePage />} />
+              <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />

@@ -66,7 +66,7 @@ const BUSINESS = {
   telephone: "425-448-6443",
   email: "info@zeusgaragedoorswa.com",
   logo: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
-  image: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
+  image: "https://zeusgaragedoorswa.com/og-hero.webp",
   description:
     "Professional garage door repair, spring replacement, and opener installation services in Kirkland, Bellevue, Redmond, and the greater Eastside area.",
   addressRegion: "WA",
@@ -354,7 +354,7 @@ export default function SEOHead(props: SEOHeadProps) {
 
   const finalOgImage =
     ogImage ||
-    "https://zeusgaragedoorswa.com/zeus-logo-navbar.png";
+    "https://zeusgaragedoorswa.com/og-hero.webp";
 
   // ── SSR path: collect data for prerender head injection
   // useEffect doesn't run during renderToString — we push data synchronously instead

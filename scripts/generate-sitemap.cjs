@@ -21,6 +21,7 @@ const PAGES = [
   // ── Core (highest priority)
   { url: "/",                                     changefreq: "weekly",  priority: "1.0" },
   { url: "/emergency-garage-door-repair",         changefreq: "monthly", priority: "0.95" },
+  { url: "/gallery",                              changefreq: "monthly", priority: "0.8" },
   { url: "/about",                                changefreq: "monthly", priority: "0.7" },
   { url: "/contact",                    changefreq: "monthly", priority: "0.8" },
   { url: "/privacy",                    changefreq: "yearly",  priority: "0.3" },
