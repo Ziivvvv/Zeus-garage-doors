@@ -170,6 +170,16 @@ Track age is the third factor. A track that's 15+ years old with visible corrosi
         "Standard lift track",
         "High-lift track",
       ]}
+      relatedArticles={[
+        { title: "What Causes a Garage Door to Go Off Track?", href: "/blog/what-causes-garage-door-off-track" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+      ]}
+      relatedServices={[
+        { label: "Off-Track Door Repair", href: "/services/off-track-repair" },
+        { label: "Roller Replacement", href: "/services/roller-replacement" },
+        { label: "Spring Replacement", href: "/services/spring-replacement" },
+      ]}
 
       faqs={TRACK_FAQS}
 

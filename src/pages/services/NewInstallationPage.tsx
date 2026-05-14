@@ -65,8 +65,19 @@ export default function NewInstallationPage() {
         "Modern glass garage doors", "Steel raised panel", "Weatherstripping", 
         "Wind load rating", "Torsion system"
       ]}
-      
-      
+      relatedArticles={[
+        { title: "Average Cost to Replace a Garage Door", href: "/blog/average-cost-to-replace-garage-door" },
+        { title: "Repair vs Replace: Which Makes Sense?", href: "/blog/repair-vs-replace-garage-door" },
+        { title: "LiftMaster vs Chamberlain: Full Comparison", href: "/blog/liftmaster-vs-chamberlain-garage-door-opener" },
+        { title: "Best Garage Door Opener for PNW Homes", href: "/blog/best-garage-door-opener-pnw" },
+      ]}
+      relatedServices={[
+        { label: "Opener Repair & Installation", href: "/services/opener-repair" },
+        { label: "Weather Seal Replacement", href: "/services/weather-seal-replacement" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+        { label: "View Our Work — Gallery", href: "/gallery" },
+      ]}
+
       faqs={[
         ...GENERAL_FAQS,
         {

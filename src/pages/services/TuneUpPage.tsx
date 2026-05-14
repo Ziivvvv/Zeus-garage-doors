@@ -180,6 +180,17 @@ For Kirkland homeowners who want to check their door balance between tune-up vis
         "Preventative maintenance",
         "Weather seal compression",
       ]}
+      relatedArticles={[
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+        { title: "How Long Do Garage Door Springs Last?", href: "/blog/how-long-do-garage-door-springs-last" },
+        { title: "Why Is My Garage Door So Noisy?", href: "/blog/why-is-my-garage-door-so-noisy" },
+      ]}
+      relatedServices={[
+        { label: "Spring Replacement", href: "/services/spring-replacement" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+        { label: "Weather Seal Replacement", href: "/services/weather-seal-replacement" },
+        { label: "Roller Replacement", href: "/services/roller-replacement" },
+      ]}
 
       faqs={TUNEUP_FAQS}
 

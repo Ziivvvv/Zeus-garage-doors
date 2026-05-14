@@ -64,8 +64,18 @@ export default function OffTrackRepairPage() {
         "Track alignment", "Lift cables", "Cable drums", "Binding", 
         "Track brackets", "Flag brackets", "Door jamb"
       ]}
-      
-      
+      relatedArticles={[
+        { title: "What Causes a Garage Door to Go Off Track?", href: "/blog/what-causes-garage-door-off-track" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+      ]}
+      relatedServices={[
+        { label: "Spring Replacement", href: "/services/spring-replacement" },
+        { label: "Cable Replacement", href: "/services/cable-replacement" },
+        { label: "Track Repair", href: "/services/track-repair" },
+        { label: "Panel Replacement", href: "/services/panel-replacement" },
+      ]}
+
       faqs={[
         ...GENERAL_FAQS,
         {

@@ -63,8 +63,17 @@ export default function CableReplacementPage() {
         "Torsion spring system", "Extension springs", "Bottom brackets", 
         "Pulleys", "Frayed wire", "Tensile strength"
       ]}
-      
-      
+      relatedArticles={[
+        { title: "How Long Do Garage Door Cables Last?", href: "/blog/how-long-do-garage-door-cables-last" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+      ]}
+      relatedServices={[
+        { label: "Spring Replacement", href: "/services/spring-replacement" },
+        { label: "Off-Track Door Repair", href: "/services/off-track-repair" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+      ]}
+
       faqs={[
         ...GENERAL_FAQS,
         {

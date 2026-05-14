@@ -171,6 +171,15 @@ For homeowners who have already replaced the bottom seal but still feel a draft,
         "Air infiltration",
         "Rodent exclusion",
       ]}
+      relatedArticles={[
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+        { title: "Why Is My Garage Door So Noisy?", href: "/blog/why-is-my-garage-door-so-noisy" },
+      ]}
+      relatedServices={[
+        { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+        { label: "Noise Reduction", href: "/services/noise-reduction" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+      ]}
 
       faqs={WEATHERSEAL_FAQS}
 

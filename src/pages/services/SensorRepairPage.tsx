@@ -171,6 +171,16 @@ After every sensor replacement, we run the full safety reversal test: place a 2Ã
         "Sensor LED indicator",
         "Sun glare interference",
       ]}
+      relatedArticles={[
+        { title: "Why Won't My Garage Door Close All the Way?", href: "/blog/why-wont-garage-door-close-all-the-way" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+      ]}
+      relatedServices={[
+        { label: "Opener Repair & Installation", href: "/services/opener-repair" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+        { label: "Remote & Keypad Programming", href: "/services/remote-keypad-programming" },
+      ]}
 
       faqs={SENSOR_FAQS}
 

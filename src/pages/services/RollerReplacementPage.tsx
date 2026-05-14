@@ -176,6 +176,16 @@ For Kirkland homeowners who want a complete system service rather than just roll
         "20,000-cycle rollers",
         "Door panel weight",
       ]}
+      relatedArticles={[
+        { title: "Nylon vs Steel Garage Door Rollers", href: "/blog/nylon-vs-steel-garage-door-rollers" },
+        { title: "Why Is My Garage Door So Noisy?", href: "/blog/why-is-my-garage-door-so-noisy" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+      ]}
+      relatedServices={[
+        { label: "Noise Reduction", href: "/services/noise-reduction" },
+        { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+        { label: "Track Repair", href: "/services/track-repair" },
+      ]}
 
       faqs={ROLLER_FAQS}
 

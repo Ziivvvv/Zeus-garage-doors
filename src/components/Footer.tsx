@@ -61,6 +61,7 @@ const NEIGHBORHOODS = [
 
 const COMPANY = [
   { label: "About Us", href: "/about" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Service Area", href: "/service-area" },
   { label: "Blog", href: "/blog" },
   { label: "Safety Checklist", href: "/safety-checklist" },

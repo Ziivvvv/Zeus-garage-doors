@@ -52,6 +52,8 @@ export interface ServicePageProps {
    */
   contentBlocks?: { heading: string; body: string }[];
   relatedEntities: string[];
+  relatedArticles?: { title: string; href: string }[];
+  relatedServices?: { label: string; href: string }[];
   faqs: FAQItem[];
   breadcrumbs: { name: string; url: string }[];
 }
@@ -165,6 +167,8 @@ export default function ServicePage({
   whyZeusPoints,
   contentBlocks,
   relatedEntities,
+  relatedArticles,
+  relatedServices,
   faqs,
   breadcrumbs,
 }: ServicePageProps) {
@@ -307,7 +311,11 @@ export default function ServicePage({
                     ))}
                   </div>
                   <p className="text-slate-400 text-xs">
-                    Industry standards set by DASMA (Door &amp; Access Systems Manufacturers Association). Zeus Garage Doors is a licensed and insured Washington State contractor.
+                    Industry standards set by{" "}
+                    <a href="https://www.dasma.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-600">
+                      DASMA
+                    </a>{" "}
+                    (Door &amp; Access Systems Manufacturers Association). Zeus Garage Doors is a licensed and insured Washington State contractor.
                   </p>
                 </div>
               </FadeIn>
@@ -435,6 +443,44 @@ export default function ServicePage({
           subtitle={`Common questions from Kirkland and Eastside WA homeowners`}
           injectSchema={false}
         />
+
+        {/* ── RELATED LINKS */}
+        {((relatedArticles && relatedArticles.length > 0) || (relatedServices && relatedServices.length > 0)) && (
+          <section className="py-12 bg-offwhite" aria-label="Related reading and services">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                {relatedArticles && relatedArticles.length > 0 && (
+                  <div>
+                    <h2 className="text-lg font-bold text-navy font-playfair mb-4">Related Articles</h2>
+                    <ul className="space-y-2">
+                      {relatedArticles.map((a) => (
+                        <li key={a.href}>
+                          <Link to={a.href} className="text-gold hover:underline font-medium text-sm">
+                            → {a.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {relatedServices && relatedServices.length > 0 && (
+                  <div>
+                    <h2 className="text-lg font-bold text-navy font-playfair mb-4">Related Services</h2>
+                    <ul className="space-y-2">
+                      {relatedServices.map((s) => (
+                        <li key={s.href}>
+                          <Link to={s.href} className="text-gold hover:underline font-medium text-sm">
+                            → {s.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* ── FINAL CTA */}
         <section

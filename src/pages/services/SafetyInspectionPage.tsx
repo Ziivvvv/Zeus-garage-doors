@@ -180,6 +180,17 @@ Zeus schedules inspection appointments with 24–48 hours notice across Kirkland
         "Component service life",
         "Safety reversal system",
       ]}
+      relatedArticles={[
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+        { title: "How Long Do Garage Door Springs Last?", href: "/blog/how-long-do-garage-door-springs-last" },
+      ]}
+      relatedServices={[
+        { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+        { label: "Spring Replacement", href: "/services/spring-replacement" },
+        { label: "Sensor Repair", href: "/services/sensor-repair" },
+        { label: "Cable Replacement", href: "/services/cable-replacement" },
+      ]}
 
       faqs={INSPECTION_FAQS}
 

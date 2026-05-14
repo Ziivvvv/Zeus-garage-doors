@@ -173,6 +173,17 @@ Zeus recommends the appropriate solution for your specific home configuration an
         "Door balance",
         "Noise decibel reduction",
       ]}
+      relatedArticles={[
+        { title: "Why Is My Garage Door So Noisy?", href: "/blog/why-is-my-garage-door-so-noisy" },
+        { title: "Nylon vs Steel Garage Door Rollers", href: "/blog/nylon-vs-steel-garage-door-rollers" },
+        { title: "Chain vs Belt vs Jackshaft Opener", href: "/blog/chain-vs-belt-vs-jackshaft-opener" },
+      ]}
+      relatedServices={[
+        { label: "Roller Replacement", href: "/services/roller-replacement" },
+        { label: "Opener Repair & Installation", href: "/services/opener-repair" },
+        { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+        { label: "Weather Seal Replacement", href: "/services/weather-seal-replacement" },
+      ]}
 
       faqs={NOISE_FAQS}
 

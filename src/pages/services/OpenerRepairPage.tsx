@@ -59,8 +59,19 @@ export default function OpenerRepairPage() {
         "Logic Board", "Safety Sensors", "Capacitor", "Remote Programming",
         "Travel Module", "DC Motor", "Battery Backup", "Wall Station"
       ]}
-      
-      
+      relatedArticles={[
+        { title: "Best Garage Door Opener for PNW Homes", href: "/blog/best-garage-door-opener-pnw" },
+        { title: "LiftMaster vs Chamberlain: Full Comparison", href: "/blog/liftmaster-vs-chamberlain-garage-door-opener" },
+        { title: "Chain vs Belt vs Jackshaft Opener", href: "/blog/chain-vs-belt-vs-jackshaft-opener" },
+        { title: "How to Program a Garage Door Remote", href: "/blog/how-to-program-garage-door-remote" },
+      ]}
+      relatedServices={[
+        { label: "Remote & Keypad Programming", href: "/services/remote-keypad-programming" },
+        { label: "Noise Reduction", href: "/services/noise-reduction" },
+        { label: "Manual-to-Automatic Conversion", href: "/services/manual-to-automatic-conversion" },
+        { label: "Sensor Repair", href: "/services/sensor-repair" },
+      ]}
+
       faqs={[
         ...GENERAL_FAQS,
         {

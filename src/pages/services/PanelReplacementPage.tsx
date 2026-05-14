@@ -64,8 +64,17 @@ export default function PanelReplacementPage() {
         "Polystyrene insulation", "R-value", "Amarr", "Clopay", "Wayne Dalton", 
         "Northwest Door", "Wind load strut", "Hinges", "Pinch-resistant joints"
       ]}
-      
-      
+      relatedArticles={[
+        { title: "Average Cost to Replace a Garage Door", href: "/blog/average-cost-to-replace-garage-door" },
+        { title: "Repair vs Replace: Which Makes Sense?", href: "/blog/repair-vs-replace-garage-door" },
+        { title: "What Causes a Garage Door to Go Off Track?", href: "/blog/what-causes-garage-door-off-track" },
+      ]}
+      relatedServices={[
+        { label: "New Door Installation", href: "/services/new-installation" },
+        { label: "Off-Track Door Repair", href: "/services/off-track-repair" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+      ]}
+
       faqs={[
         ...GENERAL_FAQS,
         {

@@ -147,6 +147,18 @@ Zeus Garage Doors offers 21-point garage door maintenance tune-ups for Kirkland,
         "Spring anchor bracket",
         "Door weight / IPPT",
       ]}
+      relatedArticles={[
+        { title: "How Long Do Garage Door Springs Last?", href: "/blog/how-long-do-garage-door-springs-last" },
+        { title: "What Affects Spring Replacement Cost?", href: "/blog/spring-replacement-cost-factors" },
+        { title: "Is DIY Garage Door Repair Safe?", href: "/blog/is-diy-garage-door-repair-safe" },
+        { title: "Garage Door Maintenance Checklist", href: "/blog/garage-door-maintenance-checklist" },
+      ]}
+      relatedServices={[
+        { label: "Cable Replacement", href: "/services/cable-replacement" },
+        { label: "Off-Track Door Repair", href: "/services/off-track-repair" },
+        { label: "Tune-Up & Maintenance", href: "/services/garage-door-tune-up" },
+        { label: "Safety Inspection", href: "/services/safety-inspection" },
+      ]}
 
       faqs={[
         ...SPRING_FAQS,
