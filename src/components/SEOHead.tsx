@@ -68,7 +68,7 @@ const BUSINESS = {
   logo: "https://zeusgaragedoorswa.com/zeus-logo-navbar.png",
   image: "https://zeusgaragedoorswa.com/og-hero.webp",
   description:
-    "Professional garage door repair, spring replacement, and opener installation services in Kirkland, Bellevue, Redmond, and the greater Eastside area.",
+    "Professional garage door repair, installation, spring replacement, and opener installation services in Kirkland, Bellevue, Redmond, and the greater Eastside area.",
   addressRegion: "WA",
   addressCountry: "US",
   postalCode: "98034",
