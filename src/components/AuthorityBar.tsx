@@ -38,7 +38,7 @@ export default function AuthorityBar() {
               <p className="text-white font-bold text-sm leading-tight">
                 Licensed · Bonded · Insured
               </p>
-              <p className="text-white text-xs mt-0.5">WA Lic. #ZEUSGGD740KN</p>
+              <p className="text-white/60 text-xs mt-0.5">Washington State Contractor</p>
             </div>
           </div>
 
