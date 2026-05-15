@@ -128,6 +128,17 @@ function buildLocalBusinessSchema(cityName?: string) {
       { "@type": "City", name: "Kenmore",       addressRegion: "WA", addressCountry: "US" },
     ],
     priceRange: BUSINESS.priceRange,
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "license",
+      name: "Washington State General Contractor License",
+      identifier: "ZEUSGGD740KN",
+      recognizedBy: {
+        "@type": "GovernmentOrganization",
+        name: "Washington State Department of Labor & Industries",
+        url: "https://lni.wa.gov",
+      },
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
