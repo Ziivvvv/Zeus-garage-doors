@@ -284,6 +284,7 @@ export default function Footer() {
           <p>
             © {currentYear} Zeus Garage Doors and Gate Repair LLC. All rights reserved.
             Serving Kirkland, Bellevue, Redmond, Bothell, Lynnwood, Mercer Island, Woodinville, Kenmore &amp; Seattle.
+            WA Lic. #ZEUSGGD740KN · Bonded &amp; Insured.
           </p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-white/70 transition-colors">
