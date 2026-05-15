@@ -259,11 +259,10 @@ export default function ServicePage({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 text-navy text-sm font-medium">
               <span>⚡ Same-Day Available</span>
-              <span>🔧 Licensed Technicians</span>
+              <span><strong>🔧 Licensed · Bonded · Insured</strong></span>
               <span>🛡️ 5-Year Warranty on Parts & Labor</span>
               <span>💰 Upfront Pricing</span>
               <span>📍 Local Kirkland Business</span>
-              <span>🛡️ Fully Insured</span>
             </div>
           </div>
         </div>

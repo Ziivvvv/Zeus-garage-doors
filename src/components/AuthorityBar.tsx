@@ -35,10 +35,10 @@ export default function AuthorityBar() {
               <Shield size={20} className="text-white" aria-hidden="true" />
             </div>
             <div>
-              <p className="text-white font-semibold text-sm leading-tight">
-                Fully Licensed &amp; Insured
+              <p className="text-white font-bold text-sm leading-tight">
+                Licensed · Bonded · Insured
               </p>
-              <p className="text-white text-xs mt-0.5">Washington State Contractor</p>
+              <p className="text-white text-xs mt-0.5">WA Lic. #ZEUSGGD740KN</p>
             </div>
           </div>
 
