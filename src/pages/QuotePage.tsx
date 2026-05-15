@@ -1,5 +1,5 @@
 import SEOHead from "@/components/SEOHead";
-import QuoteForm from "@/components/QuoteForm";
+import MultiStepQuoteForm from "@/components/MultiStepQuoteForm";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ShieldCheck, Wrench, MapPin, Clock, DollarSign, CheckCircle } from "lucide-react";
@@ -59,13 +59,7 @@ export default function QuotePage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-card border border-border rounded-2xl shadow-xl p-8"
           >
-            <h2 className="font-display text-xl font-bold text-[hsl(var(--navy))] mb-1">
-              Request Your Estimate
-            </h2>
-            <p className="text-muted-foreground text-sm mb-6">
-              Name, phone, and zip are all we need to get started.
-            </p>
-            <QuoteForm />
+            <MultiStepQuoteForm />
           </motion.div>
         </div>
       </section>

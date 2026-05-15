@@ -11,6 +11,9 @@ import FAQAccordion, { GENERAL_FAQS, UNIVERSAL_FAQS } from "@/components/FAQAcco
 import VoiceSnippets from "@/components/VoiceSnippets";
 import BlogPreview from "@/components/BlogPreview";
 import CTASection from "@/components/CTASection";
+import HowItWorks from "@/components/HowItWorks";
+import GuaranteeSection from "@/components/GuaranteeSection";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 import type { FAQItem } from "@/components/SEOHead";
 
 // High-value "People Also Ask" / voice-search FAQ pairs injected into
@@ -70,6 +73,7 @@ export default function Index() {
   return (
     <main className="pt-16">
       <QuotePopup />
+      <ExitIntentPopup />
       <SEOHead
         title="Zeus Garage Doors | Washington State's Trusted Experts"
         description="Expert garage door repair and installation across Washington State. Fast, reliable service from the pros at Zeus Garage Doors. Get a free quote today!"
@@ -133,10 +137,12 @@ export default function Index() {
       </section>
 
       <AuthorityBar />
+      <HowItWorks />
       <CommunitiesGrid />
       <TrustMarquee />
       <ServicesGrid />
       <SpecialtyServices />
+      <GuaranteeSection />
       <VoiceSnippets />
       <FAQAccordion
         items={[...GENERAL_FAQS, ...UNIVERSAL_FAQS]}
