@@ -102,12 +102,25 @@ function buildLocalBusinessSchema(cityName?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
+    "@id": `${BUSINESS.url}/#organization`,
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
-    description:
-      "Expert garage door repair and installation across Washington State. Fast, reliable service from the pros.",
+    description: BUSINESS.description,
     url: BUSINESS.url,
-    telephone: BUSINESS.telephone,
+    telephone: "+14254486443",
+    email: BUSINESS.email,
+    logo: {
+      "@type": "ImageObject",
+      url: BUSINESS.logo,
+      width: 200,
+      height: 60,
+    },
+    image: {
+      "@type": "ImageObject",
+      url: BUSINESS.image,
+      width: 1200,
+      height: 630,
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: "12550 120th Ave NE, Unit 732",
@@ -115,6 +128,11 @@ function buildLocalBusinessSchema(cityName?: string) {
       addressRegion: BUSINESS.addressRegion,
       postalCode: BUSINESS.postalCode,
       addressCountry: BUSINESS.addressCountry,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS.geo.latitude,
+      longitude: BUSINESS.geo.longitude,
     },
     areaServed: [
       { "@type": "City", name: "Seattle",       addressRegion: "WA", addressCountry: "US" },
@@ -128,17 +146,39 @@ function buildLocalBusinessSchema(cityName?: string) {
       { "@type": "City", name: "Kenmore",       addressRegion: "WA", addressCountry: "US" },
     ],
     priceRange: BUSINESS.priceRange,
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "license",
-      name: "Washington State General Contractor License",
-      identifier: "ZEUSGGD740KN",
-      recognizedBy: {
-        "@type": "GovernmentOrganization",
-        name: "Washington State Department of Labor & Industries",
-        url: "https://lni.wa.gov",
-      },
+    currenciesAccepted: BUSINESS.currenciesAccepted,
+    paymentAccepted: BUSINESS.paymentAccepted,
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+14254486443",
+      email: BUSINESS.email,
+      contactType: "customer service",
+      areaServed: "WA",
+      availableLanguage: "English",
     },
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "license",
+        name: "Washington State General Contractor License",
+        identifier: "ZEUSGGD740KN",
+        recognizedBy: {
+          "@type": "GovernmentOrganization",
+          name: "Washington State Department of Labor & Industries",
+          url: "https://lni.wa.gov",
+        },
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "bond",
+        name: "Contractor Surety Bond",
+        identifier: "543530Y",
+        recognizedBy: {
+          "@type": "Organization",
+          name: "Westfield Insurance Co",
+        },
+      },
+    ],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
