@@ -78,9 +78,6 @@ function FAQItemComponent({ item, isOpen, onToggle, index }: FAQItemComponentPro
       className={`border-b border-slate-200 last:border-b-0 transition-colors ${
         isOpen ? "bg-offwhite" : "bg-white hover:bg-slate-50"
       }`}
-      itemScope
-      itemProp="mainEntity"
-      itemType="https://schema.org/Question"
     >
       <button
         id={questionId}
@@ -90,7 +87,6 @@ function FAQItemComponent({ item, isOpen, onToggle, index }: FAQItemComponentPro
         className="w-full text-left flex items-center justify-between gap-4 px-6 py-5 group"
       >
         <h3
-          itemProp="name"
           className="text-navy font-semibold text-base lg:text-lg leading-snug group-hover:text-forest transition-colors"
         >
           {item.question}
@@ -118,12 +114,8 @@ function FAQItemComponent({ item, isOpen, onToggle, index }: FAQItemComponentPro
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
             style={{ overflow: "hidden" }}
-            itemScope
-            itemProp="acceptedAnswer"
-            itemType="https://schema.org/Answer"
           >
             <div
-              itemProp="text"
               className="px-6 pb-6 text-charcoal leading-relaxed text-base"
               dangerouslySetInnerHTML={{ __html: item.answer }}
             />
@@ -166,8 +158,6 @@ export default function FAQAccordion({
       id={id}
       className="py-16 lg:py-24 bg-white"
       aria-labelledby="faq-heading"
-      itemScope
-      itemType="https://schema.org/FAQPage"
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
