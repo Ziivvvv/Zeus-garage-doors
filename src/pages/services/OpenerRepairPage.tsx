@@ -54,6 +54,18 @@ export default function OpenerRepairPage() {
           body: "We only use OEM parts from LiftMaster and Genie. Every repair is covered by our 5-year parts and labor warranty — the strongest guarantee on the Eastside."
         }
       ]}
+      contentBlocks={[
+        {
+          heading: "What Is a Garage Door Opener and How Does It Work?",
+          body: `A garage door opener is a motorized device that automates the raising and lowering of a residential garage door. The motor drives a trolley along a rail using one of three drive mechanisms: a chain drive (durable and affordable), a belt drive (quieter, preferred for attached garages), or a jackshaft (wall-mounted, ideal for low-clearance garages). When activated by a remote, keypad, or smartphone app, the motor engages the trolley, which is connected to the door via a carriage and release cord. Safety sensors mounted near the floor emit an infrared beam across the door opening — if the beam is broken while the door is closing, the opener reverses automatically. Modern openers include a logic board that controls motor speed, travel limits, and obstacle detection force. The logic board is the most failure-prone component and is the cause of most erratic opener behavior including doors reversing for no apparent reason, not responding to remotes, or stopping mid-travel.`,
+        },
+        {
+          heading: "Garage Door Opener Repair vs. Replacement — How to Decide",
+          body: `Whether to repair or replace a garage door opener depends on the age of the unit, the nature of the failure, and your goals for smart home integration. Openers under 10 years old with a failed capacitor, stripped drive gear, or damaged safety sensor are almost always worth repairing — parts are available and the repair cost is significantly less than a new unit. Openers over 15 years old with a failed logic board or burned-out motor are typically better replaced, since new logic boards for discontinued models cost nearly as much as an entry-level new opener.
+
+If your current opener lacks battery backup, myQ smart home connectivity, or rolling code security (a feature that changes the remote frequency with every use to prevent code grabbing), replacement is worth considering even for a partially functional unit. Zeus Garage Doors carries LiftMaster belt-drive, chain-drive, and jackshaft openers and can have a new unit installed and programmed in under two hours, including transferring your existing keypad codes and vehicle HomeLink settings.`,
+        },
+      ]}
       relatedEntities={[
         "LiftMaster", "Genie", "Chamberlain", "MyQ", "Belt Drive", "Chain Drive",
         "Logic Board", "Safety Sensors", "Capacitor", "Remote Programming",

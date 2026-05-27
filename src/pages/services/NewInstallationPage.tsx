@@ -59,6 +59,20 @@ export default function NewInstallationPage() {
           body: "Every new installation is backed by our 5-year parts and labor warranty — the best on the Eastside. If anything fails due to installation workmanship, we fix it free."
         }
       ]}
+      contentBlocks={[
+        {
+          heading: "What Is Involved in a New Garage Door Installation?",
+          body: `A new garage door installation is a full system replacement that includes the door panels, track system, spring system, hardware, and opener integration. The process begins with removing the existing door — panels, horizontal and vertical tracks, torsion or extension spring system, cables, and bottom brackets — down to the bare opening. The new door is installed panel by panel from the bottom up, with hinges connecting each section and rollers fitted to the sides. The track system is installed and set to the correct vertical and horizontal alignment for the door's weight and size. A new torsion spring assembly is sized and wound to the exact counterbalance required for the door's specific weight, measured on-site. Finally, the opener is connected, the travel limits and obstacle detection force are calibrated, and all remotes and keypads are programmed. A professional installation on a standard two-car garage door typically takes three to five hours from start to finish.`,
+        },
+        {
+          heading: "Choosing the Right Garage Door for a Pacific Northwest Home",
+          body: `The Pacific Northwest's damp climate creates specific requirements for garage door selection that differ from drier inland markets. Steel insulated doors with a polyurethane foam core offer the best balance of durability, insulation value, and moisture resistance for Kirkland and Eastside WA homes. Polyurethane-insulated steel doors achieve R-values of 12 to 18, compared to R-6 to R-9 for polystyrene-insulated panels — a meaningful difference for attached garages that share a wall with living space.
+
+Wood doors and wood composite doors require more maintenance in Washington's wet climate — annual painting or staining is essential to prevent moisture infiltration and panel delamination. Aluminum and glass panel doors are a popular modern choice for contemporary homes and hold up well to the climate, though they offer minimal insulation value and should be reserved for detached garages or heated garage applications.
+
+Zeus Garage Doors carries steel, insulated steel, aluminum, and composite door lines from Amarr and Northwest Door, with options from a basic builder replacement to a fully custom carriage house design. We bring door samples to your home so you can see the profile and finish in your actual light conditions before committing.`,
+        },
+      ]}
       relatedEntities={[
         "Amarr Garage Doors", "Clopay", "Northwest Door", "Wayne Dalton", 
         "R-value", "Polyurethane insulation", "Polystyrene", "Carriage house doors", 

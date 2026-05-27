@@ -103,9 +103,17 @@ export default function SpringReplacementPage() {
         },
       ]}
 
-      // Content blocks: two editorial sections adding ~500 words
+      // Content blocks: definition + two editorial sections adding ~750 words
       // Semantic H2s hit: garage, door, spring, repair, maintenance, services, Kirkland
       contentBlocks={[
+        {
+          heading: "What Is a Garage Door Spring and What Does It Do?",
+          body: `A garage door spring is a high-tension steel coil that stores mechanical energy to counterbalance the weight of the garage door, making it possible to raise a door that weighs 130 to 350 pounds with minimal effort. Without a functioning spring, the full weight of the door falls on the opener motor — which is not designed to lift the door unassisted and will typically fail within weeks of operating against an unbalanced load.
+
+There are two types of garage door springs: torsion springs and extension springs. Torsion springs are mounted on a steel shaft directly above the closed door and work by twisting under load — when the door closes, the spring winds up and stores energy; when the door opens, the spring unwinds and releases that energy through the cable drum system. Extension springs are mounted above the horizontal tracks on each side of the door and work by stretching under load. Torsion springs are the modern standard for residential installations because they last longer, provide smoother operation, and are safer when they fail — a broken torsion spring stays on the shaft, while a broken extension spring can become a dangerous projectile without safety cables in place.
+
+Garage door springs are rated by cycle life. One cycle equals one full open and close of the door. A standard builder-grade torsion spring is rated for 10,000 cycles; high-cycle springs available from Zeus Garage Doors are rated for 20,000 to 50,000 cycles.`,
+        },
         {
           heading: "How Garage Door Spring Repair Works in Kirkland, WA",
           body: `When a garage door spring breaks in Kirkland, the counterbalance system that makes your heavy garage door easy to open fails completely. A standard residential garage door weighs between 130 and 350 pounds. Without a functioning spring, that entire weight falls on your opener motor — and in most cases, the door simply won't move at all.

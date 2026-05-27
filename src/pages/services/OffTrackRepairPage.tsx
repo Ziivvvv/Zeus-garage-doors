@@ -59,6 +59,18 @@ export default function OffTrackRepairPage() {
           body: "Every off-track repair is backed by our 5-year parts and labor warranty — the strongest in the Eastside. If the door goes off-track again due to our repair, we return at no charge."
         }
       ]}
+      contentBlocks={[
+        {
+          heading: "What Does It Mean When a Garage Door Goes Off Track?",
+          body: `A garage door goes off track when one or more rollers slip out of the vertical or horizontal track sections that guide the door through its travel path. The track system consists of vertical tracks on each side of the door opening and curved horizontal tracks that extend into the garage ceiling. Steel or nylon rollers attached to hinges on each side of the door run inside these tracks. When a roller pops out — due to a snapped lift cable, a bent track section, an impact from a vehicle, or worn roller stems — the door loses its guided path and can jam at an angle, buckle under its own weight, or drop suddenly on the unsupported side. An off-track garage door is a serious safety hazard: the door may weigh 150 to 350 pounds and is no longer supported by the counterbalance system. Do not attempt to force the door open or closed, and do not operate the opener — doing so can bend the tracks permanently, damage the opener carriage arm, and cause the door panels to crack under the uneven load.`,
+        },
+        {
+          heading: "How Zeus Garage Doors Fixes an Off-Track Door in Kirkland",
+          body: `When Zeus Garage Doors technicians arrive for an off-track repair call in Kirkland or the Eastside, the first step is stabilizing the door in its current position before attempting any realignment. If a broken cable caused the derailment, the spring tension must be safely released before any cable or track work begins. The technician then carefully guides the escaped rollers back into the track, inspects all rollers and hinges for damage, and checks the track sections for bends, separation at the joints, or improper alignment relative to the door width.
+
+Bent tracks are straightened with professional track adjustment tools or replaced if the bend is severe. Damaged rollers are replaced as a set — worn nylon rollers often cause repeated off-track events and are worth upgrading to sealed steel ball-bearing rollers at the same visit. After realignment, the technician tests the door through multiple full cycles and verifies that the gap between the door edge and track is consistent across the full travel height before clearing the system as safe for normal use.`,
+        },
+      ]}
       relatedEntities={[
         "Vertical track", "Horizontal track", "Nylon rollers", "Steel rollers", 
         "Track alignment", "Lift cables", "Cable drums", "Binding", 

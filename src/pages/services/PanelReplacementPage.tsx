@@ -59,6 +59,20 @@ export default function PanelReplacementPage() {
           body: "Panel replacements are backed by our 5-year parts and labor warranty — the longest guarantee on the Eastside. Materials defects or fitting issues are covered, no questions asked."
         }
       ]}
+      contentBlocks={[
+        {
+          heading: "What Is a Garage Door Panel and When Should It Be Replaced?",
+          body: `A garage door panel is one horizontal section of the door — most residential garage doors consist of four to six panels stacked vertically and connected by hinges. Each panel is a self-contained structural unit, typically made from steel, aluminum, wood composite, or glass-reinforced fiberglass, with an outer skin, an inner skin, and an insulating core of polyurethane or polystyrene foam. Panels are designed to be replaced individually, which means damage limited to one or two sections does not always require a full door replacement.
+
+Panel replacement is appropriate when a section has been dented by a vehicle impact, cracked by weather stress, or has developed rust penetration that has compromised the structural integrity of the skin. Cosmetic dents that do not affect the panel's structural shape or the door's seal can sometimes be left in place or repaired with filler — but any dent that causes the door to bind in the tracks, prevents the hinges from folding correctly, or allows air and moisture to enter the garage warrants replacement. The key question is whether a matching replacement panel is still available from the original manufacturer.`,
+        },
+        {
+          heading: "Matching Replacement Panels for Kirkland and Eastside Garage Doors",
+          body: `The most challenging aspect of garage door panel replacement is sourcing a panel that matches the existing door in profile, texture, color, and insulation value. Zeus Garage Doors sources replacement panels from Amarr, Clopay, Wayne Dalton, Northwest Door, and other major manufacturers with distribution to the Pacific Northwest. For doors manufactured within the last 15 years, panel matches are available in most cases. For older doors or discontinued product lines, we provide an honest assessment of whether a close visual match is achievable or whether a full door replacement would produce a better result at similar cost.
+
+When a matching panel is unavailable, some homeowners opt to replace the full door — an opportunity to upgrade insulation value, door weight, and style at the same time. Zeus Garage Doors offers free on-site consultations for both panel replacement and full door replacement across Kirkland, Bellevue, Redmond, and all Eastside WA communities, with no obligation to proceed after receiving your written quote.`,
+        },
+      ]}
       relatedEntities={[
         "Bottom section", "Intermediate panel", "Top section", "Polyurethane insulation", 
         "Polystyrene insulation", "R-value", "Amarr", "Clopay", "Wayne Dalton", 
