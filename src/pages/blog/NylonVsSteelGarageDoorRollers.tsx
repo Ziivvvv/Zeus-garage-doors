@@ -69,10 +69,10 @@ const CONTENT = `
 
 <h2>When to Replace Rollers</h2>
 <p>
-  Replace garage door rollers when: you hear grinding or squealing that persists after lubrication, rollers are visibly cracked or flat-spotted, the door wobbles or vibrates more than usual during travel, or rollers are 7+ years old on a high-use door. Worn rollers that aren't replaced continue to damage the track channel — the track repair cost is higher than the roller replacement cost.
+  Replace garage door rollers when: you hear grinding or squealing that persists after lubrication, rollers are visibly cracked or flat-spotted, the door wobbles or vibrates more than usual during travel, or rollers are 7+ years old on a high-use door. Worn rollers that aren't replaced continue to damage the track channel — the track repair cost is higher than the roller replacement cost. Our <a href="/blog/garage-door-maintenance-checklist">garage door maintenance checklist</a> covers the full inspection routine you should run every spring and fall.
 </p>
 <p>
-  Zeus replaces rollers as a flat-rate same-day service across Kirkland and the Eastside. See our <a href="/services/roller-replacement">roller replacement service</a> or call <a href="tel:+14254486443">425-448-6443</a>.
+  Zeus replaces rollers as a flat-rate same-day service across Kirkland and the Eastside. See our <a href="/services/roller-replacement">roller replacement service</a> or book a full <a href="/services/garage-door-tune-up">garage door tune-up</a> that includes roller inspection and replacement as part of a complete system check. Call <a href="tel:+14254486443">425-448-6443</a>.
 </p>
 `;
 

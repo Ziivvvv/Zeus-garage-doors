@@ -39,7 +39,7 @@ const CONTENT = `
 </p>
 <h3>Failure: Snapped Cable</h3>
 <p>
-  A snapped cable drops its side of the door, causing the door to hang at an angle — or crash down if the spring also fails simultaneously. A door with a snapped cable is not safe to operate and should be left closed until repaired.
+  A snapped cable drops its side of the door, causing the door to hang at an angle — or crash down if the spring also fails simultaneously. A door with a snapped cable is not safe to operate and should be left closed until repaired. Snapped cables are a leading cause of <a href="/blog/what-causes-garage-door-off-track">garage doors going off-track</a>.
 </p>
 
 <h2>Why Both Cables Should Be Replaced Together</h2>
@@ -57,7 +57,7 @@ const CONTENT = `
   Three practices extend cable service life significantly:
 </p>
 <ul>
-  <li><strong>Annual spring tension check:</strong> Undertensioned springs increase cable load per cycle. Keeping spring tension correctly calibrated is the single most impactful thing you can do for cable longevity.</li>
+  <li><strong>Annual spring tension check:</strong> Undertensioned springs increase cable load per cycle. Keeping spring tension correctly calibrated is the single most impactful thing you can do for cable longevity. If your spring is more than 7 years old, consider a <a href="/services/spring-replacement">proactive spring replacement</a> before it fails and shock-loads the cables.</li>
   <li><strong>Lubrication:</strong> Apply a light coat of white lithium grease to cable runs annually. This reduces friction on the cable where it passes over pulleys (extension spring systems) and slows surface corrosion.</li>
   <li><strong>Humidity management:</strong> If your garage has standing water or chronic moisture problems, address those separately. Galvanized replacement cables cost only slightly more than standard cables and are strongly recommended for Eastside WA homes.</li>
 </ul>

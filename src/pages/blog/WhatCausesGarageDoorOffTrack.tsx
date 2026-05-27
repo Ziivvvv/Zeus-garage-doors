@@ -27,7 +27,7 @@ const CONTENT = `
 
 <h3>2. Broken Lift Cable</h3>
 <p>
-  When a lift cable snaps, one side of the door drops while the other stays in place. This uneven loading pulls rollers out of the track on the low side. Cable failure is often the actual root cause of what appears to be an off-track problem — the door didn't leave the track because of the track, it left because the cable broke and the door fell.
+  When a lift cable snaps, one side of the door drops while the other stays in place. This uneven loading pulls rollers out of the track on the low side. Cable failure is often the actual root cause of what appears to be an off-track problem — the door didn't leave the track because of the track, it left because the cable broke and the door fell. See our <a href="/services/cable-replacement">cable replacement service</a> for same-day repair.
 </p>
 
 <h3>3. Worn or Broken Rollers</h3>
@@ -42,12 +42,12 @@ const CONTENT = `
 
 <h3>5. Bent Track Section</h3>
 <p>
-  Tracks bend from direct impact, from a heavy object falling against them in the garage, or from the track bracket pulling through corroded drywall or framing. A bent section creates a point of restriction where rollers bind and eventually jump.
+  Tracks bend from direct impact, from a heavy object falling against them in the garage, or from the track bracket pulling through corroded drywall or framing. A bent section creates a point of restriction where rollers bind and eventually jump. Our <a href="/services/track-repair">track repair service</a> covers section replacement and full realignment.
 </p>
 
 <h3>6. Torsion Spring Failure With Unbalanced Load</h3>
 <p>
-  A broken torsion spring drops the full weight of the door onto the opener and cables. If the opener is forced to continue operating with a broken spring, the uneven load distribution can pull one side of the door faster than the other, yanking rollers sideways out of the track.
+  A broken torsion spring drops the full weight of the door onto the opener and cables. If the opener is forced to continue operating with a broken spring, the uneven load distribution can pull one side of the door faster than the other, yanking rollers sideways out of the track. If a spring break caused your off-track door, <a href="/services/spring-replacement">spring replacement</a> must happen before the door can be safely re-tracked.
 </p>
 
 <h2>Can You Fix an Off-Track Door Yourself?</h2>

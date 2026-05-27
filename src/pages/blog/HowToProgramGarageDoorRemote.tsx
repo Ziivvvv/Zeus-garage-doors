@@ -79,7 +79,7 @@ const CONTENT = `
 
 <h2>When to Call Instead of DIY</h2>
 <p>
-  If you've tried the standard programming process and the remote still won't pair — and you've verified frequency compatibility — the issue may be a failed receiver board in the opener or a faulty remote. Zeus diagnoses both on the same service call and resolves the issue same-day. For all remote, keypad, and HomeLink issues across Kirkland and the Eastside, call <a href="tel:+14254486443">425-448-6443</a>.
+  If you've tried the standard programming process and the remote still won't pair — and you've verified frequency compatibility — the issue may be a failed receiver board in the opener or a faulty remote. Zeus diagnoses both on the same service call through our <a href="/services/opener-repair">garage door opener repair service</a> and resolves it same-day. For all remote, keypad, and HomeLink issues across Kirkland and the Eastside, <a href="/contact">contact Zeus Garage Doors</a> or call <a href="tel:+14254486443">425-448-6443</a>.
 </p>
 `;
 

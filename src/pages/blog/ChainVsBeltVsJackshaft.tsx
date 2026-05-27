@@ -46,7 +46,7 @@ const CONTENT = `
   <li>Belt material can degrade in extreme heat over decades (less relevant in Kirkland's climate)</li>
 </ul>
 <p>
-  Zeus's most common recommendation for Kirkland and Eastside WA attached garages is a LiftMaster belt-drive with myQ Wi-Fi and battery backup. The noise reduction is immediately noticeable and the additional cost over chain drive is minor relative to years of quieter operation. See our <a href="/services/opener-repair">opener installation page</a> for details.
+  Zeus's most common recommendation for Kirkland and Eastside WA attached garages is a LiftMaster belt-drive with myQ Wi-Fi and battery backup. The noise reduction is immediately noticeable and the additional cost over chain drive is minor relative to years of quieter operation. See our <a href="/services/opener-repair">opener installation service</a> for details, or read our <a href="/blog/best-garage-door-opener-pnw">best garage door opener for Pacific Northwest weather</a> guide for a full brand comparison.
 </p>
 
 <h2>Jackshaft (Wall-Mount) Openers</h2>

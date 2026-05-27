@@ -132,7 +132,7 @@ The best maintenance practice for Kirkland homeowners is annual garage door spri
 
 Beyond lubrication, watch for these maintenance signals: excessive noise during garage door operation, visible rust streaks on the spring coils, a door that feels slightly heavier when lifting manually, or an opener that seems to work harder than usual. Any of these signs indicate the spring system is under stress and due for inspection.
 
-Zeus Garage Doors offers 21-point garage door maintenance tune-ups for Kirkland, Bellevue, Redmond, and all Eastside WA communities. A professional tune-up includes spring inspection, lubrication of all moving parts, cable and roller assessment, and opener force calibration — the most cost-effective way to avoid an emergency garage door repair call.`,
+Zeus Garage Doors offers <a href="/services/garage-door-tune-up">21-point garage door maintenance tune-ups</a> for Kirkland, Bellevue, Redmond, and all Eastside WA communities. A professional tune-up includes spring inspection, lubrication of all moving parts, <a href="/services/cable-replacement">cable</a> and roller assessment, and opener force calibration — the most cost-effective way to avoid an emergency garage door repair call. See our full <a href="/blog/how-long-do-garage-door-springs-last">guide to garage door spring lifespan</a> for maintenance benchmarks.`,
         },
       ]}
 
