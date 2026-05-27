@@ -250,6 +250,20 @@ function buildServiceSchema(
   };
 }
 
+// Strip HTML tags from FAQ answers — Google schema validator requires plain text
+function stripHtml(html: string): string {
+  return html
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/<\/?(strong|em|b|i|u|span|p|div|li|ul|ol)[^>]*>/gi, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
 function buildFAQSchema(faqs: FAQItem[]) {
   return {
     "@context": "https://schema.org",
@@ -259,7 +273,7 @@ function buildFAQSchema(faqs: FAQItem[]) {
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: stripHtml(faq.answer),
       },
     })),
   };
