@@ -378,8 +378,25 @@ function buildSchemas(props: SEOHeadProps): object[] {
 // ─────────────────────────────────────────────
 
 function injectSchema(id: string, schema: object) {
+  // Remove existing schema with same ID (previously client-injected)
   const existing = document.getElementById(id);
   if (existing) existing.remove();
+
+  // Also remove prerendered schemas of same @type — they have no id attribute
+  // so getElementById can't find them, causing duplicates when Google crawls with JS
+  const schemaType = (schema as Record<string, unknown>)["@type"];
+  if (schemaType) {
+    document
+      .querySelectorAll('script[type="application/ld+json"]:not([id])')
+      .forEach((el) => {
+        try {
+          const parsed = JSON.parse(el.textContent || "");
+          if (parsed["@type"] === schemaType) el.remove();
+        } catch {
+          // ignore malformed scripts
+        }
+      });
+  }
 
   const script = document.createElement("script");
   script.id = id;
