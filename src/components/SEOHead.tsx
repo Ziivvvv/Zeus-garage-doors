@@ -91,7 +91,9 @@ const BUSINESS = {
     "Woodinville",
     "Kenmore",
   ],
-  sameAs: [],
+  sameAs: [
+    "https://secure.lni.wa.gov/verify/Detail.aspx?UBI=604837882",
+  ],
 };
 
 // ─────────────────────────────────────────────
@@ -193,6 +195,7 @@ function buildLocalBusinessSchema(cityName?: string) {
         closes: "18:00",
       },
     ],
+    sameAs: BUSINESS.sameAs,
   };
 }
 
@@ -397,11 +400,16 @@ export default function SEOHead(props: SEOHeadProps) {
 
   const collector = useContext(SeoCollectorContext);
 
-  const canonicalUrl = canonical?.startsWith("https")
+  // Cloudflare Pages 308-redirects all paths to trailing-slash versions.
+  // Canonical must match so Google doesn't see a canonical→redirect loop.
+  const _rawCanonical = canonical?.startsWith("https")
     ? canonical
     : canonical
     ? `https://zeusgaragedoorswa.com${canonical}`
-    : "https://zeusgaragedoorswa.com";
+    : "https://zeusgaragedoorswa.com/";
+  const canonicalUrl = _rawCanonical.endsWith("/")
+    ? _rawCanonical
+    : `${_rawCanonical}/`;
 
   const finalOgImage =
     ogImage ||

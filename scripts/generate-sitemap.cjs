@@ -23,6 +23,7 @@ const PAGES = [
   { url: "/emergency-garage-door-repair",         changefreq: "monthly", priority: "0.95" },
   { url: "/gallery",                              changefreq: "monthly", priority: "0.8" },
   { url: "/about",                                changefreq: "monthly", priority: "0.7" },
+  { url: "/quote",                      changefreq: "monthly", priority: "0.9" },
   { url: "/contact",                    changefreq: "monthly", priority: "0.8" },
   { url: "/privacy",                    changefreq: "yearly",  priority: "0.3" },
   { url: "/terms",                      changefreq: "yearly",  priority: "0.3" },
@@ -91,7 +92,7 @@ function generateSitemap(pages) {
     .map(
       ({ url, changefreq, priority, lastmod }) => `
   <url>
-    <loc>${BASE_URL}${url}</loc>
+    <loc>${BASE_URL}${url === "/" ? "/" : url + "/"}</loc>
     <lastmod>${lastmod || TODAY}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
