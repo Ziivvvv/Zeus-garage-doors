@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import blog1 from "@/assets/blog-1.webp";
-import blog2 from "@/assets/blog-2.png";
+import blog2 from "@/assets/blog-2-liftmaster.webp";
 import blog3 from "@/assets/blog-3.webp";
 
 const posts = [

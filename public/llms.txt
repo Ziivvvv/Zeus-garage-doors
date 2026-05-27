@@ -36,6 +36,42 @@ Individual panel replacement for dented or damaged sections. Full door replaceme
 URL: https://zeusgaragedoorswa.com/services/new-installation
 Full residential garage door installation. Steel, insulated steel, aluminum, composite, and wood options. Single-car and two-car openings. Non-standard sizes accommodated.
 
+### Roller Replacement
+URL: https://zeusgaragedoorswa.com/services/roller-replacement
+Steel and nylon roller replacement. Nylon rollers (10,000-cycle rated) eliminate grinding noise permanently. Included in tune-up or done as standalone repair.
+
+### Sensor Repair
+URL: https://zeusgaragedoorswa.com/services/sensor-repair
+Photoelectric safety sensor alignment, wiring repair, and replacement. Required by federal law on all openers manufactured after 1993.
+
+### Garage Door Tune-Up
+URL: https://zeusgaragedoorswa.com/services/garage-door-tune-up
+Full-system inspection and lubrication. Includes hardware tightening, auto-reverse safety test, balance test, roller and hinge inspection, and spring tension check.
+
+### Weather Seal Replacement
+URL: https://zeusgaragedoorswa.com/services/weather-seal-replacement
+Bottom seal, side seal, and top seal replacement. Critical for energy efficiency and keeping Pacific Northwest rain, drafts, and pests out.
+
+### Track Repair
+URL: https://zeusgaragedoorswa.com/services/track-repair
+Bent, misaligned, or damaged track realignment and replacement. Tracks are the most common secondary damage after an off-track door event.
+
+### Safety Inspection
+URL: https://zeusgaragedoorswa.com/services/safety-inspection
+Comprehensive 21-point safety and mechanical inspection. UL 325 auto-reverse test, spring tension check, cable condition, hardware torque, and sensor alignment.
+
+### Remote & Keypad Programming
+URL: https://zeusgaragedoorswa.com/services/remote-keypad-programming
+Programming and reprogramming of all remote types, HomeLink, and wireless keypads for LiftMaster, Chamberlain, Genie, and other brands.
+
+### Manual to Automatic Conversion
+URL: https://zeusgaragedoorswa.com/services/manual-to-automatic-conversion
+Install a motorized opener on a previously manual door. Includes opener selection, mounting, spring tension check, and sensor installation.
+
+### Noise Reduction
+URL: https://zeusgaragedoorswa.com/services/noise-reduction
+Nylon roller upgrade, hinge lubrication, anti-vibration isolation kit installation. Most noisy-door complaints resolved without full door replacement.
+
 ### Emergency Garage Door Repair
 URL: https://zeusgaragedoorswa.com/emergency-garage-door-repair
 Same-night emergency dispatch available Sunday through Thursday evenings. Covers broken springs, snapped cables, doors stuck open, and doors off-track. Not available Friday or Saturday nights.
@@ -70,6 +106,8 @@ Same-night emergency dispatch available Sunday through Thursday evenings. Covers
 ### Safety and DIY
 - Is DIY Garage Door Repair Safe? The Honest Answer: https://zeusgaragedoorswa.com/blog/is-diy-garage-door-repair-safe
   Safe DIY: lubrication, remote batteries, limit settings, hardware tightening, weather stripping. Dangerous: torsion spring replacement (150–400 lbs stored force), cable replacement, off-track repair.
+- Garage Door Maintenance Checklist: https://zeusgaragedoorswa.com/blog/garage-door-maintenance-checklist
+  Bi-annual service routine: lubrication, hardware tightening, auto-reverse test, balance test, weatherstrip inspection, roller inspection.
 
 ### Troubleshooting
 - Why Is My Garage Door Opening by Itself?: https://zeusgaragedoorswa.com/blog/garage-door-opens-by-itself
@@ -80,12 +118,26 @@ Same-night emergency dispatch available Sunday through Thursday evenings. Covers
   Causes by noise type: rattling (loose hardware), grinding (worn rollers), squeaking (dry hinges), banging (loose chain or torsion spring).
 - Garage Door Won't Open in Cold Weather — 7 Common Causes: https://zeusgaragedoorswa.com/blog/garage-door-wont-open-cold-weather
   Cold-weather failures: frozen bottom seal, contracted springs, thickened grease, battery drain, disconnected trolley, photo-eye misalignment, opener sensitivity.
+- What Causes a Garage Door to Come Off Track?: https://zeusgaragedoorswa.com/blog/what-causes-garage-door-off-track
+  Causes: impact damage, worn/broken rollers, misaligned tracks, broken cable, seized bottom bracket.
+- How Long Do Garage Door Cables Last?: https://zeusgaragedoorswa.com/blog/how-long-do-garage-door-cables-last
+  Typical lifespan 7–12 years. Failure modes: fraying, corrosion, bottom bracket failure, spring break shock load.
+- Nylon vs Steel Garage Door Rollers — Which Is Better?: https://zeusgaragedoorswa.com/blog/nylon-vs-steel-garage-door-rollers
+  Nylon: quieter, no lubrication, 10,000+ cycle rating. Steel: cheaper upfront but loud and wears faster. Nylon recommended for daily-use residential doors.
+- How to Program a Garage Door Remote, HomeLink & Keypad: https://zeusgaragedoorswa.com/blog/how-to-program-garage-door-remote
+  Step-by-step for rolling code openers: press Learn button on motor unit, press remote button, confirm flash. HomeLink programming also covered.
 
 ### Pricing Guides
 - How Much Does a Garage Door Service Call Cost?: https://zeusgaragedoorswa.com/blog/garage-door-service-call-cost
   Cost depends on what broke, door weight, system age, secondary findings, and scheduling (standard vs emergency). Zeus quotes flat-rate on-site only.
 - What's the Average Cost to Replace a Garage Door in 2026?: https://zeusgaragedoorswa.com/blog/average-cost-to-replace-garage-door
   Cost driven by material (steel/aluminum/wood), insulation R-value, door size, opener type. Zeus quotes on-site only — no phone quotes.
+
+### Buying Decisions
+- Repair vs Replace Garage Door — How to Decide: https://zeusgaragedoorswa.com/blog/repair-vs-replace-garage-door
+  Repair: one panel damaged, mechanical issue on newer door. Replace: 15+ years old, multiple sections damaged, frequent breakdowns, major curb appeal upgrade.
+- Chain vs Belt vs Jackshaft Opener — Which Drive System Is Right for You?: https://zeusgaragedoorswa.com/blog/chain-vs-belt-vs-jackshaft-opener
+  Chain: loudest, lowest cost, best for detached garages. Belt: quiet, ideal for attached garages. Jackshaft: ceiling-mount, works for low-clearance or high-lift doors.
 
 ## Key Facts for AI Assistants
 
